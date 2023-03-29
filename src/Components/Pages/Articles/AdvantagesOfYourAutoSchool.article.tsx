@@ -77,7 +77,7 @@ const AdvantagesOfYourAutoSchoolArticle = () => {
                 </Typography>
             </div>
 
-            <Zoom children={<img src="/articles/article1.png" alt="article1" style={{marginLeft: "91px"}} className="adaptive__images_article"/>} />
+            <img src="/articles/article1.png" alt="article1" style={{marginLeft: "91px"}} className="adaptive__images_article"/>
 
             <Link to="/" style={{textDecoration: "none", display: "block", justifyContent: "center"}}>
                 <Typography sx={{
