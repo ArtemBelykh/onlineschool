@@ -145,6 +145,12 @@
     .adaptive__circel_article {
         position: unset !important;
     }
+
+    .css-19vsqmd {
+        width: 100% !important;
+        margin-top: 15% !important;
+        font-size: 17px !important;
+    }
 }
 
 .hidden_acordionThird {
