@@ -63,8 +63,8 @@
         padding: 0 !important;
     }
 
-    .css-5rx0g5-MuiContainer-root {
-        margin-top: 100px;
+    .css-5rx0g5-MuiContainer-root, .css-1e7l1gf {
+        margin-top: 40% !important;
     }
     .secondImages img {
         width: 100% !important;
