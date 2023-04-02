@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import MainComponent from './MainComponent';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -16,7 +17,7 @@ root.render(
           <App />
       </BrowserRouter> -->
     
-    <div>Сайт не работает!</div>
+    <MainComponent />
   </React.StrictMode>
 );
 
