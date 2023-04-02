@@ -12,25 +12,28 @@ import HowToChooseADrivingSchoolForABeginnerArticle
     from "./Components/Pages/Articles/HowToChooseADrivingSchoolForABeginner.article";
 import HowToStartStudyingAtADrivingSchoolArticle
     from "./Components/Pages/Articles/HowToStartStudyingAtADrivingSchool.article";
+import Typography from "@mui/material/Typography";
 
 function App() {
     return (
         <>
-            <Navbar/>
-            <Routes>
-                <Route path="/" element={<StartMain/>}/>
-                <Route path="/license" element={<LicensePages/>}/>
-                <Route path="/work-programs" element={<WorkProgramPages/>}/>
-                <Route path="*" element={<NotFoundPages/>}/>
+
+            <Typography variant="h1" component="h1">Сайт не работает!</Typography>
+            {/*<Navbar/>*/}
+            {/*<Routes>*/}
+            {/*    <Route path="/" element={<StartMain/>}/>*/}
+            {/*    <Route path="/license" element={<LicensePages/>}/>*/}
+            {/*    <Route path="/work-programs" element={<WorkProgramPages/>}/>*/}
+            {/*    <Route path="*" element={<NotFoundPages/>}/>*/}
 
 
 
-                <Route path="/article/Advantages-of-your-Auto-school" element={<AdvantagesOfYourAutoSchoolArticle/>} />
-                <Route path="/article/How-To-Choose-a-driving-school-for-a-beginner" element={<HowToChooseADrivingSchoolForABeginnerArticle/>} />
-                <Route path="/article/How-to-start-studying-at-a-driving-school" element={<HowToStartStudyingAtADrivingSchoolArticle/>} />
-            </Routes>
+            {/*    <Route path="/article/Advantages-of-your-Auto-school" element={<AdvantagesOfYourAutoSchoolArticle/>} />*/}
+            {/*    <Route path="/article/How-To-Choose-a-driving-school-for-a-beginner" element={<HowToChooseADrivingSchoolForABeginnerArticle/>} />*/}
+            {/*    <Route path="/article/How-to-start-studying-at-a-driving-school" element={<HowToStartStudyingAtADrivingSchoolArticle/>} />*/}
+            {/*</Routes>*/}
 
-            <Footer/>
+            {/*<Footer/>*/}
         </>
     );
 }

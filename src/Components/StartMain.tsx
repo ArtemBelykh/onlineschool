@@ -11,7 +11,7 @@ const StartMain = () => {
     return (
         <div>
 
-            <Typography variant="h1" component="h1">Сайт не работает!</Typography>
+
 
 
             {/*<FirstScreen/>*/}
