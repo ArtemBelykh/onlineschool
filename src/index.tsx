@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import MainComponent from './MainComponent';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 import "slick-carousel/slick/slick.css";
@@ -13,11 +12,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-<!--       <BrowserRouter>
+      <BrowserRouter>
           <App />
-      </BrowserRouter> -->
+      </BrowserRouter>
     
-    <MainComponent />
   </React.StrictMode>
 );
 
