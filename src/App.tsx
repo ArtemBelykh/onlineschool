@@ -18,7 +18,7 @@ function App() {
     return (
         <>
 
-            <Typography variant="h1" component="h1">Сайт не работает!</Typography>
+            <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Сайт не работает!</Typography>
             {/*<Navbar/>*/}
             {/*<Routes>*/}
             {/*    <Route path="/" element={<StartMain/>}/>*/}
