@@ -14,14 +14,14 @@ const StartMain = () => {
 
 
 
-            {/*<FirstScreen/>*/}
-            {/*<SecondScreen/>*/}
+            <FirstScreen/>
+            <SecondScreen/>
 
-            {/*<ThirdScreen/>*/}
-            {/*<FourthScreen/>*/}
-            {/*<FifthScreen/>*/}
+            <ThirdScreen/>
+            <FourthScreen/>
+            <FifthScreen/>
 
-            {/*<SixthScreen/>*/}
+            <SixthScreen/>
 
         </div>
     );
