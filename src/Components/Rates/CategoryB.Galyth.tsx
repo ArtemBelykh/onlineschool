@@ -130,19 +130,32 @@ const CategoryBGalyth = () => {
                     }} variant="h6" component="h2">
                         Стоимость
                     </Typography>
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "900",
-                        fontSize: "40px",
-                        lineHeight: "50px",
-                        color: "#000000",
-                        textTransform: "uppercase",
-                    }} variant="h6" component="h2">
-                        35 000 ₽
-                    </Typography>
 
-
+                    <div style={{marginTop: "-30px", textAlign: "end"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "500",
+                            fontSize: "20px",
+                            lineHeight: "20px",
+                            color: "rgba(0, 0, 0, 0.5)",
+                            textTransform: "uppercase",
+                            textDecorationLine: "line-through"
+                        }} variant="h6" component="h2">
+                            40 000 ₽
+                        </Typography>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "900",
+                            fontSize: "40px",
+                            lineHeight: "50px",
+                            color: "#000000",
+                            textTransform: "uppercase"
+                        }} variant="h6" component="h2">
+                            35 000 ₽
+                        </Typography>
+                    </div>
 
                 </div>
                 <ModalMain styleBtn={{background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)", borderRadius: "23px", width: "100%", height: "73px"}} variantBtn="contained"

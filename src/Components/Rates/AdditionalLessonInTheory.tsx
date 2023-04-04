@@ -131,17 +131,34 @@ const AdditionalLessonInTheory = () => {
                     }} variant="h6" component="h2">
                         Стоимость
                     </Typography>
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "900",
-                        fontSize: "40px",
-                        lineHeight: "50px",
-                        color: "#000000",
-                        textTransform: "uppercase"
-                    }} variant="h6" component="h2">
-                        1 200 ₽
-                    </Typography>
+
+
+
+                    <div style={{marginTop: "-30px", textAlign: "end"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "500",
+                            fontSize: "20px",
+                            lineHeight: "20px",
+                            color: "rgba(0, 0, 0, 0.5)",
+                            textTransform: "uppercase",
+                            textDecorationLine: "line-through"
+                        }} variant="h6" component="h2">
+                            2 000 ₽
+                        </Typography>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "900",
+                            fontSize: "40px",
+                            lineHeight: "50px",
+                            color: "#000000",
+                            textTransform: "uppercase"
+                        }} variant="h6" component="h2">
+                            1 200 ₽
+                        </Typography>
+                    </div>
 
 
 
