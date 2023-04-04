@@ -19,7 +19,7 @@ const Footer = () => {
                                         <ListItemText sx={{
                                             fontFamily: "Mulish",
                                             color: "white"
-                                        }}>{page}</ListItemText>
+                                        }}>{page.title}</ListItemText>
                                     </ListItemIcon>
                                 </ListItemButton>
                             ))}

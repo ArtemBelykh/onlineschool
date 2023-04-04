@@ -21,7 +21,7 @@ const FirstScreen = () => {
                     сопровождение вместе с автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
                 <img className="image_main__adaptive"
-                     style={{position: "absolute", left: 0, width: "60%", height: "auto", marginTop: "50px"}}
+                     style={{width: "100%", height: "auto", marginTop: "50px"}}
                      src="/mainIMG.png" alt="main"/>
 
                 <div className="circeBtn__adaptive" style={{display: "none"}}>
@@ -37,24 +37,24 @@ const FirstScreen = () => {
 
                 <Box className="fistScreenBox__adaptive" sx={{
                     position: "absolute",
-                    left: 0,
                     top: "75%",
+                    left: "210px",
                     background: "white",
-                    width: "65%",
+                    width: "75%",
                     height: "170px",
                     zIndex: "5",
                     boxShadow: "0px 0px 9px rgba(0, 0, 0, 0.25)",
-                    borderRadius: "0px 58px 58px 0px"
+                    borderRadius: "58px 58px 58px 58px"
                 }}>
                     <Card className="fistScreenBoxCard__adaptive" sx={{
                         maxWidth: "100%",
                         height: "150px",
                         boxShadow: "none",
-                        borderRadius: "0px 58px 58px 0px",
+                        borderRadius: "58px 58px 58px 58px",
                         display: "flex",
                         justifyContent: "space-around",
                         alignItems: "center",
-                        flexWrap: "wrap"
+                        flexWrap: "wrap",
                     }}>
                         <CardContent>
                             <img style={{width: "130px", height: "130px"}} src="/pc.png" alt="pc"/>

@@ -1,10 +1,11 @@
 @media screen and (max-width: 900px) {
     .image_main__adaptive {
-        width: 100% !important;
         margin-top: 30px !important;
         transform: scaleX(-1);
         transform-origin: center;
         transform-box: fill-box;
+        position: absolute !important;
+        left: 0
     }
 
     .fistScreenH5__adaptive {
@@ -17,12 +18,11 @@
     }
 
     .fistScreenBox__adaptive {
-        top: 450px !important;
-        margin-left: 10px;
+        top: 420px !important;
         width: 90% !important;
         border-radius: 28px !important;
         height: 350px !important;
-        padding: 10px 10px 10px 10px;
+        left: 20px !important;
     }
 
     .fistScreenBoxCard__adaptive {
@@ -212,3 +212,4 @@ footer {
     letter-spacing: unset !important;
     color: white;
 }
+

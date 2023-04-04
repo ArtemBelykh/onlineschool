@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const SecondScreen = () => {
     return (
-        <Container sx={{display: "flex", justifyContent: "space-around", width: "60%", flexWrap: "wrap"}}>
+        <Container id="about" sx={{display: "flex", justifyContent: "space-around", width: "60%", flexWrap: "wrap"}}>
 
             <div style={{width: "400px"}}>
                 <Typography sx={{
@@ -41,9 +41,9 @@ const SecondScreen = () => {
                     color: "#000000",
                     marginTop: "20px",
                     marginBottom: "25px"
-                }}>"Автошкола Право на Права" — автошкола в Костроме , которая профессионально обучит будущих водителей
-                    транспортных средств категории "В", "ВЕ", "А". Наша теоретическая подготовка и курсы помогут Вам
-                    получить отличные навыки вождения и успешно сдать экзамены в ГИБДД.</Typography>
+                }}>«Автошкола «Право на Права» — автошкола в Костроме, которая профессионально обучит будущих водителей
+                    транспортных средств категории "А" и "В". Наша теоретическая подготовка и курсы помогут Вам получить
+                    отличные навыки вождения и успешно сдать экзамены в ГИБДД.</Typography>
 
 
                 <div className="adaptive__link_second">

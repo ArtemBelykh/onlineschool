@@ -53,7 +53,7 @@ const ThirdScreen = () => {
     };
 
     return (
-        <Container sx={{width: "55%", marginTop: "70px"}}>
+        <Container id="rate" sx={{width: "55%", marginTop: "70px"}}>
             <Typography sx={{
                 fontFamily: "Mulish",
                 fontStyle: "normal",
@@ -90,9 +90,6 @@ const ThirdScreen = () => {
                     <RememberEverything/>
                 </TabPanel>
                 <TabPanel value={value} index={5}>
-                    <AdditionalDriving/>
-                </TabPanel>
-                <TabPanel value={value} index={6}>
                     <AdditionalLessonInTheory/>
                 </TabPanel>
                 <Tabs
@@ -108,8 +105,7 @@ const ThirdScreen = () => {
                     <Tab label="Категория 'А' г. Кострома" {...a11yProps(2)} />
                     <Tab label="Переаттестация после обучения" {...a11yProps(3)} />
                     <Tab label="Вспомнить Всё!" {...a11yProps(4)} />
-                    <Tab label="Дополнительное вождение" {...a11yProps(5)} />
-                    <Tab label="Дополнительное занятие по теории" {...a11yProps(6)} />
+                    <Tab label="Дополнительное занятие по теории" {...a11yProps(5)} />
                 </Tabs>
 
             </Box>

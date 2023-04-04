@@ -23,7 +23,7 @@ const FourthScreen = () => {
 
     };
     return (
-        <Container sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "500px" : "650px"}} >
+        <Container id="articles" sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "500px" : "650px"}} >
 
             <Typography sx={{
                 fontFamily: "Mulish",

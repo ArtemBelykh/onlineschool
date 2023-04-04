@@ -27,7 +27,7 @@ const DrawerComp = () => {
                     {pages.map((page, index) => (
                         <ListItemButton sx={{paddingLeft: "50px"}} key={index}>
                             <ListItemIcon>
-                                <ListItemText>{page}</ListItemText>
+                                <ListItemText>{page.title}</ListItemText>
                             </ListItemIcon>
 
                         </ListItemButton>

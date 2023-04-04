@@ -9,8 +9,8 @@ const AdditionalDriving = () => {
         <Box sx={styleBox} className="adaptive__rates">
             <div style={{padding: "50px"}} className="adaptive__rates_div">
                 <Typography sx={styleTitle} variant="h2" component="h2">
-                    дополнительное
-                    вождение
+                    Доп занятие
+                    по теории
                 </Typography>
 
                 <div style={{display: "flex", justifyContent: "space-between", width: "400px"}} className="adaptive__rates_div1">
@@ -80,23 +80,6 @@ const AdditionalDriving = () => {
                         color: "#000000"
                     }} variant="h6" component="h2">
                         1.5 ч.
-                    </Typography>
-                </div>
-
-
-                <div style={{display: "flex", alignItems: "center", marginTop: "45px", marginBottom: "53px"}}>
-                    <div><img src="/symbol.png" alt="symbol"/></div>
-
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "400",
-                        fontSize: "24px",
-                        lineHeight: "94%",
-                        color: "#000000",
-                        marginLeft: "14px"
-                    }} variant="h6" component="h2">
-                        1,5 часа практики
                     </Typography>
                 </div>
 

@@ -95,7 +95,7 @@ const CategoryBGalyth = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        190 часов теории
+                        195 часов теории
                     </Typography>
                 </div>
 
@@ -111,7 +111,7 @@ const CategoryBGalyth = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        56 часов практики
+                        60 часов практики
                     </Typography>
                 </div>
 

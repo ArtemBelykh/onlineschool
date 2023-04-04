@@ -5,7 +5,7 @@ const SixthScreen = () => {
     return (
         <>
 
-            <Container sx={{width: "65%"}}>
+            <Container id="contact" sx={{width: "65%"}}>
                 <Typography sx={{
                     fontFamily: "Mulish",
                     fontStyle: "normal",

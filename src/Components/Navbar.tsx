@@ -7,10 +7,14 @@ import {
     useTheme,
 } from "@mui/material";
 import DrawerComp from "./DrawerComp";
+import {Link as LinkScroll, animateScroll as scroll} from "react-scroll";
 import ModalMain from "./ModalMain";
-import {NavLink} from "react-router-dom";
+import {Link as NavLinks} from "react-router-dom";
 
-export const pages = ["О школе", "Тарифы", "Новости", "Отзывы", "Контакты"];
+export const pages = [{title: "О школе", tags: "about"}, {title: "Тарифы", tags: "rate"}, {
+    title: "Статьи",
+    tags: "articles"
+}, {title: "Отзывы", tags: "reviews"}, {title: "Контакты", tags: "contact"}];
 
 const Navbar = () => {
     const theme = useTheme();
@@ -21,7 +25,8 @@ const Navbar = () => {
                 <Container>
 
                     <Toolbar>
-                        <img width="50" height="50" style={{borderRadius: "50%"}} src="/logoMain.jpg" alt="43r534"/>
+                        <NavLinks to="/"><img width="50" height="50" style={{borderRadius: "50%"}} src="/logoMain.jpg"
+                                              alt="43r534"/></NavLinks>
                         {isMatch ? (
                             <>
                                 <DrawerComp/>
@@ -32,7 +37,13 @@ const Navbar = () => {
                                     {pages.map((page, index) => (
                                         <ListItemButton key={index}>
                                             <ListItemIcon>
-                                                <ListItemText sx={{fontFamily: "Mulish"}}>{page}</ListItemText>
+                                                <LinkScroll activeClass="active" spy={true}
+                                                            smooth={true}
+                                                            offset={-100}
+                                                            duration={500}
+                                                            style={{color: "black", textDecoration: "none"}}
+                                                            to={page.tags}><ListItemText id={"#" + page.tags}
+                                                                                               sx={{fontFamily: "Mulish"}}>{page.title}</ListItemText></LinkScroll>
                                             </ListItemIcon>
                                         </ListItemButton>
                                     ))}
@@ -51,7 +62,10 @@ const Navbar = () => {
                                     <Link sx={{color: "black", textDecoration: "none"}} href={"tel:+7 (8142) 33 22 11"}>+7
                                         (910) 801-96-91</Link>
                                 </Typography>
-                                <ModalMain styleBtn={{marginLeft: "auto", background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)"}} variantBtn="contained"
+                                <ModalMain styleBtn={{
+                                    marginLeft: "auto",
+                                    background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)"
+                                }} variantBtn="contained"
                                            titleBtn="Записаться на обучение"/>
                             </>
                         )}
