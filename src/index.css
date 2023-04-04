@@ -167,7 +167,7 @@
     left: 20px;
     text-align: start !important;
 }
-.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-251er {
     color: #DB1C1C !important;
     justify-content: start !important;
 }
