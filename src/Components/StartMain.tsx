@@ -10,18 +10,15 @@ import Typography from "@mui/material/Typography";
 const StartMain = () => {
     return (
         <div>
+            <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Сайт не работает!</Typography>
+            {/*<FirstScreen/>*/}
+            {/*<SecondScreen/>*/}
 
+            {/*<ThirdScreen/>*/}
+            {/*<FourthScreen/>*/}
+            {/*<FifthScreen/>*/}
 
-
-
-            <FirstScreen/>
-            <SecondScreen/>
-
-            <ThirdScreen/>
-            <FourthScreen/>
-            <FifthScreen/>
-
-            <SixthScreen/>
+            {/*<SixthScreen/>*/}
 
         </div>
     );

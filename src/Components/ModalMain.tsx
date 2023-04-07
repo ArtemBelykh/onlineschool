@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -8,6 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, {SelectChangeEvent} from '@mui/material/Select';
 import CloseIcon from '@mui/icons-material/Close';
+import { useForm } from 'react-hook-form';
 
 export interface IModalMain {
     styleBtn?: object | undefined,
@@ -33,12 +34,39 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
 
     const [age, setAge] = React.useState('');
 
     const handleChange = (event: SelectChangeEvent) => {
         setAge(event.target.value);
     };
+
+    async function onSubmit(data: any) {
+        console.log(data)
+
+        // await fetch("http://localhost:5000/api/send", {
+        //     method: "POST",
+        //     mode: "no-cors", // no-cors, *cors, same-origin
+        //     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        //     credentials: "include", // include, *same-origin, omit
+        //     headers: {
+        //         'Content-Type': 'application/json;charset=utf-8'
+        //     },
+        //     body: JSON.stringify(data)
+        // })
+
+            await fetch('https://test-6nq2.onrender.com/api/send', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+    }
+
     return (
         <>
             <Button onClick={handleOpen} sx={styleBtn} variant={variantBtn} color={colorBtn}>
@@ -64,16 +92,18 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             noValidate
                             autoComplete="off"
                             style={{marginTop: "25px"}}
+                            onSubmit={handleSubmit(onSubmit)}
                         >
-                            <TextField id="standard-basic" label="Ваше имя" variant="standard"/>
-                            <TextField id="standard-basic" label="Ваша фамилия" variant="standard"/>
-                            <TextField id="standard-basic" label="Email" variant="standard"/>
-                            <TextField id="standard-basic" label="Дата записи" variant="standard"/>
-                            <TextField id="standard-basic" label="Ваш телефон" variant="standard"/>
+                            <TextField {...register("name")} id="standard-basic" label="Ваше имя" variant="standard"/>
+                            <TextField {...register("lastname")} id="standard-basic" label="Ваша фамилия" variant="standard"/>
+                            <TextField {...register("email")} id="standard-basic" label="Email" variant="standard"/>
+                            <TextField {...register("dataCurrent")} type="date" id="standard-basic" label="Дата записи" variant="standard"/>
+                            <TextField {...register("phoneClient")} type="tel" id="standard-basic" label="Ваш телефон" variant="standard"/>
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
                                 <InputLabel id="demo-simple-select-standard-label">Форма обучения</InputLabel>
                                 <Select
+                                    {...register("formsLearnClient")}
                                     labelId="demo-simple-select-standard-label"
                                     id="demo-simple-select-standard"
                                     value={age}
@@ -81,9 +111,9 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                     label="learn"
                                     sx={{textAlign: "left"}}
                                 >
-                                    <MenuItem value={10}>Дистанционное обучение</MenuItem>
-                                    <MenuItem value={20}>Вечернее обучение</MenuItem>
-                                    <MenuItem value={30}>Дневное обучение</MenuItem>
+                                    <MenuItem value="Дистанционное обучение">Дистанционное обучение</MenuItem>
+                                    <MenuItem value="Вечернее обучение">Вечернее обучение</MenuItem>
+                                    <MenuItem value="Дневное обучение">Дневное обучение</MenuItem>
                                 </Select>
                             </FormControl>
 
@@ -100,12 +130,12 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                         fontSize: "30px",
                                     }}
                                 >
-                                    <FormControlLabel value="female" control={<Radio/>}
+                                    <FormControlLabel control={<Radio/>}
                                                       label="Я согласен(-на) с политикой конфиденциальности"/>
                                 </RadioGroup>
                             </FormControl>
 
-                            <Button sx={{
+                            <Button type="submit" sx={{
                                 background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
                                 borderRadius: "20px",
                                 color: "white",
