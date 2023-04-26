@@ -97,7 +97,7 @@ const RecertificationInSchool = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        4 теоретических консультаций
+                        в другой автошколе
                     </Typography>
                 </div>
 
@@ -145,7 +145,7 @@ const RecertificationInSchool = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            19 000 ₽
+                            18 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",

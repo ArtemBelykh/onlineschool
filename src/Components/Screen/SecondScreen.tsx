@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const SecondScreen = () => {
     return (
-        <Container id="about" sx={{display: "flex", justifyContent: "space-around", width: "60%", flexWrap: "wrap"}}>
+        <Container id="about" className={"SecondScreenAdaptive"} sx={{display: "flex", justifyContent: "space-around", width: "60%", flexWrap: "wrap", marginTop: "100px"}}>
 
             <div style={{width: "400px"}}>
                 <Typography sx={{
@@ -57,16 +57,6 @@ const SecondScreen = () => {
                         textDecoration: "none"
                     }} to={'/license'}>Лицензии</Link>
 
-                    <Link style={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "600",
-                        fontSize: "17px",
-                        lineHeight: "25px",
-                        color: "#DB241C",
-                        marginLeft: "50px",
-                        textDecoration: "none"
-                    }} to={'/work-programs'}>Рабочие программы</Link>
                 </div>
             </div>
 

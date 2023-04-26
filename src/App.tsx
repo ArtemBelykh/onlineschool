@@ -7,12 +7,11 @@ import StartMain from "./Components/StartMain";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import NotFoundPages from "./Components/Pages/NotFound.pages";
-import AdvantagesOfYourAutoSchoolArticle from "./Components/Pages/Articles/AdvantagesOfYourAutoSchool.article";
-import HowToChooseADrivingSchoolForABeginnerArticle
-    from "./Components/Pages/Articles/HowToChooseADrivingSchoolForABeginner.article";
-import HowToStartStudyingAtADrivingSchoolArticle
-    from "./Components/Pages/Articles/HowToStartStudyingAtADrivingSchool.article";
+import HowToChooseADrivingSchoolForABeginnerArticle from "./Components/Pages/Articles/HowToChooseADrivingSchoolForABeginner.article";
+import HowMeArticle
+    from "./Components/Pages/Articles/HowMe.article";
 import Typography from "@mui/material/Typography";
+import HowToSaveMoneyArticle from "./Components/Pages/Articles/HowToSaveMoney.article";
 
 function App() {
     return (
@@ -28,9 +27,9 @@ function App() {
 
 
 
-                <Route path="/article/Advantages-of-your-Auto-school" element={<AdvantagesOfYourAutoSchoolArticle/>} />
+                <Route path="/article/How-to-save-money" element={<HowToSaveMoneyArticle/>} />
                 <Route path="/article/How-To-Choose-a-driving-school-for-a-beginner" element={<HowToChooseADrivingSchoolForABeginnerArticle/>} />
-                <Route path="/article/How-to-start-studying-at-a-driving-school" element={<HowToStartStudyingAtADrivingSchoolArticle/>} />
+                <Route path="/article/How-Me" element={<HowMeArticle/>} />
             </Routes>
 
             <Footer/>

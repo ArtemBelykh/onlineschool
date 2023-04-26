@@ -15,13 +15,13 @@ const styleH5 = {
 const FirstScreen = () => {
     return (
         <>
-            <Container className="fistScreenContainer__adaptive " sx={{marginTop: "120px", height: "90vh"}}>
+            <Container className="fistScreenContainer__adaptive " sx={{marginTop: "120px", height: "100%"}}>
                 <Typography className="fistScreenH5__adaptive" variant="h5" component="h2" sx={styleH5}>Обретите свободу
                     передвижения и юридическое
-                    сопровождение вместе с автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
+                    сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
                 <img className="image_main__adaptive"
-                     style={{width: "100%", height: "auto", marginTop: "50px"}}
+                     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}
                      src="/mainIMG.png" alt="main"/>
 
                 <div className="circeBtn__adaptive" style={{display: "none"}}>
@@ -35,18 +35,17 @@ const FirstScreen = () => {
                                titleBtn="Записаться на обучение"/>
                 </div>
 
-                <Box className="fistScreenBox__adaptive" sx={{
-                    position: "absolute",
-                    top: "75%",
-                    left: "210px",
+                <Box className="fistScreenBox__adaptive" style={{zIndex: "1"}} sx={{
+                    position: "relative",
                     background: "white",
-                    width: "75%",
+                    width: "100%",
                     height: "170px",
                     zIndex: "5",
                     boxShadow: "0px 0px 9px rgba(0, 0, 0, 0.25)",
-                    borderRadius: "58px 58px 58px 58px"
+                    borderRadius: "0px 0px 58px 58px",
+                    marginTop: "-110px",
                 }}>
-                    <Card className="fistScreenBoxCard__adaptive" sx={{
+                    <Card className="fistScreenBoxCard__adaptive" style={{zIndex: "1"}} sx={{
                         maxWidth: "100%",
                         height: "150px",
                         boxShadow: "none",

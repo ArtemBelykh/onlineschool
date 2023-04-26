@@ -38,7 +38,7 @@ const Footer = () => {
 
                     <div className="topAdaptiveFooter"
                          style={{textAlign: "center", color: "white", marginTop: "30px"}}>Права защищены
-                        © {new Date().getFullYear()} Автошкола право на права
+                        © {new Date().getFullYear()} Автошкола Право на Права
                     </div>
                 </Container>
             </footer>

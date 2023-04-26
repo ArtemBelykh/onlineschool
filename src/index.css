@@ -1,4 +1,28 @@
+@media screen and (max-width: 1300px) {
+    .SecondScreenAdaptive {
+        flex-wrap: nowrap !important;
+    }
+
+
+    .fistScreenBox__adaptive {
+        margin-top: -100px !important;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .SecondScreenAdaptive {
+        flex-wrap: wrap !important;
+    }
+
+}
+
 @media screen and (max-width: 900px) {
+    .slick-slide {
+        text-align: center !important;
+        text-align: -webkit-center !important;
+    }
+
     .image_main__adaptive {
         margin-top: 30px !important;
         transform: scaleX(-1);
@@ -13,21 +37,19 @@
         font-size: 26px !important;
     }
 
-    .fistScreenContainer__adaptive {
-        margin-top: 80px !important;
-    }
-
+    /*.fistScreenContainer__adaptive {*/
+    /*    margin-top: 80px !important;*/
+    /*}*/
     .fistScreenBox__adaptive {
-        top: 420px !important;
-        width: 90% !important;
+        margin-top: 250px !important;
         border-radius: 28px !important;
-        height: 350px !important;
-        left: 20px !important;
+        height: 100% !important;
     }
 
     .fistScreenBoxCard__adaptive {
-        height: 350px !important;
+        height: 100% !important;
     }
+
 
     .circeBtn__adaptive {
         display: block !important;
@@ -42,11 +64,17 @@
         height: 500px !important;
     }
 
-    .adaptiveListFooter, .adaptiveListFooter1 {
-        display: block !important;
-        text-align: center !important;
-        justify-content: center;
-        margin: auto !important;
+    .adaptiveListFooter1 {
+        /*display: block !important;*/
+        align-items: center;
+    }
+
+    .adaptiveListFooter {
+        width: 200px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        /*text-align: center !important;*/
+        justify-content: center !important;
     }
 
     .adaptiveListFooter img {
@@ -54,10 +82,9 @@
         height: 100px !important;
     }
 
-    .css-89cnh7-MuiList-root {
-        width: 35% !important;
-    }
-
+    /*.css-89cnh7-MuiList-root {*/
+    /*    width: 35% !important;*/
+    /*}*/
     .MuiContainer-root {
         width: 90% !important;
         padding: 0 !important;
@@ -66,6 +93,7 @@
     .css-5rx0g5-MuiContainer-root, .css-1e7l1gf {
         margin-top: 40% !important;
     }
+
     .secondImages img {
         width: 100% !important;
 
@@ -118,10 +146,10 @@
     }
 
     .adaptive__reviews_height {
-        height: 500px !important;
+        height: 600px !important;
     }
 
-    .css-1160xiw-MuiPaper-root-MuiDrawer-paper, .css-1ab2xsx{
+    .css-1160xiw-MuiPaper-root-MuiDrawer-paper, .css-1ab2xsx {
         width: 318px;
         height: 549px !important;
 
@@ -161,12 +189,14 @@
     border-radius: 0px 5px 5px 0px;
     right: auto !important;
 }
+
 .css-1ujykiq-MuiButtonBase-root-MuiTab-root {
     width: 170px;
     align-items: self-start !important;
     left: 20px;
     text-align: start !important;
 }
+
 .css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-251er.Mui-selected {
     color: #DB1C1C !important;
 }

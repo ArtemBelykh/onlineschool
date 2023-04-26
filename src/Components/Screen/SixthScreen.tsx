@@ -20,7 +20,7 @@ const SixthScreen = () => {
                 </Typography>
             </Container>
 
-            <div style={{display: "flex", marginBottom: "100px", flexWrap: "wrap", width: "100%"}}>
+            <div style={{display: "flex", marginBottom: "100px", flexWrap: "wrap", width: "100%", justifyContent: "center"}}>
 
                 <div style={{position: "relative", overflow: "hidden"}} className="adaptive__maps_div2"><a
                     href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"
@@ -31,12 +31,12 @@ const SixthScreen = () => {
                     Карты</a>
                     <iframe className="adaptive__maps"
                             src="https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"
-                            width="991" height="476" frameBorder="1" allowFullScreen={true}
+                            width="700" height="476" frameBorder="1" allowFullScreen={true}
                             style={{position: "relative"}}></iframe>
                 </div>
 
 
-                <div style={{paddingLeft: "50px"}}>
+                <div className={"adaptiveSix"} style={{paddingLeft: "50px"}}>
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -57,7 +57,7 @@ const SixthScreen = () => {
                     }} variant="h6" component="h2">
                         г. Кострома <br/>
                         ул. Советская 44а <br/>
-                        ОФИС 25
+                        офис 25, 2 этаж
                     </Typography>
                     <Typography sx={{
                         fontFamily: "Mulish",
@@ -114,7 +114,7 @@ const SixthScreen = () => {
 
                     <div style={{display: "flex", marginTop: "38px"}}>
                         <img style={{marginRight: "30px"}} src="/vk.png" alt="vk"/>
-                        <img src="/whatsapp.png" alt="whatsapp"/>
+                        {/*<img src="/whatsapp.png" alt="whatsapp"/>*/}
                     </div>
                 </div>
             </div>

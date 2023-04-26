@@ -7,10 +7,11 @@ import {Link} from "react-router-dom";
 
 const styleSliderItems = {
     width: "266px !important",
-    height: "100%",
+    height: "470px",
     border: "1px solid rgba(0, 0, 0, 0.5)",
     borderRadius: "20px",
     cursor: "poiner"
+
 }
 
 const FourthScreen = () => {
@@ -77,7 +78,7 @@ const FourthScreen = () => {
                             lineHeight: "23px",
                             marginBottom: "10px"
                         }} variant="h4" component="h2">
-                            Достоинства нашей автошколы
+                            Как выбрать автошколу
                         </Typography>
 
                         <Typography sx={{
@@ -97,7 +98,7 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "20px"
                         }}>
-                            <div><Link style={{color: "#DB241C", textDecoration: "none"}} to="/article/Advantages-of-your-Auto-school">Читать далее</Link></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-To-Choose-a-driving-school-for-a-beginner">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
@@ -137,7 +138,7 @@ const FourthScreen = () => {
                             lineHeight: "23px",
                             marginBottom: "10px"
                         }} variant="h4" component="h2">
-                            Как новичку выбрать автошколу
+                            Почему именно мы
                         </Typography>
 
                         <Typography sx={{
@@ -155,10 +156,9 @@ const FourthScreen = () => {
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
-                            marginTop: "20px",
-                            color: "#DB241C"
+                            marginTop: "40px"
                         }}>
-                            <div><Link style={{color: "#DB241C", textDecoration: "none"}} to="/article/How-To-Choose-a-driving-school-for-a-beginner">Читать далее</Link></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-Me">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
@@ -198,7 +198,7 @@ const FourthScreen = () => {
                             lineHeight: "23px",
                             marginBottom: "10px"
                         }} variant="h4" component="h2">
-                            С чего начать обучение в автошколе
+                            Как сэкономить на обучении в автошколе
                         </Typography>
 
                         <Typography sx={{
@@ -216,10 +216,9 @@ const FourthScreen = () => {
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
-                            marginTop: "20px",
-                            color: "#DB241C"
+                            marginTop: "20px"
                         }}>
-                            <div><Link style={{color: "#DB241C", textDecoration: "none"}} to="/article/How-to-start-studying-at-a-driving-school">Читать далее</Link></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-to-save-money">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>

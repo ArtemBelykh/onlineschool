@@ -8,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, {SelectChangeEvent} from '@mui/material/Select';
 import CloseIcon from '@mui/icons-material/Close';
-import { useForm } from 'react-hook-form';
+import {useForm} from 'react-hook-form';
 
 export interface IModalMain {
     styleBtn?: object | undefined,
@@ -34,7 +34,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const {register, handleSubmit, formState: {errors}, reset} = useForm();
 
 
     const [age, setAge] = React.useState('');
@@ -44,20 +44,11 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     };
 
     async function onSubmit(data: any) {
-        console.log(data)
+        reset()
 
-        // await fetch("http://localhost:5000/api/send", {
-        //     method: "POST",
-        //     mode: "no-cors", // no-cors, *cors, same-origin
-        //     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        //     credentials: "include", // include, *same-origin, omit
-        //     headers: {
-        //         'Content-Type': 'application/json;charset=utf-8'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-
-            await fetch('https://test-6nq2.onrender.com/api/send', {
+        if (!data.lastname && !data.dataCurrent && !data.email && !data.formsLearnClient && !data.phoneClient && !data.name) return alert("Заполните все данные, они обязательны!")
+        handleClose()
+        await fetch('https://test-6nq2.onrender.com/api/send', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -65,6 +56,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
             },
             body: JSON.stringify(data)
         })
+
     }
 
     return (
@@ -95,10 +87,15 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             onSubmit={handleSubmit(onSubmit)}
                         >
                             <TextField {...register("name")} id="standard-basic" label="Ваше имя" variant="standard"/>
-                            <TextField {...register("lastname")} id="standard-basic" label="Ваша фамилия" variant="standard"/>
-                            <TextField {...register("email")} id="standard-basic" label="Email" variant="standard"/>
-                            <TextField {...register("dataCurrent")} type="date" id="standard-basic" label="Дата записи" variant="standard"/>
-                            <TextField {...register("phoneClient")} type="tel" id="standard-basic" label="Ваш телефон" variant="standard"/>
+                            <TextField {...register("lastname")} id="standard-basic" label="Ваша фамилия"
+                                       variant="standard"/>
+                            <TextField {...register("email")} type="email" id="standard-basic" label="Email"
+                                       variant="standard"/>
+                            <TextField {...register("dataCurrent")} type="datetime-local" id="standard-basic"
+                                       label="Дата записи"
+                                       variant="standard"/>
+                            <TextField {...register("phoneClient")} type="tel" id="standard-basic" label="Ваш телефон"
+                                       variant="standard"/>
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
                                 <InputLabel id="demo-simple-select-standard-label">Форма обучения</InputLabel>
@@ -112,7 +109,6 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                     sx={{textAlign: "left"}}
                                 >
                                     <MenuItem value="Дистанционное обучение">Дистанционное обучение</MenuItem>
-                                    <MenuItem value="Вечернее обучение">Вечернее обучение</MenuItem>
                                     <MenuItem value="Дневное обучение">Дневное обучение</MenuItem>
                                 </Select>
                             </FormControl>
