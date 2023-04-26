@@ -10,6 +10,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import {pages} from "./Navbar";
 import CloseIcon from "@mui/icons-material/Close";
+import {Link as LinkScroll} from "react-scroll/modules";
 
 const DrawerComp = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -27,7 +28,13 @@ const DrawerComp = () => {
                     {pages.map((page, index) => (
                         <ListItemButton sx={{paddingLeft: "50px"}} key={index}>
                             <ListItemIcon>
-                                <ListItemText>{page.title}</ListItemText>
+                                <LinkScroll activeClass="active" spy={true}
+                                            smooth={true}
+                                            offset={-100}
+                                            duration={500}
+                                            style={{color: "black", textDecoration: "none"}}
+                                            to={page.tags}><ListItemText id={"#" + page.tags}
+                                                                         sx={{fontFamily: "Mulish"}}>{page.title}</ListItemText></LinkScroll>
                             </ListItemIcon>
 
                         </ListItemButton>
