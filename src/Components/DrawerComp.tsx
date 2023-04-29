@@ -28,13 +28,17 @@ const DrawerComp = () => {
                     {pages.map((page, index) => (
                         <ListItemButton sx={{paddingLeft: "50px"}} key={index}>
                             <ListItemIcon>
-                                <LinkScroll activeClass="active" spy={true}
+                                <LinkScroll onClick={() => navigate('/#' + page.tags)}
+                                            activeClass="active" spy={true}
                                             smooth={true}
                                             offset={-100}
                                             duration={500}
                                             style={{color: "black", textDecoration: "none"}}
-                                            to={"#" + page.tags}><ListItemText id={"#" + page.tags}
-                                                                         sx={{fontFamily: "Mulish"}}>{page.title}</ListItemText></LinkScroll>
+                                            to={page.tags}>
+                                    <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
+                                        {page.title}
+                                    </ListItemText>
+                                </LinkScroll>
                             </ListItemIcon>
 
                         </ListItemButton>
