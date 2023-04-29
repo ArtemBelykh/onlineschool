@@ -9,14 +9,22 @@ import {
 import DrawerComp from "./DrawerComp";
 import {Link as LinkScroll, animateScroll as scroll} from "react-scroll";
 import ModalMain from "./ModalMain";
-import {Link as NavLinks} from "react-router-dom";
+import {Link as NavLinks, useNavigate, useParams} from "react-router-dom";
 
-export const pages = [{title: "О школе", tags: "about"}, {title: "Тарифы", tags: "rate"}, {
+export const pages = [{title: "О школе", tags: "about", link: "/about"}, {
+    title: "Тарифы",
+    tags: "rate",
+    link: "/rate"
+}, {
     title: "Статьи",
-    tags: "articles"
-}, {title: "Отзывы", tags: "reviews"}, {title: "Контакты", tags: "contact"}];
+    tags: "articles",
+    link: "/articles"
+}, {title: "Отзывы", tags: "reviews", link: "/reviews"}, {title: "Контакты", tags: "contact", link: "/contact"}];
 
 const Navbar = () => {
+
+    const navigate = useNavigate()
+
     const theme = useTheme();
     const isMatch = useMediaQuery(theme.breakpoints.down("md"));
     return (
@@ -25,8 +33,9 @@ const Navbar = () => {
                 <Container>
 
                     <Toolbar>
-                        <NavLinks to="/"><img width="50" height="50" style={{borderRadius: "50%"}} src="/logoMain.jpg"
-                                              alt="43r534"/></NavLinks>
+                        <NavLinks to="/">
+                            <img width="50" height="50" style={{borderRadius: "50%"}} src="/logoMain.jpg" alt="43r534"/>
+                        </NavLinks>
                         {isMatch ? (
                             <>
                                 <DrawerComp/>
@@ -37,13 +46,17 @@ const Navbar = () => {
                                     {pages.map((page, index) => (
                                         <ListItemButton key={index}>
                                             <ListItemIcon>
-                                                <LinkScroll activeClass="active" spy={true}
+                                                <LinkScroll onClick={() => navigate('/#' + page.tags)}
+                                                            activeClass="active" spy={true}
                                                             smooth={true}
                                                             offset={-100}
                                                             duration={500}
                                                             style={{color: "black", textDecoration: "none"}}
-                                                            to={page.tags}><ListItemText id={"#" + page.tags}
-                                                                                               sx={{fontFamily: "Mulish"}}>{page.title}</ListItemText></LinkScroll>
+                                                            to={page.tags}>
+                                                    <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
+                                                        {page.title}
+                                                    </ListItemText>
+                                                </LinkScroll>
                                             </ListItemIcon>
                                         </ListItemButton>
                                     ))}

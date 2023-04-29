@@ -20,7 +20,13 @@ const SixthScreen = () => {
                 </Typography>
             </Container>
 
-            <div style={{display: "flex", marginBottom: "100px", flexWrap: "wrap", width: "100%", justifyContent: "center"}}>
+            <div style={{
+                display: "flex",
+                marginBottom: "100px",
+                flexWrap: "wrap",
+                width: "100%",
+                justifyContent: "center"
+            }}>
 
                 <div style={{position: "relative", overflow: "hidden"}} className="adaptive__maps_div2"><a
                     href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"
@@ -113,8 +119,15 @@ const SixthScreen = () => {
                     </Typography>
 
                     <div style={{display: "flex", marginTop: "38px"}}>
-                        <img style={{marginRight: "30px"}} src="/vk.png" alt="vk"/>
-                        {/*<img src="/whatsapp.png" alt="whatsapp"/>*/}
+                        <a href="https://vk.com/club196114781" target="_blank"><img
+                            style={{marginRight: "30px", width: "52px", height: "52px"}} src="/vk.png" alt="vk"/></a>
+                        <a href="whatsapp://send?text=l&phone=+78142332211&abid=+78142332211"><img
+                            style={{marginRight: "30px", width: "52px", height: "52px"}} src="/whatsapp.png"
+                            alt="whatsapp"/></a>
+                        <a href="https://t.me/PravoNaPrava" target="_blank">
+                            <img style={{width: "52px", height: "52px"}}
+                                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
+                                 alt="telegram"/></a>
                     </div>
                 </div>
             </div>

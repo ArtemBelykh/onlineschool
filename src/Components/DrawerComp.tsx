@@ -33,7 +33,7 @@ const DrawerComp = () => {
                                             offset={-100}
                                             duration={500}
                                             style={{color: "black", textDecoration: "none"}}
-                                            to={page.tags}><ListItemText id={"#" + page.tags}
+                                            to={"#" + page.tags}><ListItemText id={"#" + page.tags}
                                                                          sx={{fontFamily: "Mulish"}}>{page.title}</ListItemText></LinkScroll>
                             </ListItemIcon>
 

@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width: 900px) {
+    .adaptPuz {
+        right: 0 !important;
+        z-index: -1 !important;
+    }
     .slick-slide {
         text-align: center !important;
         text-align: -webkit-center !important;

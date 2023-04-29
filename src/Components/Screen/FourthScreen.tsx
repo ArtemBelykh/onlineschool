@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Typography} from "@mui/material";
 import Slider from "react-slick";
 import Box from "@mui/material/Box";
-import {Link} from "react-router-dom";
 
 
 const styleSliderItems = {
@@ -26,6 +25,7 @@ const FourthScreen = () => {
     return (
         <Container id="articles" sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "500px" : "650px"}} >
 
+            <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1"}}><img src="/puz/puz2.png" alt="puz2" /></div>
             <Typography sx={{
                 fontFamily: "Mulish",
                 fontStyle: "normal",

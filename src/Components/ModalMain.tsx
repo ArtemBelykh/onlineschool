@@ -91,7 +91,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                        variant="standard"/>
                             <TextField {...register("email")} type="email" id="standard-basic" label="Email"
                                        variant="standard"/>
-                            <TextField {...register("dataCurrent")} type="datetime-local" id="standard-basic"
+                            <TextField {...register("dataCurrent")} type="date" id="standard-basic"
                                        label="Дата записи"
                                        variant="standard"/>
                             <TextField {...register("phoneClient")} type="tel" id="standard-basic" label="Ваш телефон"
