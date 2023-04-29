@@ -18,7 +18,7 @@ const LicensePages = () => {
         setChecked((prev) => !prev);
     };
     return (
-        <Container className="fistScreenContainer__adaptive " sx={{marginTop: "120px", height: "90vh"}}>
+        <Container className="fistScreenContainer__adaptive " sx={{marginTop: "120px", height: "100%", marginBottom: "50px"}}>
 
             <Typography variant="h2" component="h2" sx={{
                 textAlign: "center",
@@ -45,7 +45,7 @@ const LicensePages = () => {
             </Typography>
 
 
-            <Box sx={{display: "flex", justifyContent: "space-between", marginTop: "30px" }}>
+            <Box className="adaptLicence" sx={{display: "flex", justifyContent: "space-between", marginTop: "30px", flexWrap: "wrap" }}>
                 <ModalAssets img="/license/2.jpg"/>
                 <ModalAssets img="/license/3.jpg"/>
                 <ModalAssets img="/license/l1pdf.png" img2="/license/l2pdf.png" isPdf={true}/>

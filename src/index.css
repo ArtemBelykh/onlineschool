@@ -40,10 +40,16 @@
         width: 100% !important;
         font-size: 26px !important;
     }
-
-    /*.fistScreenContainer__adaptive {*/
-    /*    margin-top: 80px !important;*/
-    /*}*/
+    .css-2lyiev {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .fistScreenContainer__adaptive {
+        margin-top: 80px !important;
+    }
+    .adaptLicence {
+        justify-content: center !important;
+    }
     .fistScreenBox__adaptive {
         margin-top: 250px !important;
         border-radius: 28px !important;

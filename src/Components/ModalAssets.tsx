@@ -62,7 +62,7 @@ export default function ModalAssets({img, img2, isPdf}: any) {
 
 
     return (
-        <div>
+        <div className="modalAssets_Adapt">
             <img style={{width: "295px", height: "435px", filter: "drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.25))"}} src={img} onClick={handleOpen}/>
             <Modal
                 aria-labelledby="spring-modal-title"
