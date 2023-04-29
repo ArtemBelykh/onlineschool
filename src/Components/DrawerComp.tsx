@@ -11,9 +11,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import {pages} from "./Navbar";
 import CloseIcon from "@mui/icons-material/Close";
 import {Link as LinkScroll} from "react-scroll/modules";
+import {useNavigate} from "react-router-dom";
 
 const DrawerComp = () => {
     const [openDrawer, setOpenDrawer] = useState(false);
+    const navigate = useNavigate()
 
     return (
         <React.Fragment>
