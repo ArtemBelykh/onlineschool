@@ -2,8 +2,11 @@ import React from 'react';
 import {Container, List, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
 import {pages} from "./Navbar";
 import ModalMain from "./ModalMain";
+import {Link as LinkScroll} from "react-scroll/modules";
+import {useNavigate} from "react-router-dom";
 
 const Footer = () => {
+    const navigate = useNavigate()
     return (
         <>
             <footer className="footer__adaptive" style={{display: "flex", alignItems: "center"}}>
@@ -16,10 +19,17 @@ const Footer = () => {
                             {pages.map((page, index) => (
                                 <ListItemButton key={index}>
                                     <ListItemIcon>
-                                        <ListItemText sx={{
-                                            fontFamily: "Mulish",
-                                            color: "white"
-                                        }}>{page.title}</ListItemText>
+                                        <LinkScroll onClick={() => navigate('/#' + page.tags)}
+                                                    activeClass="active" spy={true}
+                                                    smooth={true}
+                                                    offset={-100}
+                                                    duration={500}
+                                                    style={{color: "black", textDecoration: "none"}}
+                                                    to={page.tags}>
+                                            <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
+                                                {page.title}
+                                            </ListItemText>
+                                        </LinkScroll>
                                     </ListItemIcon>
                                 </ListItemButton>
                             ))}
