@@ -12,7 +12,7 @@ const Footer = () => {
 
                     <div className="adaptiveListFooter1" style={{display: "flex", justifyContent: "space-between"}}>
                         <List className="adaptiveListFooter" sx={{display: "flex", width: "50%"}}>
-                            {/*<img width="50" height="50" style={{borderRadius: "50%"}} src="/logoMain.jpg" alt="43r534"/>*/}
+                            <img width="50" height="50" style={{borderRadius: "50%"}} src="/logoMain.jpg" alt="43r534"/>
                             {pages.map((page, index) => (
                                 <ListItemButton key={index}>
                                     <ListItemIcon>

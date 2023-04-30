@@ -21,7 +21,7 @@ const CategoryAKostroma = () => {
                         lineHeight: "25px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        Вождение (МКПП)
+                        Вождение
                     </Typography>
                     <Typography sx={{
                         fontFamily: "Mulish",
@@ -78,7 +78,7 @@ const CategoryAKostroma = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        3 месяца
+                        1 месяца
                     </Typography>
                 </div>
 
@@ -95,7 +95,7 @@ const CategoryAKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        190 часов обучения
+                        130 часов обучения
                     </Typography>
                 </div>
 
@@ -111,7 +111,7 @@ const CategoryAKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        56 часов практики
+                        16 часов практики
                     </Typography>
                 </div>
 
@@ -131,9 +131,6 @@ const CategoryAKostroma = () => {
                         Стоимость
                     </Typography>
 
-
-
-
                     <div style={{marginTop: "-30px", textAlign: "end"}}>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -145,7 +142,7 @@ const CategoryAKostroma = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            40 000 ₽
+                            15 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -156,7 +153,7 @@ const CategoryAKostroma = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            26 000 ₽
+                            12 000 ₽
                         </Typography>
                     </div>
 

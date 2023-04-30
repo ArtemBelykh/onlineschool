@@ -95,7 +95,7 @@ const RememberEverything = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        2 часа обучения
+                        Доступ к обучающей онлайн платформе
                     </Typography>
                 </div>
 

@@ -121,7 +121,7 @@ const SixthScreen = () => {
                     <div style={{display: "flex", marginTop: "38px"}}>
                         <a href="https://vk.com/club196114781" target="_blank"><img
                             style={{marginRight: "30px", width: "52px", height: "52px"}} src="/vk.png" alt="vk"/></a>
-                        <a href="whatsapp://send?text=l&phone=+78142332211&abid=+78142332211"><img
+                        <a href="whatsapp://send?text=l&phone=+79108019691&abid=+79108019691"><img
                             style={{marginRight: "30px", width: "52px", height: "52px"}} src="/whatsapp.png"
                             alt="whatsapp"/></a>
                         <a href="https://t.me/PravoNaPrava" target="_blank">

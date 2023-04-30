@@ -4,7 +4,7 @@ import StarIcon from "@mui/icons-material/Star";
 import Box from "@mui/material/Box";
 import {styleSliderItems} from "../Screen/FifthScreen";
 
-const IndexReviews = ({name, text}: any) => {
+const IndexReviews = ({name, text, city}: any) => {
     const value = 3.5;
     return (
         <Box sx={styleSliderItems}>
@@ -30,7 +30,7 @@ const IndexReviews = ({name, text}: any) => {
                     marginBottom: "10px",
                     color: "rgba(0, 0, 0, 0.5)"
                 }} variant="h4" component="h2">
-                    г. Галич
+                    {city}
                 </Typography>
 
                 <Rating
