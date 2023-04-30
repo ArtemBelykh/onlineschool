@@ -95,7 +95,7 @@ const CategoryAKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        190 часов теории
+                        190 часов обучения
                     </Typography>
                 </div>
 

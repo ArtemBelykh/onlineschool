@@ -7,9 +7,9 @@ import {
     useTheme,
 } from "@mui/material";
 import DrawerComp from "./DrawerComp";
-import {Link as LinkScroll, animateScroll as scroll} from "react-scroll";
+import {Link as LinkScroll} from "react-scroll";
 import ModalMain from "./ModalMain";
-import {Link as NavLinks, useNavigate, useParams} from "react-router-dom";
+import {Link as NavLinks, useNavigate} from "react-router-dom";
 
 export const pages = [{title: "О школе", tags: "about", link: "/about"}, {
     title: "Тарифы",

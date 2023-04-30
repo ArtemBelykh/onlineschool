@@ -96,7 +96,7 @@ const CategoryBKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        195 часов теории
+                        195 часов обучения
                     </Typography>
                 </div>
 

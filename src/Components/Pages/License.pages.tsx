@@ -1,22 +1,11 @@
 import React from 'react';
-import {Container, FormControlLabel, Paper, Switch, Theme, Zoom} from "@mui/material";
+import {Container} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ModalAssets from "../ModalAssets";
 
-const icon = (
-    <Paper sx={{ m: 10 }} elevation={2}>
-        <img aria-label="show" src="/vk.png" alt=""/>
-    </Paper>
-);
-
 
 const LicensePages = () => {
-    const [checked, setChecked] = React.useState(true);
-
-    const handleChange = () => {
-        setChecked((prev) => !prev);
-    };
     return (
         <Container className="fistScreenContainer__adaptive " sx={{marginTop: "120px", height: "100%", marginBottom: "50px"}}>
 
