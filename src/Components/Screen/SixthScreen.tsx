@@ -50,7 +50,7 @@ const SixthScreen = () => {
                         fontSize: "16px",
                         lineHeight: "20px",
                         color: "rgba(0, 0, 0, 0.5)"
-                    }} variant="h6" component="h2">
+                    }} variant="h6" component="span">
                         Адрес
                     </Typography>
                     <Typography sx={{
@@ -60,7 +60,7 @@ const SixthScreen = () => {
                         fontSize: "24px",
                         lineHeight: "30px",
                         color: "#000000"
-                    }} variant="h6" component="h2">
+                    }} variant="h6" component="span">
                         г. Кострома <br/>
                         ул. Советская 44а <br/>
                         офис 25, 2 этаж
@@ -73,7 +73,7 @@ const SixthScreen = () => {
                         lineHeight: "20px",
                         color: "rgba(0, 0, 0, 0.5)",
                         marginTop: "38px"
-                    }} variant="h6" component="h2">
+                    }} variant="h6" component="span">
                         Часы работы
                     </Typography>
                     <Typography sx={{
@@ -83,7 +83,7 @@ const SixthScreen = () => {
                         fontSize: "24px",
                         lineHeight: "30px",
                         color: "#000000"
-                    }} variant="h6" component="h2">
+                    }} variant="h6" component="span">
                         с 9.00 до 20.00
                     </Typography>
                     <Typography sx={{
@@ -93,7 +93,7 @@ const SixthScreen = () => {
                         fontSize: "14px",
                         lineHeight: "18px",
                         color: "#000000"
-                    }} variant="h6" component="h2">
+                    }} variant="h6" component="span">
                         без перерыва и выходных
                     </Typography>
                     <Typography sx={{
@@ -104,7 +104,7 @@ const SixthScreen = () => {
                         lineHeight: "20px",
                         color: "rgba(0, 0, 0, 0.5)",
                         marginTop: "38px"
-                    }} variant="h6" component="h2">
+                    }} variant="h6" component="span">
                         Телефон
                     </Typography>
                     <Typography sx={{
@@ -114,7 +114,7 @@ const SixthScreen = () => {
                         fontSize: "24px",
                         lineHeight: "30px",
                         color: "#000000"
-                    }} variant="h6" component="h2">
+                    }} variant="h6" component="span">
                         +7 (910) 801-96-91
                     </Typography>
 

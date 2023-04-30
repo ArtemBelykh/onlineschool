@@ -32,7 +32,7 @@ const ThirdScreen = () => {
             >
                 {value === index && (
                     <Box>
-                        <Typography>{children}</Typography>
+                        <Typography component={'span'} >{children}</Typography>
                     </Box>
                 )}
             </div>
@@ -100,9 +100,9 @@ const ThirdScreen = () => {
                     aria-label="Vertical tabs example"
                     sx={{borderColor: 'divider'}}
                 >
-                    <Tab label="Категория 'В' г. Кострома" {...a11yProps(0)} />
-                    <Tab label="Категория 'В' г. Галич" {...a11yProps(1)} />
-                    <Tab label="Категория 'А' г. Кострома" {...a11yProps(2)} />
+                    <Tab label="Категория 'В' &nbsp; &nbsp; &nbsp; г. Кострома" {...a11yProps(0)} />
+                    <Tab label="Категория 'В' &nbsp; &nbsp; &nbsp; г. Галич" {...a11yProps(1)} />
+                    <Tab label="Категория 'А' &nbsp; &nbsp; &nbsp; г. Кострома" {...a11yProps(2)} />
                     <Tab label="Переаттестация после обучения" {...a11yProps(3)} />
                     <Tab label="Вспомнить Всё!" {...a11yProps(4)} />
                     <Tab label="Дополнительное занятие по теории" {...a11yProps(5)} />
