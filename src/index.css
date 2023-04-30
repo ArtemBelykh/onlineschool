@@ -18,6 +18,9 @@
 }
 
 @media screen and (max-width: 900px) {
+    .css-x7najv-MuiButtonBase-root-MuiButton-root {
+        margin-top: 50px !important;
+    }
     .adaptPuz {
         right: 0 !important;
         z-index: -1 !important;
@@ -90,6 +93,8 @@
     .adaptiveListFooter img {
         width: 100px !important;
         height: 100px !important;
+        position: absolute !important;
+        right: -150px !important;
     }
 
     /*.css-89cnh7-MuiList-root {*/
