@@ -24,7 +24,7 @@ const Footer = () => {
                                                     smooth={true}
                                                     offset={-100}
                                                     duration={500}
-                                                    style={{color: "black", textDecoration: "none"}}
+                                                    style={{color: "white", textDecoration: "none"}}
                                                     to={page.tags}>
                                             <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
                                                 {page.title}
