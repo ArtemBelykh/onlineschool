@@ -124,7 +124,7 @@ const SixthScreen = () => {
                         <a href="whatsapp://send?text=l&phone=+79108019691&abid=+79108019691"><img
                             style={{marginRight: "30px", width: "52px", height: "52px"}} src="/whatsapp.png"
                             alt="whatsapp"/></a>
-                        <a href="https://t.me/PravoNaPrava" target="_blank">
+                        <a href="telegram://https://t.me/PravoNaPrava" target="_blank">
                             <img style={{width: "52px", height: "52px"}}
                                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
                                  alt="telegram"/></a>
