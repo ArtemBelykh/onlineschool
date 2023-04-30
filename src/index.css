@@ -18,7 +18,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .css-x7najv-MuiButtonBase-root-MuiButton-root {
+    .css-x7najv-MuiButtonBase-root-MuiButton-root, .css-vobilf {
         margin-top: 50px !important;
     }
     .adaptPuz {
