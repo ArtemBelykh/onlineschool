@@ -48,7 +48,6 @@ const Navbar = () => {
                                             <ListItemIcon>
                                                 <LinkScroll onClick={() => {
                                                     navigate('/#' + page.tags)
-                                                    window.location.reload()
                                                 }}
                                                             activeClass="active" spy={true}
                                                             smooth={true}

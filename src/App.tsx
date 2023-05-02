@@ -20,7 +20,7 @@ function App() {
             {/*<Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Сайт не работает!</Typography>*/}
             <Navbar/>
             <Routes>
-                <Route path="/" element={<StartMain/>}/>
+                <Route path="/" element={<StartMain/>} />
                 <Route path="/license" element={<LicensePages/>}/>
                 <Route path="/work-programs" element={<WorkProgramPages/>}/>
                 <Route path="*" element={<NotFoundPages/>}/>
