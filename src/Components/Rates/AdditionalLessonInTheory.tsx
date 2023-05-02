@@ -78,7 +78,7 @@ const AdditionalLessonInTheory = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        1.5 ч.
+                        1 месяц
                     </Typography>
                 </div>
 
@@ -95,7 +95,7 @@ const AdditionalLessonInTheory = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        1,5 часа практики
+                        Доступ к онлайн платформе
                     </Typography>
                 </div>
 
@@ -155,7 +155,7 @@ const AdditionalLessonInTheory = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            1 200 ₽
+                            1 500 ₽
                         </Typography>
                     </div>
 
