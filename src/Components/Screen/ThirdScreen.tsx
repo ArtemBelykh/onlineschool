@@ -99,9 +99,9 @@ const ThirdScreen = () => {
                     aria-label="Vertical tabs example"
                     sx={{borderColor: 'divider'}}
                 >
-                    <Tab label="Категория 'В' \n г. Кострома" {...a11yProps(0)} />
-                    <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp; г. Галич" {...a11yProps(1)} />
-                    <Tab label="Категория 'А' &nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(2)} />
+                    <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(0)} />
+                    <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Галич" {...a11yProps(1)} />
+                    <Tab label="Категория 'А' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(2)} />
                     <Tab label="Переаттестация после обучения в другой атвошколе" {...a11yProps(3)} />
                     <Tab label="Вспомнить Всё!" {...a11yProps(4)} />
                     <Tab label="Дополнительное занятие по вождению" {...a11yProps(5)} />
