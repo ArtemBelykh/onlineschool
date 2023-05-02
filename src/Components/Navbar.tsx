@@ -46,7 +46,10 @@ const Navbar = () => {
                                     {pages.map((page, index) => (
                                         <ListItemButton key={index}>
                                             <ListItemIcon>
-                                                <LinkScroll onClick={() => navigate('/#' + page.tags)}
+                                                <LinkScroll onClick={() => {
+                                                    navigate('/#' + page.tags)
+                                                    window.location.reload()
+                                                }}
                                                             activeClass="active" spy={true}
                                                             smooth={true}
                                                             offset={-100}
