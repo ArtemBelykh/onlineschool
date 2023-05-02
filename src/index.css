@@ -44,6 +44,9 @@
 }
 
 @media screen and (max-width: 900px) {
+    .adaptiveSix {
+        padding: 0 !important;
+    }
     .css-x7najv-MuiButtonBase-root-MuiButton-root, .css-vobilf {
         margin-top: 50px !important;
     }
