@@ -15,6 +15,14 @@
         flex-wrap: wrap !important;
     }
 
+    .hidden_boxThird {
+        display: none !important;
+    }
+
+
+    .hidden_acordionThird {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 900px) {
