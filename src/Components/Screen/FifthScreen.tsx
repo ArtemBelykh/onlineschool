@@ -50,7 +50,7 @@ const FifthScreen = () => {
         prevArrow: <SamplePrevArrow/>,
         responsive: [
             {
-                breakpoint: 1300,
+                breakpoint: 1500,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
