@@ -9,7 +9,7 @@ const AdditionalDriving = () => {
         <Box sx={styleBox} className="adaptive__rates">
             <div style={{padding: "50px"}} className="adaptive__rates_div">
                 <Typography sx={styleTitle} variant="h2" component="h2">
-                    Доп занятие
+                    Допоплнительное занятие
                     по вождению
                 </Typography>
 
@@ -138,7 +138,7 @@ const AdditionalDriving = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            1 500 ₽
+                            1 200 ₽
                         </Typography>
                     </div>
 
