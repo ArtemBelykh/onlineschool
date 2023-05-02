@@ -8,7 +8,6 @@ import CategoryBGalyth from "../Rates/CategoryB.Galyth";
 import CategoryAKostroma from "../Rates/CategoryA.Kostroma";
 import RecertificationInSchool from "../Rates/RecertificationInSchool";
 import RememberEverything from "../Rates/RememberEverything";
-import AdditionalDriving from "../Rates/AdditionalDriving";
 import AdditionalLessonInTheory from "../Rates/AdditionalLessonInTheory";
 import Acordion from "../Acordion";
 
