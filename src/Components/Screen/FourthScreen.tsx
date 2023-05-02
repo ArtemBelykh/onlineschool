@@ -18,7 +18,7 @@ const FourthScreen = () => {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: window.screen.width < 900 || 1300 ? 1 : 3,
+        slidesToShow: window.screen.width < 900 || 690 ? 1 : 3,
         slidesToScroll: 1,
 
     };
