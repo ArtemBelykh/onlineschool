@@ -70,7 +70,7 @@ const Acordion = () => {
                     aria-controls="panel4bh-content"
                     id="panel4bh-header"
                 >
-                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Переаттестация после обучения</Typography>
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Переаттестация после обучения в другой автошколе</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <RecertificationInSchool/>
