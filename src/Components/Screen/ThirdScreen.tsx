@@ -109,7 +109,7 @@ const ThirdScreen = () => {
 
             </Box>
 
-
+        {/*&#10;&#13;*/}
         </Container>
     );
 };

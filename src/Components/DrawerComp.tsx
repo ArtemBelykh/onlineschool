@@ -30,7 +30,7 @@ const DrawerComp = () => {
                     {pages.map((page, index) => (
                         <ListItemButton sx={{paddingLeft: "50px"}} key={index}>
                             <ListItemIcon>
-                                <LinkScroll onClick={() => navigate('/#' + page.tags)}
+                                <LinkScroll onClick={() => navigate(-1)}
                                             activeClass="active" spy={true}
                                             smooth={true}
                                             offset={-100}

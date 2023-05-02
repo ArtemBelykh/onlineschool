@@ -47,7 +47,7 @@ const Navbar = () => {
                                         <ListItemButton key={index}>
                                             <ListItemIcon>
                                                 <LinkScroll onClick={() => {
-                                                    navigate('/#' + page.tags)
+                                                    navigate(-1)
                                                 }}
                                                             activeClass="active" spy={true}
                                                             smooth={true}

@@ -19,7 +19,7 @@ const Footer = () => {
                             {pages.map((page, index) => (
                                 <ListItemButton key={index}>
                                     <ListItemIcon>
-                                        <LinkScroll onClick={() => navigate('/#' + page.tags)}
+                                        <LinkScroll onClick={() => navigate(-1)}
                                                     activeClass="active" spy={true}
                                                     smooth={true}
                                                     offset={-100}
