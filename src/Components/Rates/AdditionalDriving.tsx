@@ -10,7 +10,7 @@ const AdditionalDriving = () => {
             <div style={{padding: "50px"}} className="adaptive__rates_div">
                 <Typography sx={styleTitle} variant="h2" component="h2">
                     Доп занятие
-                    по теории
+                    по вождению
                 </Typography>
 
                 <div style={{display: "flex", justifyContent: "space-between", width: "400px"}} className="adaptive__rates_div1">
