@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import {styleSliderItems} from "../Screen/FifthScreen";
 
 const IndexReviews = ({name, text, city}: any) => {
-    const value = 3.5;
+    const value = 5;
     return (
         <Box sx={styleSliderItems}>
 
