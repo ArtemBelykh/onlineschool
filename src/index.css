@@ -13,6 +13,15 @@
         text-align: -webkit-center !important;
     }
 
+    .hidden_boxThird {
+        display: none !important;
+    }
+
+
+    .hidden_acordionThird {
+        display: block !important;
+    }
+
 }
 
 @media screen and (max-width: 690px) {
