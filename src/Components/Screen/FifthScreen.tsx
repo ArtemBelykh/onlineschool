@@ -44,10 +44,38 @@ const FifthScreen = () => {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: window.screen.width < 1100 ? 1 : 2,
+        slidesToShow: 2,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow/>,
-        prevArrow: <SamplePrevArrow/>
+        prevArrow: <SamplePrevArrow/>,
+        responsive: [
+            {
+                breakpoint: 1100,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true
+
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 690,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     };
 
     return (
