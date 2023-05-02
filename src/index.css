@@ -8,6 +8,11 @@
         margin-top: -100px !important;
     }
 
+    .slick-slide {
+        text-align: center !important;
+        text-align: -webkit-center !important;
+    }
+
 }
 
 @media screen and (max-width: 690px) {
