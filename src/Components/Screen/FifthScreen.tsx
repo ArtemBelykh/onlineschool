@@ -44,7 +44,7 @@ const FifthScreen = () => {
         dots: true,
         infinite: false,
         speed: 500,
-        slidesToShow: window.screen.width < 900 ? 1 : 2,
+        slidesToShow: window.screen.width < 1100 ? 1 : 2,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow/>,
         prevArrow: <SamplePrevArrow/>
