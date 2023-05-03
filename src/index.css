@@ -24,6 +24,17 @@
 
 }
 
+@media screen and (max-width: 1583px) {
+    .hidden_boxThird {
+        display: none !important;
+    }
+
+
+    .hidden_acordionThird {
+        display: block !important;
+    }
+}
+
 @media screen and (max-width: 690px) {
     .SecondScreenAdaptive {
         flex-wrap: wrap !important;
