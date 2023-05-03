@@ -30,22 +30,25 @@ const DrawerComp = () => {
                     {pages.map((page, index) => (
                         <ListItemButton sx={{paddingLeft: "50px"}} key={index}>
                             <ListItemIcon>
-                                <LinkScroll activeClass="active" spy={true}
-                                            smooth={true}
-                                            offset={-100}
-                                            duration={500}
-                                            style={{color: "black", textDecoration: "none"}}
-                                            to={page.tags}>
-                                    <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
-                                        {page.title}
-                                    </ListItemText>
-                                </LinkScroll>
+                                <ListItemIcon>
+                                    <LinkScroll activeClass="active" spy={true}
+                                                smooth={true}
+                                                offset={-100}
+                                                duration={500}
+                                                style={{color: "black", textDecoration: "none"}}
+                                                to={page.tags}>
+                                        <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
+                                            {page.title}
+                                        </ListItemText>
+                                    </LinkScroll>
+                                </ListItemIcon>
                             </ListItemIcon>
 
                         </ListItemButton>
                     ))}
-                    <ListItemText sx={{marginTop: "30px"}}><Link sx={{color: "rgba(0, 0, 0, 0.54)", textDecoration: "none", paddingLeft: "50px"}}
-                                        href={"tel:+7 (8142) 33 22 11"}>+7
+                    <ListItemText sx={{marginTop: "30px"}}><Link
+                        sx={{color: "rgba(0, 0, 0, 0.54)", textDecoration: "none", paddingLeft: "50px"}}
+                        href={"tel:+7 (8142) 33 22 11"}>+7
                         (910) 801-96-91</Link></ListItemText>
                 </List>
             </Drawer>
