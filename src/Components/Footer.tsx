@@ -19,13 +19,13 @@ const Footer = () => {
                             {pages.map((page, index) => (
                                 <ListItemButton key={index}>
                                     <ListItemIcon>
-                                        <LinkScroll onClick={() => navigate(-1)}
-                                                    activeClass="active" spy={true}
-                                                    smooth={true}
-                                                    offset={-100}
-                                                    duration={500}
-                                                    style={{color: "white", textDecoration: "none"}}
-                                                    to={page.tags}>
+                                        <LinkScroll
+                                            activeClass="active" spy={true}
+                                            smooth={true}
+                                            offset={-100}
+                                            duration={500}
+                                            style={{color: "white", textDecoration: "none"}}
+                                            to={page.tags}>
                                             <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
                                                 {page.title}
                                             </ListItemText>
