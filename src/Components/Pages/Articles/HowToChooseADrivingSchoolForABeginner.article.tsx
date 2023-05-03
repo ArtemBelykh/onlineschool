@@ -22,7 +22,8 @@ const HowToChooseADrivingSchoolForABeginnerArticle = () => {
                     fontSize: "24px",
                     lineHeight: "113.5%",
                     color: "#000000",
-                    marginTop: "50px"
+                    marginTop: "50px",
+                    textAlign: "justify"
                 }}>
                     <p>Прежде чем начать писать эту статью, хочу Вам представиться, меня зовут Андрей Крючков, я адвокат, и
                     я

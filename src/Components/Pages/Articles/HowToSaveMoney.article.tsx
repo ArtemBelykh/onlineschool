@@ -29,7 +29,8 @@ const HowToSaveMoneyArticle = () => {
                     fontSize: "24px",
                     lineHeight: "113.5%",
                     color: "#000000",
-                    marginTop: "50px"
+                    marginTop: "50px",
+                    textAlign: "justify"
                 }}>
                     <p>Всем доброго времени суток.</p>
                     <p>Сразу хочу Вас поблагодарить за просмотры и отзывы по предыдущей моей статье. <br/>

@@ -29,7 +29,8 @@ const HowMeArticle = () => {
                     fontSize: "24px",
                     lineHeight: "113.5%",
                     color: "#000000",
-                    marginTop: "50px"
+                    marginTop: "50px",
+                    textAlign: "justify"
                 }}>
                     <p>Добрый день, наш будущий ученик.</p>
                     <p>В этой статье я хочу немного рассказать про нашу автошколу, чтобы не было никаких сомнений в
