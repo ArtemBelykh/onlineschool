@@ -124,7 +124,7 @@ const FourthScreen = () => {
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
-                            marginTop: "20px"
+                            marginTop: "40px"
                         }}>
                             <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-To-Choose-a-driving-school-for-a-beginner">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
@@ -244,14 +244,407 @@ const FourthScreen = () => {
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
-                            marginTop: "20px"
+                            marginTop: "40px"
                         }}>
                             <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-to-save-money">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
+
+
+
+
                 </Box>
 
+                <Box sx={styleSliderItems}>
+                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+
+                    <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
+                        <div style={{
+                            background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                            borderRadius: "50%",
+                            width: "53px",
+                            height: "53px",
+                            position: "absolute",
+                            top: "45%"
+                        }}>
+                            <Typography sx={{
+                                fontFamily: "Mulish",
+                                fontStyle: "normal",
+                                fontWeight: "700",
+                                fontSize: "20px",
+                                lineHeight: "20px",
+                                textAlign: "center",
+                                color: "#FFFFFF"
+                            }} variant="h6" component="h2">
+                                12
+                                апр
+                            </Typography>
+                        </div>
+                    </div>
+                    <div style={{padding: "30px"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "700",
+                            fontSize: "20px",
+                            lineHeight: "23px",
+                            marginBottom: "10px"
+                        }} variant="h4" component="h2">
+                            Медицинский тест на дороге
+                        </Typography>
+
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "400",
+                            fontSize: "16px",
+                            lineHeight: "20px"
+                        }} variant="h6" component="h2">
+                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
+                            будут...
+                        </Typography>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "40px"
+                        }}>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Medical-Test-On-The-Road">Читать далее</a></div>
+                            <div><img src="/Arrow%201.png" alt="arrow"/></div>
+                        </div>
+                    </div>
+
+
+
+
+                </Box>
+
+                <Box sx={styleSliderItems}>
+                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+
+                    <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
+                        <div style={{
+                            background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                            borderRadius: "50%",
+                            width: "53px",
+                            height: "53px",
+                            position: "absolute",
+                            top: "45%"
+                        }}>
+                            <Typography sx={{
+                                fontFamily: "Mulish",
+                                fontStyle: "normal",
+                                fontWeight: "700",
+                                fontSize: "20px",
+                                lineHeight: "20px",
+                                textAlign: "center",
+                                color: "#FFFFFF"
+                            }} variant="h6" component="h2">
+                                12
+                                апр
+                            </Typography>
+                        </div>
+                    </div>
+                    <div style={{padding: "30px"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "700",
+                            fontSize: "20px",
+                            lineHeight: "23px",
+                            marginBottom: "10px"
+                        }} variant="h4" component="h2">
+                            ЧЕСТНЫЕ ЧАСЫ В АВТОШКОЛЕ
+                        </Typography>
+
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "400",
+                            fontSize: "16px",
+                            lineHeight: "20px"
+                        }} variant="h6" component="h2">
+                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
+                            будут...
+                        </Typography>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "40px"
+                        }}>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Honest-Hours-In-Driving-School">Читать далее</a></div>
+                            <div><img src="/Arrow%201.png" alt="arrow"/></div>
+                        </div>
+                    </div>
+
+
+
+
+                </Box>
+
+                <Box sx={styleSliderItems}>
+                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+
+                    <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
+                        <div style={{
+                            background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                            borderRadius: "50%",
+                            width: "53px",
+                            height: "53px",
+                            position: "absolute",
+                            top: "45%"
+                        }}>
+                            <Typography sx={{
+                                fontFamily: "Mulish",
+                                fontStyle: "normal",
+                                fontWeight: "700",
+                                fontSize: "20px",
+                                lineHeight: "20px",
+                                textAlign: "center",
+                                color: "#FFFFFF"
+                            }} variant="h6" component="h2">
+                                12
+                                апр
+                            </Typography>
+                        </div>
+                    </div>
+                    <div style={{padding: "30px"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "700",
+                            fontSize: "20px",
+                            lineHeight: "23px",
+                            marginBottom: "10px"
+                        }} variant="h4" component="h2">
+                            Выйти из машины или нет
+                        </Typography>
+
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "400",
+                            fontSize: "16px",
+                            lineHeight: "20px"
+                        }} variant="h6" component="h2">
+                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
+                            будут...
+                        </Typography>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "40px"
+                        }}>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Get-a-car">Читать далее</a></div>
+                            <div><img src="/Arrow%201.png" alt="arrow"/></div>
+                        </div>
+                    </div>
+
+
+
+
+                </Box>
+
+                <Box sx={styleSliderItems}>
+                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+
+                    <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
+                        <div style={{
+                            background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                            borderRadius: "50%",
+                            width: "53px",
+                            height: "53px",
+                            position: "absolute",
+                            top: "45%"
+                        }}>
+                            <Typography sx={{
+                                fontFamily: "Mulish",
+                                fontStyle: "normal",
+                                fontWeight: "700",
+                                fontSize: "20px",
+                                lineHeight: "20px",
+                                textAlign: "center",
+                                color: "#FFFFFF"
+                            }} variant="h6" component="h2">
+                                12
+                                апр
+                            </Typography>
+                        </div>
+                    </div>
+                    <div style={{padding: "30px"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "700",
+                            fontSize: "20px",
+                            lineHeight: "23px",
+                            marginBottom: "10px"
+                        }} variant="h4" component="h2">
+                            Как купить поддержанный автомобиль?
+                        </Typography>
+
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "400",
+                            fontSize: "16px",
+                            lineHeight: "20px"
+                        }} variant="h6" component="h2">
+                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
+                            будут...
+                        </Typography>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px"
+                        }}>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Buy-Car">Читать далее</a></div>
+                            <div><img src="/Arrow%201.png" alt="arrow"/></div>
+                        </div>
+                    </div>
+
+
+
+
+                </Box>
+
+                <Box sx={styleSliderItems}>
+                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+
+                    <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
+                        <div style={{
+                            background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                            borderRadius: "50%",
+                            width: "53px",
+                            height: "53px",
+                            position: "absolute",
+                            top: "45%"
+                        }}>
+                            <Typography sx={{
+                                fontFamily: "Mulish",
+                                fontStyle: "normal",
+                                fontWeight: "700",
+                                fontSize: "20px",
+                                lineHeight: "20px",
+                                textAlign: "center",
+                                color: "#FFFFFF"
+                            }} variant="h6" component="h2">
+                                12
+                                апр
+                            </Typography>
+                        </div>
+                    </div>
+                    <div style={{padding: "30px"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "700",
+                            fontSize: "20px",
+                            lineHeight: "23px",
+                            marginBottom: "10px"
+                        }} variant="h4" component="h2">
+                            Категории водительского удостоверения
+                        </Typography>
+
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "400",
+                            fontSize: "16px",
+                            lineHeight: "20px"
+                        }} variant="h6" component="h2">
+                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
+                            будут...
+                        </Typography>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "20px"
+                        }}>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Wu-category">Читать далее</a></div>
+                            <div><img src="/Arrow%201.png" alt="arrow"/></div>
+                        </div>
+                    </div>
+
+
+
+
+                </Box>
+
+                <Box sx={styleSliderItems}>
+                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+
+                    <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
+                        <div style={{
+                            background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                            borderRadius: "50%",
+                            width: "53px",
+                            height: "53px",
+                            position: "absolute",
+                            top: "45%"
+                        }}>
+                            <Typography sx={{
+                                fontFamily: "Mulish",
+                                fontStyle: "normal",
+                                fontWeight: "700",
+                                fontSize: "20px",
+                                lineHeight: "20px",
+                                textAlign: "center",
+                                color: "#FFFFFF"
+                            }} variant="h6" component="h2">
+                                12
+                                апр
+                            </Typography>
+                        </div>
+                    </div>
+                    <div style={{padding: "30px"}}>
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "700",
+                            fontSize: "20px",
+                            lineHeight: "23px",
+                            marginBottom: "10px"
+                        }} variant="h4" component="h2">
+                            ОФОРМЛЕНИЕ «ЕВРОПРОТОКОЛА»
+                        </Typography>
+
+                        <Typography sx={{
+                            fontFamily: "Mulish",
+                            fontStyle: "normal",
+                            fontWeight: "400",
+                            fontSize: "16px",
+                            lineHeight: "20px"
+                        }} variant="h6" component="h2">
+                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
+                            будут...
+                        </Typography>
+
+                        <div style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            alignItems: "center",
+                            marginTop: "40px"
+                        }}>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Euro-Protocol">Читать далее</a></div>
+                            <div><img src="/Arrow%201.png" alt="arrow"/></div>
+                        </div>
+                    </div>
+
+
+
+
+                </Box>
             </Slider>
 
         </Container>
@@ -259,3 +652,6 @@ const FourthScreen = () => {
 };
 
 export default FourthScreen;
+
+
+
