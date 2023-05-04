@@ -10,6 +10,7 @@ import RecertificationInSchool from "../Rates/RecertificationInSchool";
 import RememberEverything from "../Rates/RememberEverything";
 import AdditionalLessonInTheory from "../Rates/AdditionalLessonInTheory";
 import Acordion from "../Acordion";
+import AdditionalDriving from "../Rates/AdditionalDriving";
 
 const ThirdScreen = () => {
     interface TabPanelProps {
@@ -89,6 +90,9 @@ const ThirdScreen = () => {
                     <RememberEverything/>
                 </TabPanel>
                 <TabPanel value={value} index={5}>
+                    <AdditionalDriving/>
+                </TabPanel>
+                <TabPanel value={value} index={6}>
                     <AdditionalLessonInTheory/>
                 </TabPanel>
                 <Tabs
@@ -105,7 +109,7 @@ const ThirdScreen = () => {
                     <Tab label="Переаттестация после обучения в другой атвошколе" {...a11yProps(3)} />
                     <Tab label="Вспомнить Всё!" {...a11yProps(4)} />
                     <Tab label="Дополнительное занятие по вождению" {...a11yProps(5)} />
-                    <Tab label="Дополнительное занятие по теории" {...a11yProps(5)} />
+                    <Tab label="Дополнительное занятие по теории" {...a11yProps(6)} />
                 </Tabs>
 
             </Box>
