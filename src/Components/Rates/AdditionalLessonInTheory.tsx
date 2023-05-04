@@ -155,7 +155,7 @@ const AdditionalLessonInTheory = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            1 500 ₽
+                            1 200 ₽
                         </Typography>
                     </div>
 
