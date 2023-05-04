@@ -184,7 +184,7 @@ const FourthScreen = () => {
                             display: "flex",
                             justifyContent: "space-between",
                             alignItems: "center",
-                            marginTop: "40px"
+                            marginTop: "60px"
                         }}>
                             <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-Me">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
