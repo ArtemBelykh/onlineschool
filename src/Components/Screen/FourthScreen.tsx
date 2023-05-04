@@ -22,7 +22,7 @@ const FourthScreen = () => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1100,
+                breakpoint: 1336,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,

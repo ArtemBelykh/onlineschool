@@ -7,7 +7,7 @@ import {
     useTheme,
 } from "@mui/material";
 import DrawerComp from "./DrawerComp";
-import {Link as LinkScroll} from "react-scroll";
+import {Link as LinkScroll, scroller} from "react-scroll";
 import ModalMain from "./ModalMain";
 import {Link as NavLinks, useNavigate} from "react-router-dom";
 
@@ -22,6 +22,13 @@ export const pages = [{title: "О школе", tags: "about", link: "/about"}, {
 }, {title: "Отзывы", tags: "reviews", link: "/reviews"}, {title: "Контакты", tags: "contact", link: "/contact"}];
 
 const Navbar = () => {
+
+    // const myHash = window.location.hash; //получаем значение хеша
+    // window.location.hash = ''; //очищаем хеш
+    // if (myHash[1] !== undefined) { //проверяем, есть ли в хеше какое-то значение
+    //     return <ScrollElement />
+    //     // $('html, body').animate({scrollTop: $(myHash).offset().top}, 500); //скроллим за полсекунды
+    // }
 
     const navigate = useNavigate()
 
@@ -46,15 +53,15 @@ const Navbar = () => {
                                     {pages.map((page, index) => (
                                         <ListItemButton key={index}>
                                             <ListItemIcon>
-                                                <LinkScroll onClick={() => {
-                                                    navigate(-1)
-                                                }}
-                                                            activeClass="active" spy={true}
-                                                            smooth={true}
-                                                            offset={-100}
-                                                            duration={500}
-                                                            style={{color: "black", textDecoration: "none"}}
-                                                            to={page.tags}>
+                                                <LinkScroll
+                                                    activeClass="active" spy={false}
+                                                    onClick={() => navigate(-1)}
+                                                    smooth={true}
+                                                    offset={-100}
+                                                    duration={500}
+                                                    style={{color: "black", textDecoration: "none"}}
+                                                    to={page.tags}
+                                                >
                                                     <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
                                                         {page.title}
                                                     </ListItemText>
