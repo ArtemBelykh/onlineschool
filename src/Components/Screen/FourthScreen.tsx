@@ -80,9 +80,11 @@ const FourthScreen = () => {
 
     };
     return (
-        <Container id="articles" sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "500px" : "650px"}} >
+        <Container id="articles"
+                   sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "500px" : "650px"}}>
 
-            <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1"}}><img src="/puz/puz2.png" alt="puz2" /></div>
+            <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1"}}><img
+                src="/puz/puz2.png" alt="puz2"/></div>
             <Typography sx={{
                 fontFamily: "Mulish",
                 fontStyle: "normal",
@@ -154,7 +156,8 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "40px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-To-Choose-a-driving-school-for-a-beginner">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}}
+                                    href="/article/How-To-Choose-a-driving-school-for-a-beginner">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
@@ -213,13 +216,15 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "60px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-Me">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-Me">Читать
+                                далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
                 </Box>
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/no-money.jpg" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                         src="/articles/no-money.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -271,18 +276,18 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "40px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/How-to-save-money">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}}
+                                    href="/article/How-to-save-money">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
 
 
-
-
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/test-on-med.jpg" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                         src="/articles/test-on-med.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -334,18 +339,18 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "40px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Medical-Test-On-The-Road">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}}
+                                    href="/article/Medical-Test-On-The-Road">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
 
 
-
-
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/clock.jpg" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                         src="/articles/clock.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -397,18 +402,18 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "40px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Honest-Hours-In-Driving-School">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}}
+                                    href="/article/Honest-Hours-In-Driving-School">Читать далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
 
 
-
-
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/out-cars.jpg" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                         src="/articles/out-cars.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -451,7 +456,8 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Каждый автомобилист знает, что когда тебя останавливает сотрудник ГИБДД, нужно подчиняться...
+                            Каждый автомобилист знает, что когда тебя останавливает сотрудник ГИБДД, нужно
+                            подчиняться...
                         </Typography>
 
                         <div style={{
@@ -460,18 +466,18 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "40px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Get-a-car">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Get-a-car">Читать
+                                далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
 
 
-
-
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/buy-avto.jpg" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                         src="/articles/buy-avto.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -523,18 +529,18 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "20px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Buy-Car">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Buy-Car">Читать
+                                далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
 
 
-
-
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "50px"}} src="/articles/kat-vy.jpg" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                         src="/articles/kat-vy.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -587,18 +593,18 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "20px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Wu-category">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Wu-category">Читать
+                                далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
 
 
-
-
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/euro-protocol.jpg" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                         src="/articles/euro-protocol.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -651,12 +657,11 @@ const FourthScreen = () => {
                             alignItems: "center",
                             marginTop: "40px"
                         }}>
-                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Euro-Protocol">Читать далее</a></div>
+                            <div><a style={{color: "#DB241C", textDecoration: "none"}} href="/article/Euro-Protocol">Читать
+                                далее</a></div>
                             <div><img src="/Arrow%201.png" alt="arrow"/></div>
                         </div>
                     </div>
-
-
 
 
                 </Box>
