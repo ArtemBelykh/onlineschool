@@ -97,7 +97,7 @@ const RecertificationInSchool = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        Доступ к онлайн платформе
+                        Доступ к обучающей онлайн платформе
                     </Typography>
                 </div>
 

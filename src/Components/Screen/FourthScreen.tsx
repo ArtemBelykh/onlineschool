@@ -192,7 +192,7 @@ const FourthScreen = () => {
                     </div>
                 </Box>
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/no-money.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -257,7 +257,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/test-on-med.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -322,7 +322,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/clock.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -387,7 +387,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/out-cars.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -452,7 +452,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/buy-avto.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -517,7 +517,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "50px"}} src="/articles/kat-vy.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -582,7 +582,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post3.png" alt="post3"/>
+                    <img style={{width: "100%", height: "236px", borderRadius: "20px"}} src="/articles/euro-protocol.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
