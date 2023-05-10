@@ -13,13 +13,42 @@ const styleSliderItems = {
 
 }
 
+function SampleNextArrow(props: any) {
+    const {className, style, onClick} = props;
+    return (
+        <div
+            className={className}
+            style={{...style}}
+            onClick={onClick}
+        >
+            <img src="/Arrow%201.png" alt="arrow"/>
+        </div>
+    );
+}
+
+function SamplePrevArrow(props: any) {
+    const {className, style, onClick} = props;
+    return (
+        <div
+            className={className}
+            style={{...style, position: "absolute !important", bottom: "0"}}
+            onClick={onClick}
+        >
+            <img style={{transform: "scaleX(-1)", transformOrigin: "center", transformBox: "fill-box"}}
+                 src="/Arrow%201.png" alt="arrow"/>
+        </div>
+    );
+}
+
 const FourthScreen = () => {
     const settings = {
-        dots: false,
+        dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        nextArrow: <SampleNextArrow/>,
+        prevArrow: <SamplePrevArrow/>,
         responsive: [
             {
                 breakpoint: 1336,
@@ -91,8 +120,7 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                18
-                                апр
+                                18 <br/>апр
                             </Typography>
                         </div>
                     </div>
@@ -152,8 +180,7 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                10
-                                апр
+                                20 <br/>апр
                             </Typography>
                         </div>
                     </div>
@@ -212,8 +239,7 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                12
-                                апр
+                                30 <br/>апр
                             </Typography>
                         </div>
                     </div>
@@ -236,8 +262,7 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
-                            будут...
+                            Сразу хочу Вас поблагодарить за просмотры и отзывы по предыдущей моей статье.
                         </Typography>
 
                         <div style={{
@@ -277,8 +302,7 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                12
-                                апр
+                                5 <br/>мая
                             </Typography>
                         </div>
                     </div>
@@ -301,8 +325,7 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
-                            будут...
+                            Каждый водитель хоть раз был остановлен сотрудниками ГИБДД для проверки документов и...
                         </Typography>
 
                         <div style={{
@@ -342,8 +365,7 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                12
-                                апр
+                                6 <br/>мая
                             </Typography>
                         </div>
                     </div>
@@ -366,8 +388,7 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
-                            будут...
+                            Сразу хочу Вас поблагодарить за просмотры и отзывы по предыдущей моей статье...
                         </Typography>
 
                         <div style={{
@@ -407,8 +428,7 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                12
-                                апр
+                                7 <br/>мая
                             </Typography>
                         </div>
                     </div>
@@ -431,8 +451,7 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
-                            будут...
+                            Каждый автомобилист знает, что когда тебя останавливает сотрудник ГИБДД, нужно подчиняться...
                         </Typography>
 
                         <div style={{
@@ -472,8 +491,7 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                12
-                                апр
+                                9 <br/> мая
                             </Typography>
                         </div>
                     </div>
@@ -496,8 +514,7 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
-                            будут...
+                            Я являюсь практикующим юристом и часто сталкиваюсь с различными ситуациями, в которые...
                         </Typography>
 
                         <div style={{
@@ -537,8 +554,8 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                12
-                                апр
+                                10
+                                мая
                             </Typography>
                         </div>
                     </div>
@@ -561,8 +578,7 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
-                            будут...
+                            Категория А. Водительское удостоверение такого типа позволяет управлять мотоциклом...
                         </Typography>
 
                         <div style={{
@@ -602,8 +618,8 @@ const FourthScreen = () => {
                                 textAlign: "center",
                                 color: "#FFFFFF"
                             }} variant="h6" component="h2">
-                                12
-                                апр
+                                10
+                                мая
                             </Typography>
                         </div>
                     </div>
@@ -626,8 +642,7 @@ const FourthScreen = () => {
                             fontSize: "16px",
                             lineHeight: "20px"
                         }} variant="h6" component="h2">
-                            Поверьте, я не пытаюсь как-то призвать к совести «АВТОШКОЛЫ», нет, они как экономили, так и
-                            будут...
+                            В целях защиты прав потерпевших на возмещение вреда, причиненного их жизни...
                         </Typography>
 
                         <div style={{
