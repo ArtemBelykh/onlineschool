@@ -10,11 +10,11 @@ import Select, {SelectChangeEvent} from '@mui/material/Select';
 import CloseIcon from '@mui/icons-material/Close';
 import {useForm} from 'react-hook-form';
 import {MuiTelInput} from "mui-tel-input";
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DateField } from '@mui/x-date-pickers/DateField';
-
+import {DemoContainer} from '@mui/x-date-pickers/internals/demo';
+import {LocalizationProvider} from '@mui/x-date-pickers/LocalizationProvider';
+import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs';
+import {DateField} from '@mui/x-date-pickers/DateField';
+import {DatePicker} from "@mui/x-date-pickers";
 
 
 export interface IModalMain {
@@ -120,19 +120,20 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             <TextField {...register("dataCurrent")} type="date" id="standard-basic"
                                        variant="standard"/>
 
-                            <LocalizationProvider dateAdapter={AdapterDayjs}>
-                            <DemoContainer components={['DateField']}>
-                                <DateField label="Basic date field" />
-                            </DemoContainer>
-                        </LocalizationProvider>
+                            {/*<LocalizationProvider dateAdapter={AdapterDayjs}>*/}
+                            {/*    <DemoContainer {...register("dataCurrent")} components={['DateField']}>*/}
+                            {/*        <DatePicker label="Basic date field"/>*/}
+                            {/*    </DemoContainer>*/}
+                            {/*</LocalizationProvider>*/}
 
                             <MuiTelInput defaultCountry="RU" {...register("phoneClient", {
                                 maxLength: {value: 16, message: "Введите корректный номер телефона"},
                                 minLength: {value: 16, message: "Введите корректный номер телефона"},
                             })} value={value} onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
-                                         variant="standard" />
+                                         variant="standard"/>
 
-                            {errors?.phoneClient && <InputLabel sx={{width: "85%!important"}}>Введите корректный номер телефона</InputLabel>}
+                            {errors?.phoneClient && <InputLabel sx={{width: "85%!important"}}>Введите корректный номер
+                                телефона</InputLabel>}
 
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
