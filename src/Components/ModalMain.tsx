@@ -9,6 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, {SelectChangeEvent} from '@mui/material/Select';
 import CloseIcon from '@mui/icons-material/Close';
 import {useForm} from 'react-hook-form';
+import {MuiTelInput} from "mui-tel-input";
 
 
 export interface IModalMain {
@@ -32,6 +33,7 @@ const style = {
 
 
 const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
+    const [value, setValue] = React.useState('')
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -60,6 +62,11 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
             body: JSON.stringify(data)
         })
 
+    }
+
+
+    const handleChangePhone = (newValue: any) => {
+        setValue(newValue)
     }
 
 
@@ -107,11 +114,12 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             </InputLabel>
                             <TextField {...register("dataCurrent")} type="date" id="standard-basic"
                                        variant="standard"/>
-                            <TextField {...register("phoneClient", {
+
+                            <MuiTelInput {...register("phoneClient", {
                                 maxLength: {value: 11, message: "Введите корректный номер телефона"},
                                 minLength: {value: 11, message: "Введите корректный номер телефона"}
-                            })} type="tel" id="standard-basic" label="Ваш телефон"
-                                       variant="standard"/>
+                            })} value={value} onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
+                                         variant="standard" />
 
 
                             {errors?.phoneClient && <InputLabel>Максимум 11 символов</InputLabel>}
