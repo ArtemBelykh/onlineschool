@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -9,6 +9,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, {SelectChangeEvent} from '@mui/material/Select';
 import CloseIcon from '@mui/icons-material/Close';
 import {useForm} from 'react-hook-form';
+
 
 export interface IModalMain {
     styleBtn?: object | undefined,
@@ -29,6 +30,7 @@ const style = {
     borderRadius: "10px"
 };
 
+
 const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -47,6 +49,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
         reset()
 
         if (!data.lastname && !data.dataCurrent && !data.email && !data.formsLearnClient && !data.phoneClient && !data.name) return alert("Заполните все данные, они обязательны!")
+
         handleClose()
         await fetch('https://test-6nq2.onrender.com/api/send', {
             method: 'POST',
@@ -59,6 +62,8 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
 
     }
 
+
+    // @ts-ignore
     return (
         <>
             <Button onClick={handleOpen} sx={styleBtn} variant={variantBtn} color={colorBtn}>
@@ -86,16 +91,31 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             style={{marginTop: "25px"}}
                             onSubmit={handleSubmit(onSubmit)}
                         >
-                            <TextField {...register("name")} id="standard-basic" label="Ваше имя" variant="standard"/>
+                            <TextField {...register("name")} id="standard-basic" label="Ваше имя"
+                                       variant="standard"/>
                             <TextField {...register("lastname")} id="standard-basic" label="Ваша фамилия"
                                        variant="standard"/>
                             <TextField {...register("email")} type="email" id="standard-basic" label="Email"
                                        variant="standard"/>
+
+                            <InputLabel sx={{
+                                marginLeft: "-35px!important",
+                                marginTop: "5px!important",
+                                marginBottom: "0px!important"
+                            }}>
+                                Дата записи
+                            </InputLabel>
                             <TextField {...register("dataCurrent")} type="date" id="standard-basic"
-                                       label="Дата записи"
                                        variant="standard"/>
-                            <TextField {...register("phoneClient")} type="tel" id="standard-basic" label="Ваш телефон"
+                            <TextField {...register("phoneClient", {
+                                maxLength: {value: 11, message: "Введите корректный номер телефона"},
+                                minLength: {value: 11, message: "Введите корректный номер телефона"}
+                            })} type="tel" id="standard-basic" label="Ваш телефон"
                                        variant="standard"/>
+
+
+                            {errors?.phoneClient && <InputLabel>Максимум 11 символов</InputLabel>}
+
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
                                 <InputLabel id="demo-simple-select-standard-label">Форма обучения</InputLabel>
