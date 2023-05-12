@@ -120,7 +120,6 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                 minLength: {value: 10, message: "Введите корректный номер телефона"},
                             })} value={value} onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
                                          variant="standard" />
-                            {/*sgfsdfsdfsdfsdf*/}
 
                             {errors?.phoneClient && <InputLabel>Введите корректный номер телефона</InputLabel>}
 
