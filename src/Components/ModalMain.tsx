@@ -10,6 +10,11 @@ import Select, {SelectChangeEvent} from '@mui/material/Select';
 import CloseIcon from '@mui/icons-material/Close';
 import {useForm} from 'react-hook-form';
 import {MuiTelInput} from "mui-tel-input";
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DateField } from '@mui/x-date-pickers/DateField';
+
 
 
 export interface IModalMain {
@@ -114,6 +119,12 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             </InputLabel>
                             <TextField {...register("dataCurrent")} type="date" id="standard-basic"
                                        variant="standard"/>
+
+                            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                            <DemoContainer components={['DateField']}>
+                                <DateField label="Basic date field" />
+                            </DemoContainer>
+                        </LocalizationProvider>
 
                             <MuiTelInput defaultCountry="RU" {...register("phoneClient", {
                                 maxLength: {value: 16, message: "Введите корректный номер телефона"},
