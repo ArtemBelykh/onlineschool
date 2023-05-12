@@ -115,9 +115,13 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             <TextField {...register("dataCurrent")} type="date" id="standard-basic"
                                        variant="standard"/>
 
-                            <MuiTelInput defaultCountry="RU" {...register("phoneClient")} value={value}
-                                         onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
-                                         variant="standard"/>
+                            <MuiTelInput defaultCountry="RU" {...register("phoneClient", {
+                                maxLength: {value: 12, message: "Введите корректный номер телефона"}
+                            })} value={value} onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
+                                         variant="standard" />
+
+
+                            {errors?.phoneClient && <InputLabel>Максимум 11 символов</InputLabel>}
 
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
