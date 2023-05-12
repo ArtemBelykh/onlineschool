@@ -117,7 +117,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
 
                             <MuiTelInput defaultCountry="RU" {...register("phoneClient", {
                                 maxLength: {value: 17, message: "Введите корректный номер телефона"},
-                                minLength: {value: 17, message: "Введите корректный номер телефона"},
+                                minLength: {value: 10, message: "Введите корректный номер телефона"},
                             })} value={value} onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
                                          variant="standard" />
 
