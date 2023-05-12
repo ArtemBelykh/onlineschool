@@ -99,7 +99,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                        variant="standard"/>
 
                             <InputLabel sx={{
-                                marginLeft: "-35px!important",
+                                marginLeft: "-40px!important",
                                 marginTop: "5px!important",
                                 marginBottom: "0px!important"
                             }}>
