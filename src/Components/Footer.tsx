@@ -21,6 +21,7 @@ const Footer = () => {
                                     <ListItemIcon>
                                         <LinkScroll
                                             activeClass="active" spy={true}
+                                            onClick={() => navigate('/')}
                                             smooth={true}
                                             offset={-100}
                                             duration={500}

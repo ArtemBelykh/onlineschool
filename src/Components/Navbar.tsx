@@ -55,7 +55,7 @@ const Navbar = () => {
                                             <ListItemIcon>
                                                 <LinkScroll
                                                     activeClass="active" spy={false}
-                                                    onClick={() => navigate(-1)}
+                                                    onClick={() => navigate('/')}
                                                     smooth={true}
                                                     offset={-100}
                                                     duration={500}
