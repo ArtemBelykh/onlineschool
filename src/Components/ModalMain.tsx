@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -61,7 +61,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
             },
             body: JSON.stringify(data)
         })
-
+        console.log(data)
     }
 
 
@@ -121,7 +121,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             })} value={value} onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
                                          variant="standard" />
 
-                            {errors?.phoneClient && <InputLabel>Введите корректный номер телефона</InputLabel>}
+                            {errors?.phoneClient && <InputLabel sx={{width: "85%!important"}}>Введите корректный номер телефона</InputLabel>}
 
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
