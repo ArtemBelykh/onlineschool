@@ -116,12 +116,13 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                        variant="standard"/>
 
                             <MuiTelInput defaultCountry="RU" {...register("phoneClient", {
-                                maxLength: {value: 17, message: "Введите корректный номер телефона"}
+                                maxLength: {value: 17, message: "Введите корректный номер телефона"},
+                                minLength: {value: 17, message: "Введите корректный номер телефона"},
                             })} value={value} onChange={handleChangePhone} id="standard-basic" label="Ваш телефон"
                                          variant="standard" />
 
 
-                            {errors?.phoneClient && <InputLabel>Максимум 11 символов</InputLabel>}
+                            {errors?.phoneClient && <InputLabel>Введите корректный номер телефона</InputLabel>}
 
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
