@@ -21,7 +21,7 @@ const FirstScreen = () => {
                     сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
                 <img className="image_main__adaptive"
-                     style={{width: "100%", height: "100%", marginTop: "50px", zIndex: "0"}}
+                     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}
                      src="/mainIMG.png" alt="main"/>
 
                 <div className="circeBtn__adaptive" style={{display: "none"}}>

@@ -296,7 +296,7 @@ footer {
 .textStroke404 {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(219, 28, 28, 1);
-    font-family: Mulish !important;
+    font-family: "Mulish" !important;
     font-style: normal !important;
     font-weight: 900 !important;
     font-size: 379px !important;
@@ -307,11 +307,6 @@ footer {
 .css-1anid1y {
     width: 90% !important;
 }
-/*.css-17e2cfq {*/
-/*    padding-left: 50px!important;*/
-/*    padding-right: 50px !important;*/
-/*}*/
-
 .hhhh p {
     text-indent: 50px;
     margin-top: -20px;
@@ -319,4 +314,3 @@ footer {
 .css-7i2w6c {
     height: 490px !important;
 }
-
