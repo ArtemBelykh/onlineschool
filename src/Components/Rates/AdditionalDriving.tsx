@@ -69,7 +69,7 @@ const AdditionalDriving = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        Всего 1.5 ч.
+                        1.5 ч.
                     </Typography>
                 </div>
 

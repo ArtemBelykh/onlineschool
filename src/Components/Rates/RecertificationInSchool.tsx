@@ -56,7 +56,7 @@ const RecertificationInSchool = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        Всего 1 месяц
+                        1 месяц
                     </Typography>
                 </div>
 
@@ -89,7 +89,7 @@ const RecertificationInSchool = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        7 практических занятий
+                        В том числе 7 практических занятий
                     </Typography>
                 </div>
 
