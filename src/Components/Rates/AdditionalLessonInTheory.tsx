@@ -78,7 +78,7 @@ const AdditionalLessonInTheory = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        Всего 1 месяц
+                        1 месяц
                     </Typography>
                 </div>
 

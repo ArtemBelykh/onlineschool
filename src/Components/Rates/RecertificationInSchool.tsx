@@ -89,7 +89,7 @@ const RecertificationInSchool = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        В том числе 7 практических занятий
+                        7 практических занятий
                     </Typography>
                 </div>
 
