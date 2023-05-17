@@ -1,8 +1,9 @@
 import React, {Suspense} from 'react'
 import './App.css';
 import {Route, Routes} from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+
+const Navbar = React.lazy(() => import("./Components/Navbar"))
+const Footer = React.lazy(() => import("./Components/Footer"))
 const NotFoundPages = React.lazy(() => import("./Components/Pages/NotFound.pages"))
 const HowToChooseADrivingSchoolForABeginnerArticle = React.lazy(() => import("./Components/Pages/Articles/HowToChooseADrivingSchoolForABeginner.article"))
 const HowMeArticle = React.lazy(() => import("./Components/Pages/Articles/HowMe.article"))
@@ -19,9 +20,8 @@ const LicensePages = React.lazy(() => import("./Components/Pages/License.pages")
 function App() {
     return (
         <>
-            <Navbar/>
-
             <Suspense fallback="load">
+                <Navbar/>
                 <Routes>
                     <Route path="/" element={<StartMain/>}/>
                     <Route path="/license" element={<LicensePages/>}/>
@@ -38,9 +38,8 @@ function App() {
                     <Route path="/article/Wu-category" element={<WuCategoriesArticle/>}/>
                     <Route path="/article/Euro-Protocol" element={<EuroProtocolArticle/>}/>
                 </Routes>
+                <Footer/>
             </Suspense>
-
-            <Footer/>
 
         </>
     );
