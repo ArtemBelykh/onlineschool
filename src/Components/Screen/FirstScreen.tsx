@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Card, CardContent, Container, Fab, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import ModalMain from "../ModalMain";
+import {ImageSchool} from "../ImageSchool";
 
 const styleH5 = {
     width: "80%",
@@ -20,9 +21,10 @@ const FirstScreen = () => {
                     передвижения и юридическое
                     сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
-                <img className="image_main__adaptive"
-                     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}
-                     src="/mainIMG.png" alt="main"/>
+                <ImageSchool src={"/mainIMG.png"} placeholderSrc={"/mainIMG-small.jpg"} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
+                {/*<img className="image_main__adaptive"*/}
+                {/*     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}*/}
+                {/*     src="/mainIMG.png" alt="main"/>*/}
 
                 <div className="circeBtn__adaptive" style={{display: "none"}}>
                     <ModalMain styleBtn={{

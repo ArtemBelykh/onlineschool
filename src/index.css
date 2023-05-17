@@ -314,3 +314,15 @@ footer {
 .css-7i2w6c {
     height: 490px !important;
 }
+
+.progressive {
+    object-fit: cover;
+    object-position: center;
+}
+.loading {
+    filter: blur(10px);
+}
+.loaded {
+    filter: blur(0);
+    transition: filter 0.3s linear;
+}
