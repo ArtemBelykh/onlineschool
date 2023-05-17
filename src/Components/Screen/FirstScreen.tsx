@@ -4,6 +4,9 @@ import Box from "@mui/material/Box";
 import ModalMain from "../ModalMain";
 import {ImageSchool} from "../ImageSchool";
 
+import mainIMG_Small from '/mainIMG-small.webp'
+import mainIMG from '/mainIMG.webp'
+
 const styleH5 = {
     width: "80%",
     fontFamily: "Mulish",
@@ -21,7 +24,7 @@ const FirstScreen = () => {
                     передвижения и юридическое
                     сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
-                <ImageSchool src={"/mainIMG.webp"} placeholderSrc={"/mainIMG-small.webp"} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
+                <ImageSchool src={mainIMG} placeholderSrc={mainIMG_Small} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
                 {/*<img className="image_main__adaptive"*/}
                 {/*     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}*/}
                 {/*     src="/mainIMG.png" alt="main"/>*/}
