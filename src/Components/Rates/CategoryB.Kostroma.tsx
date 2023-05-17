@@ -79,7 +79,7 @@ const CategoryBKostroma = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        Всего 3 месяца
+                        3 месяца
                     </Typography>
                 </div>
 
@@ -96,7 +96,7 @@ const CategoryBKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        В том числе 195 часов обучения
+                         Всего 195 часов обучения
                     </Typography>
                 </div>
 
@@ -112,7 +112,7 @@ const CategoryBKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        60 часов практики
+                        В том числе 60 часов практики
                     </Typography>
                 </div>
 
