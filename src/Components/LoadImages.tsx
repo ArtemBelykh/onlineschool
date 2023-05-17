@@ -7,10 +7,11 @@ export interface ILoadableImage {
     src: string;
     alt?: string;
     onLoad?(): void;
-    style: React.CSSProperties
+    style: React.CSSProperties,
+    classList?: string
 }
 export const LoadImages = (props: ILoadableImage) => {
-    const { src, alt = '', onLoad = () => {}, style } = props
+    const { src, alt = '', onLoad = () => {}, style, classList } = props
     const [isLoaded, setIsLoaded] = React.useState(false)
     const imageRef = React.useRef<HTMLImageElement | null>(null)
     const containerRef = React.useRef<HTMLDivElement | null>(null)
@@ -34,7 +35,7 @@ export const LoadImages = (props: ILoadableImage) => {
         })}>
             {(isVisible || isLoaded) && (<img style={style} ref={imageRef} className={cn(styles.image, {
                 [styles.imageLoaded]: isLoaded
-            })} src={src} alt={alt} />)}
+            }, classList)} src={src} alt={alt} />)}
         </div>
     )
 }
