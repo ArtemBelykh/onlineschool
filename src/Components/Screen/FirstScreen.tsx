@@ -21,7 +21,7 @@ const FirstScreen = () => {
                     передвижения и юридическое
                     сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
-                <ImageSchool src={"/mainIMG.png"} placeholderSrc={"/mainIMG-small.jpg"} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
+                <ImageSchool src={"/mainIMG.jpg"} placeholderSrc={"/mainIMG-small.jpg"} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
                 {/*<img className="image_main__adaptive"*/}
                 {/*     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}*/}
                 {/*     src="/mainIMG.png" alt="main"/>*/}
