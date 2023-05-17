@@ -132,8 +132,9 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                 Дата записи
                             </InputLabel>
                             <TextField {...register("dataCurrent")}
-                                       //inputProps={{min: "2023-05-16", max: "2025-05-31"}} type="date"
+                                       //inputProps={{min: "2023-05-16", max: "2025-05-31"}}
                                        id="standard-basic"
+                                       type="date"
                                        variant="standard"/>
 
                             {/*<LocalizationProvider dateAdapter={AdapterDayjs}>*/}
