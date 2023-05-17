@@ -36,6 +36,20 @@ const style = {
     borderRadius: "10px"
 };
 
+const dateNow = new Date(); // Creating a new date object with the current date and time
+const year = dateNow.getFullYear(); // Getting current year from the created Date object
+const monthWithOffset = dateNow.getUTCMonth() + 1; // January is 0 by default in JS. Offsetting +1 to fix date for calendar.
+const month = // Setting current Month number from current Date object
+    monthWithOffset.toString().length < 2 // Checking if month is < 10 and pre-prending 0 to adjust for date input.
+        ? `0${monthWithOffset}`
+        : monthWithOffset;
+const date =
+    dateNow.getUTCDate().toString().length < 2 // Checking if date is < 10 and pre-prending 0 if not to adjust for date input.
+        ? `0${dateNow.getUTCDate()}`
+        : dateNow.getUTCDate();
+
+const materialDateInput = `${year}-${month}-${date}`; // combining to format for defaultValue or value attribute of material <TextField>
+
 
 const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     const [value, setValue] = React.useState('')
@@ -117,7 +131,9 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             }}>
                                 Дата записи
                             </InputLabel>
-                            <TextField {...register("dataCurrent")} type="date" id="standard-basic"
+                            <TextField {...register("dataCurrent")}
+                                       //inputProps={{min: "2023-05-16", max: "2025-05-31"}} type="date"
+                                       id="standard-basic"
                                        variant="standard"/>
 
                             {/*<LocalizationProvider dateAdapter={AdapterDayjs}>*/}
