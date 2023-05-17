@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import {Card, CardContent, Container, Fab, Typography} from "@mui/material";
+import React from 'react';
+import {Card, CardContent, Container, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import ModalMain from "../ModalMain";
 import {ImageSchool} from "../ImageSchool";
 
-import mainIMG_Small from '/mainIMG-small.webp'
-import mainIMG from '/mainIMG.webp'
+import main_img_Small from "/mainIMG-small.webp"
+import main_img from "/mainIMG.webp"
 
 const styleH5 = {
     width: "80%",
@@ -24,7 +24,7 @@ const FirstScreen = () => {
                     передвижения и юридическое
                     сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
-                <ImageSchool src={mainIMG} placeholderSrc={mainIMG_Small} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
+                <ImageSchool src={main_img} placeholderSrc={main_img_Small} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
                 {/*<img className="image_main__adaptive"*/}
                 {/*     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}*/}
                 {/*     src="/mainIMG.png" alt="main"/>*/}
