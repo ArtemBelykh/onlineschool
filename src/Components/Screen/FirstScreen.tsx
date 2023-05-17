@@ -58,16 +58,16 @@ const FirstScreen = () => {
                         flexWrap: "wrap",
                     }}>
                         <CardContent>
-                            <img style={{width: "130px", height: "130px"}} src="/pc.png" alt="pc"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/pc.png" alt="pc"/>
                         </CardContent>
                         <CardContent>
-                            <img style={{width: "130px", height: "130px"}} src="/teacher.png" alt="teacher"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/teacher.png" alt="teacher"/>
                         </CardContent>
                         <CardContent>
-                            <img style={{width: "130px", height: "130px"}} src="/cars.png" alt="cars"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/cars.png" alt="cars"/>
                         </CardContent>
                         <CardContent>
-                            <img style={{width: "130px", height: "130px"}} src="/Maps.png" alt="maps"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/Maps.png" alt="maps"/>
                         </CardContent>
                     </Card>
                 </Box>
