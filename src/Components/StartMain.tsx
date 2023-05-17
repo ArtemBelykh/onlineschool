@@ -12,24 +12,12 @@ const SixthScreen = React.lazy(() => import("./Screen/SixthScreen"))
 const StartMain = () => {
     return (
         <div>
-            <Suspense fallback="load">
-                <FirstScreen/>
-            </Suspense>
-            <Suspense fallback="load">
-                <SecondScreen/>
-            </Suspense>
-            <Suspense fallback="load">
-                <ThirdScreen/>
-            </Suspense>
-            <Suspense fallback="load">
-                <FourthScreen/>
-            </Suspense>
-            <Suspense fallback="load">
-                <FifthScreen/>
-            </Suspense>
-            <Suspense fallback="load">
-                <SixthScreen/>
-            </Suspense>
+            <FirstScreen/>
+            <SecondScreen/>
+            <ThirdScreen/>
+            <FourthScreen/>
+            <FifthScreen/>
+            <SixthScreen/>
 
 
         </div>

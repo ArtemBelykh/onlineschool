@@ -1,6 +1,7 @@
 import React, {Suspense} from 'react'
 import './App.css';
 import {Route, Routes} from "react-router-dom";
+import Loading from "./Components/Loading";
 
 const Navbar = React.lazy(() => import("./Components/Navbar"))
 const Footer = React.lazy(() => import("./Components/Footer"))
@@ -22,24 +23,35 @@ function App() {
         <>
             <Suspense fallback="load">
                 <Navbar/>
-                <Routes>
-                    <Route path="/" element={<StartMain/>}/>
-                    <Route path="/license" element={<LicensePages/>}/>
-                    <Route path="*" element={<NotFoundPages/>}/>
+            </Suspense>
+            <Routes>
+                <Route path="/" element={<Suspense fallback={<Loading/>}><StartMain/></Suspense>}/>
+                <Route path="/license" element={<Suspense fallback={<Loading/>}><LicensePages/></Suspense>}/>
+                <Route path="*" element={<Suspense fallback={<Loading/>}><NotFoundPages/></Suspense>}/>
 
-                    <Route path="/article/How-to-save-money" element={<HowToSaveMoneyArticle/>}/>
-                    <Route path="/article/How-To-Choose-a-driving-school-for-a-beginner"
-                           element={<HowToChooseADrivingSchoolForABeginnerArticle/>}/>
-                    <Route path="/article/How-Me" element={<HowMeArticle/>}/>
-                    <Route path="/article/Medical-Test-On-The-Road" element={<MedicalTestOnTheRoad/>}/>
-                    <Route path="/article/Honest-Hours-In-Driving-School" element={<HonestHoursInDrivingSchool/>}/>
-                    <Route path="/article/Get-a-car" element={<GetOutOfTheCarOrNotArticle/>}/>
-                    <Route path="/article/Buy-Car" element={<HowToBuyAUsedCar/>}/>
-                    <Route path="/article/Wu-category" element={<WuCategoriesArticle/>}/>
-                    <Route path="/article/Euro-Protocol" element={<EuroProtocolArticle/>}/>
-                </Routes>
+                <Route path="/article/How-to-save-money"
+                       element={<Suspense fallback={<Loading/>}><HowToSaveMoneyArticle/></Suspense>}/>
+                <Route path="/article/How-To-Choose-a-driving-school-for-a-beginner"
+                       element={<Suspense
+                           fallback={<Loading/>}><HowToChooseADrivingSchoolForABeginnerArticle/></Suspense>}/>
+                <Route path="/article/How-Me" element={<Suspense fallback={<Loading/>}><HowMeArticle/></Suspense>}/>
+                <Route path="/article/Medical-Test-On-The-Road"
+                       element={<Suspense fallback={<Loading/>}><MedicalTestOnTheRoad/></Suspense>}/>
+                <Route path="/article/Honest-Hours-In-Driving-School"
+                       element={<Suspense fallback={<Loading/>}><HonestHoursInDrivingSchool/></Suspense>}/>
+                <Route path="/article/Get-a-car"
+                       element={<Suspense fallback={<Loading/>}><GetOutOfTheCarOrNotArticle/></Suspense>}/>
+                <Route path="/article/Buy-Car"
+                       element={<Suspense fallback={<Loading/>}><HowToBuyAUsedCar/></Suspense>}/>
+                <Route path="/article/Wu-category"
+                       element={<Suspense fallback={<Loading/>}><WuCategoriesArticle/></Suspense>}/>
+                <Route path="/article/Euro-Protocol"
+                       element={<Suspense fallback={<Loading/>}><EuroProtocolArticle/></Suspense>}/>
+            </Routes>
+            <Suspense fallback="load">
                 <Footer/>
             </Suspense>
+
 
         </>
     );
