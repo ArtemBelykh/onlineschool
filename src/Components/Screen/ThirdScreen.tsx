@@ -3,7 +3,7 @@ import {Container, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Acordion from "../Acordion";
+const Acordion = React.lazy(() => import("../Acordion"))
 
 const CategoryBKostroma = React.lazy(() => import("../Rates/CategoryB.Kostroma"))
 const CategoryBGalyth = React.lazy(() => import("../Rates/CategoryB.Galyth"))

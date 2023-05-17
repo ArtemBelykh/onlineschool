@@ -1,5 +1,5 @@
 import React, {Suspense} from 'react'
-import FirstScreen from "./Screen/FirstScreen";
+const FirstScreen = React.lazy(() => import("./Screen/FirstScreen"))
 
 const SecondScreen = React.lazy(() => import("./Screen/SecondScreen"))
 const ThirdScreen = React.lazy(() => import("./Screen/ThirdScreen"))
@@ -11,8 +11,9 @@ const SixthScreen = React.lazy(() => import("./Screen/SixthScreen"))
 const StartMain = () => {
     return (
         <div>
-
-            <FirstScreen/>
+            <Suspense fallback="load">
+                <FirstScreen/>
+            </Suspense>
 
             <Suspense fallback="load">
                 <SecondScreen/>
