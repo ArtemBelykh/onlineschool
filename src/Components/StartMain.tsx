@@ -1,23 +1,37 @@
-import React from 'react';
+import React, {Suspense} from 'react'
 import FirstScreen from "./Screen/FirstScreen";
-import SecondScreen from "./Screen/SecondScreen";
-import ThirdScreen from "./Screen/ThirdScreen";
-import FourthScreen from "./Screen/FourthScreen";
-import FifthScreen from "./Screen/FifthScreen";
-import SixthScreen from "./Screen/SixthScreen";
+
+const SecondScreen = React.lazy(() => import("./Screen/SecondScreen"))
+const ThirdScreen = React.lazy(() => import("./Screen/ThirdScreen"))
+const FourthScreen = React.lazy(() => import("./Screen/FourthScreen"))
+const FifthScreen = React.lazy(() => import("./Screen/FifthScreen"))
+const SixthScreen = React.lazy(() => import("./Screen/SixthScreen"))
+
 
 const StartMain = () => {
     return (
         <div>
 
             <FirstScreen/>
-            <SecondScreen/>
 
-            <ThirdScreen/>
-            <FourthScreen/>
-            <FifthScreen/>
+            <Suspense fallback="load">
+                <SecondScreen/>
+            </Suspense>
 
-            <SixthScreen/>
+            <Suspense fallback="load">
+                <ThirdScreen/>
+            </Suspense>
+
+            <Suspense fallback="load">
+                <FourthScreen/>
+            </Suspense>
+
+            <Suspense fallback="load">
+                <FifthScreen/>
+            </Suspense>
+            <Suspense fallback="load">
+                <SixthScreen/>
+            </Suspense>
 
         </div>
     );

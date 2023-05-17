@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {Suspense} from 'react'
 import {Container, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import CategoryBKostroma from "../Rates/CategoryB.Kostroma";
-import CategoryBGalyth from "../Rates/CategoryB.Galyth";
-import CategoryAKostroma from "../Rates/CategoryA.Kostroma";
-import RecertificationInSchool from "../Rates/RecertificationInSchool";
-import RememberEverything from "../Rates/RememberEverything";
-import AdditionalLessonInTheory from "../Rates/AdditionalLessonInTheory";
 import Acordion from "../Acordion";
-import AdditionalDriving from "../Rates/AdditionalDriving";
+
+const CategoryBKostroma = React.lazy(() => import("../Rates/CategoryB.Kostroma"))
+const CategoryBGalyth = React.lazy(() => import("../Rates/CategoryB.Galyth"))
+const CategoryAKostroma = React.lazy(() => import("../Rates/CategoryA.Kostroma"))
+const RecertificationInSchool = React.lazy(() => import("../Rates/RecertificationInSchool"))
+
+const RememberEverything = React.lazy(() => import("../Rates/RememberEverything"))
+
+const AdditionalLessonInTheory = React.lazy(() => import("../Rates/AdditionalLessonInTheory"))
+
+const AdditionalDriving = React.lazy(() => import("../Rates/AdditionalDriving"))
 
 const ThirdScreen = () => {
     interface TabPanelProps {
@@ -32,7 +36,7 @@ const ThirdScreen = () => {
             >
                 {value === index && (
                     <Box>
-                        <Typography component={'span'} >{children}</Typography>
+                        <Typography component={'span'}>{children}</Typography>
                     </Box>
                 )}
             </div>
@@ -75,25 +79,39 @@ const ThirdScreen = () => {
                 className="hidden_boxThird"
             >
                 <TabPanel value={value} index={0}>
-                    <CategoryBKostroma/>
+                    <Suspense fallback="load">
+                        <CategoryBKostroma/>
+                    </Suspense>
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <CategoryBGalyth/>
+                    <Suspense fallback="load">
+                        <CategoryBGalyth/>
+                    </Suspense>
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    <CategoryAKostroma/>
+                    <Suspense fallback="load">
+                        <CategoryAKostroma/>
+                    </Suspense>
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                    <RecertificationInSchool/>
+                    <Suspense fallback="load">
+                        <RecertificationInSchool/>
+                    </Suspense>
                 </TabPanel>
                 <TabPanel value={value} index={4}>
-                    <RememberEverything/>
+                    <Suspense fallback="load">
+                        <RememberEverything/>
+                    </Suspense>
                 </TabPanel>
                 <TabPanel value={value} index={5}>
-                    <AdditionalDriving/>
+                    <Suspense fallback="load">
+                        <AdditionalDriving/>
+                    </Suspense>
                 </TabPanel>
                 <TabPanel value={value} index={6}>
-                    <AdditionalLessonInTheory/>
+                    <Suspense fallback="load">
+                        <AdditionalLessonInTheory/>
+                    </Suspense>
                 </TabPanel>
                 <Tabs
                     orientation="vertical"
@@ -103,9 +121,12 @@ const ThirdScreen = () => {
                     aria-label="Vertical tabs example"
                     sx={{borderColor: 'divider'}}
                 >
-                    <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(0)} />
-                    <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Галич" {...a11yProps(1)} />
-                    <Tab label="Категория 'А' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(2)} />
+                    <Tab
+                        label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(0)} />
+                    <Tab
+                        label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Галич" {...a11yProps(1)} />
+                    <Tab
+                        label="Категория 'А' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(2)} />
                     <Tab label="Переаттестация после обучения в другой атвошколе" {...a11yProps(3)} />
                     <Tab label="Вспомнить Всё!" {...a11yProps(4)} />
                     <Tab label="Дополнительное занятие по вождению" {...a11yProps(5)} />
@@ -114,7 +135,7 @@ const ThirdScreen = () => {
 
             </Box>
 
-        {/*&#10;&#13;*/}
+            {/*&#10;&#13;*/}
         </Container>
     );
 };
