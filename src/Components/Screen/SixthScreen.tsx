@@ -117,7 +117,6 @@ const SixthScreen = () => {
                     }} variant="h6" component="h2">
                         +7 (910) 801-96-91
                     </Typography>
-                    <Suspense fallback="load">
                         <div style={{display: "flex", marginTop: "38px"}}>
                             <a href="https://vk.com/club196114781" target="_blank"><img
                                 style={{marginRight: "30px", width: "52px", height: "52px"}} src="/vk.png"
@@ -130,7 +129,6 @@ const SixthScreen = () => {
                                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
                                      alt="telegram"/></a>
                         </div>
-                    </Suspense>
                 </div>
             </div>
 
