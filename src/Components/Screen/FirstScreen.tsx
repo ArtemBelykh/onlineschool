@@ -41,7 +41,7 @@ const FirstScreen = () => {
                     position: "relative",
                     background: "white",
                     width: "100%",
-                    height: "170px",
+                    height: "200px",
                     zIndex: "5",
                     boxShadow: "0px 0px 9px rgba(0, 0, 0, 0.25)",
                     borderRadius: "0px 0px 58px 58px",
@@ -49,7 +49,7 @@ const FirstScreen = () => {
                 }}>
                     <Card className="fistScreenBoxCard__adaptive" style={{zIndex: "1"}} sx={{
                         maxWidth: "100%",
-                        height: "150px",
+                        height: "100%",
                         boxShadow: "none",
                         borderRadius: "58px 58px 58px 58px",
                         display: "flex",

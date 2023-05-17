@@ -315,10 +315,10 @@ footer {
     height: 490px !important;
 }
 
-.progressive {
-    object-fit: cover;
-    object-position: center;
-}
+/*.progressive {*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*}*/
 .loading {
     filter: blur(10px);
 }
