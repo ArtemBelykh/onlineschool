@@ -14,30 +14,6 @@ const RecertificationInSchool = () => {
                     в другой автошколе
                 </Typography>
 
-                {/*<div style={{display: "flex", justifyContent: "space-between", width: "400px"}}>*/}
-                {/*    <Typography sx={{*/}
-                {/*        fontFamily: "Mulish",*/}
-                {/*        fontStyle: "normal",*/}
-                {/*        fontWeight: "500",*/}
-                {/*        fontSize: "20px",*/}
-                {/*        lineHeight: "25px",*/}
-                {/*        color: "#000000"*/}
-                {/*    }} variant="h6" component="h2">*/}
-                {/*        Вождение (МКПП)*/}
-                {/*    </Typography>*/}
-                {/*    <Typography sx={{*/}
-                {/*        fontFamily: "Mulish",*/}
-                {/*        fontStyle: "normal",*/}
-                {/*        fontWeight: "500",*/}
-                {/*        fontSize: "20px",*/}
-                {/*        lineHeight: "25px",*/}
-                {/*        color: "#000000"*/}
-                {/*    }} variant="h6" component="h2">*/}
-                {/*        г. Кострома*/}
-                {/*    </Typography>*/}
-
-                {/*</div>*/}
-
                 <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}} className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
@@ -80,7 +56,7 @@ const RecertificationInSchool = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        1 месяц
+                        Всего 1 месяц
                     </Typography>
                 </div>
 

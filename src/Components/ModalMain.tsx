@@ -80,7 +80,6 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
             },
             body: JSON.stringify(data)
         })
-        console.log(data)
     }
 
 
@@ -89,7 +88,6 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     }
 
 
-    // @ts-ignore
     return (
         <>
             <Button onClick={handleOpen} sx={styleBtn} variant={variantBtn} color={colorBtn}>
@@ -136,12 +134,6 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                        id="standard-basic"
                                        type="date"
                                        variant="standard"/>
-
-                            {/*<LocalizationProvider dateAdapter={AdapterDayjs}>*/}
-                            {/*    <DemoContainer {...register("dataCurrent")} components={['DateField']}>*/}
-                            {/*        <DatePicker label="Basic date field"/>*/}
-                            {/*    </DemoContainer>*/}
-                            {/*</LocalizationProvider>*/}
 
                             <MuiTelInput defaultCountry="RU" {...register("phoneClient", {
                                 maxLength: {value: 16, message: "Введите корректный номер телефона"},

@@ -78,7 +78,7 @@ const AdditionalLessonInTheory = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        1 месяц
+                        Всего 1 месяц
                     </Typography>
                 </div>
 
@@ -98,22 +98,6 @@ const AdditionalLessonInTheory = () => {
                         Доступ к онлайн платформе
                     </Typography>
                 </div>
-
-                {/*<div style={{display: "flex", alignItems: "center", marginTop: "25px", marginBottom: "53px"}}>*/}
-                {/*    <div><img src="/symbol.png" alt="symbol"/></div>*/}
-
-                {/*    <Typography sx={{*/}
-                {/*        fontFamily: "Mulish",*/}
-                {/*        fontStyle: "normal",*/}
-                {/*        fontWeight: "400",*/}
-                {/*        fontSize: "24px",*/}
-                {/*        lineHeight: "94%",*/}
-                {/*        color: "#000000",*/}
-                {/*        marginLeft: "14px"*/}
-                {/*    }} variant="h6" component="h2">*/}
-                {/*        7 практических занятий*/}
-                {/*    </Typography>*/}
-                {/*</div>*/}
 
 
                 <hr style={{border: "1px solid #DB241C", marginBottom: "54px"}}/>

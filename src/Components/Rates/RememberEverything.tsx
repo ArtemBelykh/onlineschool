@@ -111,7 +111,7 @@ const RememberEverything = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        5 практических занятий
+                        В том числе 5 практических занятий
                     </Typography>
                 </div>
 
