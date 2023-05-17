@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react'
+import React from "react";
 import {
     AppBar, Container, Link, List, ListItemButton, ListItemIcon, ListItemText,
     Toolbar,
@@ -8,9 +8,9 @@ import {
 } from "@mui/material";
 import DrawerComp from "./DrawerComp";
 import {Link as LinkScroll} from "react-scroll";
-import {Link as NavLinks, useNavigate} from "react-router-dom";
-const ModalMain = React.lazy(() => import("./ModalMain"))
 
+import {Link as NavLinks, useNavigate} from "react-router-dom";
+import ModalMain from "./ModalMain";
 
 export const pages = [{title: "О школе", tags: "about", link: "/about"}, {
     title: "Тарифы",
@@ -23,6 +23,7 @@ export const pages = [{title: "О школе", tags: "about", link: "/about"}, {
 }, {title: "Отзывы", tags: "reviews", link: "/reviews"}, {title: "Контакты", tags: "contact", link: "/contact"}];
 
 const Navbar = () => {
+
     const navigate = useNavigate()
 
     const theme = useTheme();
@@ -77,14 +78,11 @@ const Navbar = () => {
                                     <Link sx={{color: "black", textDecoration: "none"}} href={"tel:+7 (8142) 33 22 11"}>+7
                                         (910) 801-96-91</Link>
                                 </Typography>
-
-                                <Suspense fallback="load">
                                 <ModalMain styleBtn={{
                                     marginLeft: "auto",
                                     background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)"
                                 }} variantBtn="contained"
                                            titleBtn="Записаться на обучение"/>
-                                </Suspense>
                             </>
                         )}
                     </Toolbar>
