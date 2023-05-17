@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Typography} from "@mui/material";
 import Slider from "react-slick";
 import Box from "@mui/material/Box";
+import {LoadImages} from "../LoadImages";
 
 
 const styleSliderItems = {
@@ -101,7 +102,7 @@ const FourthScreen = () => {
 
             <Slider {...settings} className="sliderSlider">
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post1.jpg" alt="post1"/>
+                    <LoadImages style={{width: "100%", height: "236px"}} src="/post1.jpg" alt="post1"/>
 
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -163,7 +164,7 @@ const FourthScreen = () => {
                     </div>
                 </Box>
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post2.jpg" alt="post2"/>
+                    <LoadImages style={{width: "100%", height: "236px"}} src="/post2.jpg" alt="post2"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -223,7 +224,7 @@ const FourthScreen = () => {
                     </div>
                 </Box>
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                    <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
                          src="/articles/no-money.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -286,7 +287,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                    <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
                          src="/articles/test-on-med.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -349,7 +350,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                    <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
                          src="/articles/clock.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -412,7 +413,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                    <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
                          src="/articles/out-cars.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -476,7 +477,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                    <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
                          src="/articles/buy-avto.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -539,7 +540,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                    <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
                          src="/articles/kat-vy.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -603,7 +604,7 @@ const FourthScreen = () => {
                 </Box>
 
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
+                    <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
                          src="/articles/euro-protocol.jpg" alt="post3"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
