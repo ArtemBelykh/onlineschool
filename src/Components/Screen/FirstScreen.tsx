@@ -4,8 +4,8 @@ import Box from "@mui/material/Box";
 import ModalMain from "../ModalMain";
 import {ImageSchool} from "../ImageSchool";
 
-import main_img_Small from "/mainIMG-small.webp"
-import main_img from "/mainIMG.webp"
+import main_img_Small from "../../assets/mainIMG-small.webp"
+import main_img from "../../assets/mainIMG.webp"
 
 const styleH5 = {
     width: "80%",
