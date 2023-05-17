@@ -128,7 +128,7 @@ const SixthScreen = () => {
                                 alt="whatsapp"/></a>
                             <a href="tg://resolve?domain=PravoNaPrava44" target="_blank">
                                 <img style={{width: "52px", height: "52px"}}
-                                     src="/Telegram_logo.svg.png"
+                                     src="/telegram.png"
                                      alt="telegram"/></a>
                         </div>
                 </div>

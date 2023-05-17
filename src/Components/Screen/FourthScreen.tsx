@@ -101,7 +101,7 @@ const FourthScreen = () => {
 
             <Slider {...settings} className="sliderSlider">
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post1.png" alt="post1"/>
+                    <img style={{width: "100%", height: "236px"}} src="/post1.jpg" alt="post1"/>
 
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -163,7 +163,7 @@ const FourthScreen = () => {
                     </div>
                 </Box>
                 <Box sx={styleSliderItems}>
-                    <img style={{width: "100%", height: "236px"}} src="/post2.png" alt="post2"/>
+                    <img style={{width: "100%", height: "236px"}} src="/post2.jpg" alt="post2"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
