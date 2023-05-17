@@ -21,7 +21,7 @@ const LicensePages = React.lazy(() => import("./Components/Pages/License.pages")
 function App() {
     return (
         <>
-            <Suspense fallback="load">
+            <Suspense>
                 <Navbar/>
             </Suspense>
             <Routes>
@@ -48,7 +48,7 @@ function App() {
                 <Route path="/article/Euro-Protocol"
                        element={<Suspense fallback={<Loading/>}><EuroProtocolArticle/></Suspense>}/>
             </Routes>
-            <Suspense fallback="load">
+            <Suspense>
                 <Footer/>
             </Suspense>
 
