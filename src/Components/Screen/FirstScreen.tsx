@@ -21,7 +21,11 @@ const FirstScreen = () => {
                     передвижения и юридическое
                     сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
 
-                <ImageSchool src={"/mainIMG.webp"} placeholderSrc={"/mainIMG-small.webp"} className="image_main__adaptive" style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}} />
+                <ImageSchool src={"/mainIMG.webp"} placeholderSrc={"/mainIMG-small.webp"}
+                             className="image_main__adaptive"
+                             style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}
+                             alt={"Сайт в городе Костроме и Галиче"}
+                />
                 {/*<img className="image_main__adaptive"*/}
                 {/*     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}*/}
                 {/*     src="/mainIMG.png" alt="main"/>*/}
@@ -58,16 +62,16 @@ const FirstScreen = () => {
                         flexWrap: "wrap",
                     }}>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/pc.png" alt="pc"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/pc.png" alt="Онлайн и офлайн обучение"/>
                         </CardContent>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/teacher.png" alt="teacher"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/teacher.png" alt="Опытные преподаватели"/>
                         </CardContent>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/cars.png" alt="cars"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/cars.png" alt="Своя площадкадля учебной езды"/>
                         </CardContent>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/Maps.png" alt="maps"/>
+                            <ImageSchool style={{width: "130px", height: "130px"}} src="/Maps.png" alt="Гибкая система оплаты"/>
                         </CardContent>
                     </Card>
                 </Box>

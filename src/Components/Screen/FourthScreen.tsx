@@ -84,8 +84,9 @@ const FourthScreen = () => {
         <Container id="articles"
                    sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "500px" : "650px"}}>
 
-            <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1"}}><img
-                src="/puz/puz2.png" alt="puz2"/></div>
+            <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1"}}>
+                <img src="/puz/puz2.png" alt="Кружочки"/>
+            </div>
             <Typography sx={{
                 fontFamily: "Mulish",
                 fontStyle: "normal",
@@ -102,7 +103,7 @@ const FourthScreen = () => {
 
             <Slider {...settings} className="sliderSlider">
                 <Box sx={styleSliderItems}>
-                    <LoadImages style={{width: "100%", height: "236px"}} src="/post1.jpg" alt="post1"/>
+                    <LoadImages style={{width: "100%", height: "236px"}} src="/post1.jpg" alt="Как выбрать автошколу"/>
 
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
@@ -164,7 +165,7 @@ const FourthScreen = () => {
                     </div>
                 </Box>
                 <Box sx={styleSliderItems}>
-                    <LoadImages style={{width: "100%", height: "236px"}} src="/post2.jpg" alt="post2"/>
+                    <LoadImages style={{width: "100%", height: "236px"}} src="/post2.jpg" alt="Почему именно мы"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -225,7 +226,7 @@ const FourthScreen = () => {
                 </Box>
                 <Box sx={styleSliderItems}>
                     <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
-                         src="/articles/no-money.jpg" alt="post3"/>
+                         src="/articles/no-money.jpg" alt="Как сэкономить на обучении в автошколе"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -285,10 +286,9 @@ const FourthScreen = () => {
 
 
                 </Box>
-
                 <Box sx={styleSliderItems}>
                     <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
-                         src="/articles/test-on-med.jpg" alt="post3"/>
+                         src="/articles/test-on-med.jpg" alt="Медицинский тест на дороге"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -348,10 +348,9 @@ const FourthScreen = () => {
 
 
                 </Box>
-
                 <Box sx={styleSliderItems}>
                     <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
-                         src="/articles/clock.jpg" alt="post3"/>
+                         src="/articles/clock.jpg" alt="Честные часы в автошколе"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -411,10 +410,9 @@ const FourthScreen = () => {
 
 
                 </Box>
-
                 <Box sx={styleSliderItems}>
                     <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
-                         src="/articles/out-cars.jpg" alt="post3"/>
+                         src="/articles/out-cars.jpg" alt="Выйти из машины или нет"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -475,10 +473,9 @@ const FourthScreen = () => {
 
 
                 </Box>
-
                 <Box sx={styleSliderItems}>
                     <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
-                         src="/articles/buy-avto.jpg" alt="post3"/>
+                         src="/articles/buy-avto.jpg" alt="Как купить поддержанный автомобиль?"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -538,10 +535,9 @@ const FourthScreen = () => {
 
 
                 </Box>
-
                 <Box sx={styleSliderItems}>
                     <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
-                         src="/articles/kat-vy.jpg" alt="post3"/>
+                         src="/articles/kat-vy.jpg" alt="Категории водительского удостоверения"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
@@ -602,10 +598,9 @@ const FourthScreen = () => {
 
 
                 </Box>
-
                 <Box sx={styleSliderItems}>
                     <LoadImages style={{width: "100%", height: "236px", borderRadius: "20px 20px 0px 0px"}}
-                         src="/articles/euro-protocol.jpg" alt="post3"/>
+                         src="/articles/euro-protocol.jpg" alt="Оформление Европротокола"/>
 
                     <div style={{display: "flex", justifyContent: "end", marginRight: "20px"}}>
                         <div style={{
