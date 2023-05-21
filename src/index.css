@@ -319,6 +319,12 @@ footer {
 /*    object-fit: cover;*/
 /*    object-position: center;*/
 /*}*/
+
+@font-face {
+    font-display: swap;
+    font-family: "Mulish";
+}
+
 .loading {
     filter: blur(10px);
 }
