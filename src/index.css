@@ -321,8 +321,8 @@ footer {
 /*}*/
 
 @font-face {
-    font-display: swap;
-    font-family: "Mulish";
+    font-display: swap !important;
+    font-family: "Mulish" !important;
 }
 
 .loading {
