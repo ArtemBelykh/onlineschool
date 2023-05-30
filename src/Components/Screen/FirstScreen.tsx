@@ -46,7 +46,7 @@ const FirstScreen = () => {
                     position: "relative",
                     background: "white",
                     width: "100%",
-                    height: "200px",
+                    height: "250px",
                     zIndex: "5",
                     boxShadow: "0px 0px 9px rgba(0, 0, 0, 0.25)",
                     borderRadius: "0px 0px 58px 58px",
