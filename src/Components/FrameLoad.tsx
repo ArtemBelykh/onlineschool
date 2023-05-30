@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
 
-export const FrameLoad = ({src, ...props}: any) => {
+export const FrameLoad = ({src}: any) => {
     const [imageSrc, setImageSrc] = useState(src);
 
     const cn = `progressive ${
-        imageSrc === src ? "loading" : "loaded"
+        imageSrc === !src ? "loading" : "loaded"
     }`;
 
     useEffect(() => {
