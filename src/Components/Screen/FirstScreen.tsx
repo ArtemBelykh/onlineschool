@@ -63,19 +63,19 @@ const FirstScreen = () => {
                         flexWrap: "wrap",
                     }}>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/pc.png"
+                            <ImageSchool style={{width: "100%", height: "100%"}} src="/pc.png"
                                          alt="Онлайн и офлайн обучение"/>
                         </CardContent>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/teacher.png"
+                            <ImageSchool style={{width: "100%", height: "100%"}} src="/teacher.png"
                                          alt="Опытные преподаватели"/>
                         </CardContent>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/cars.png"
+                            <ImageSchool style={{width: "100%", height: "100%"}} src="/cars.png"
                                          alt="Своя площадкадля учебной езды"/>
                         </CardContent>
                         <CardContent>
-                            <ImageSchool style={{width: "130px", height: "130px"}} src="/Maps.png"
+                            <ImageSchool style={{width: "100%", height: "100%"}} src="/Maps.png"
                                          alt="Гибкая система оплаты"/>
                         </CardContent>
                     </Card>
