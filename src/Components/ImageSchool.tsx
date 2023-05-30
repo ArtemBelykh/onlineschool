@@ -22,6 +22,7 @@ export const ImageSchool = ({ src, placeholderSrc, width = "100%", ...props }: a
             alt={props.alt || ""}
             width={width}
             {...props}
+            loading={"lazy"}
         />
     );
 };

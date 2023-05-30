@@ -26,10 +26,6 @@ const FirstScreen = () => {
                              style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}
                              alt={"Сайт в городе Костроме и Галиче"}
                 />
-                {/*<img className="image_main__adaptive"*/}
-                {/*     style={{width: "100%", height: "auto", marginTop: "50px", zIndex: "0"}}*/}
-                {/*     src="/mainIMG.png" alt="main"/>*/}
-
                 <div className="circeBtn__adaptive" style={{display: "none"}}>
                     <ModalMain styleBtn={{
                         width: "120px",
