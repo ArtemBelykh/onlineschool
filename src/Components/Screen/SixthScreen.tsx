@@ -30,13 +30,14 @@ const SixthScreen = () => {
 
                 <div style={{position: "relative", overflow: "hidden"}} className="adaptive__maps_div2">
                     <a
-                    href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"
-                    style={{color: "#eee", fontSize: "12px", position: "absolute", top: "0px"}}>Кострома</a>
+                        href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"
+                        style={{color: "#eee", fontSize: "12px", position: "absolute", top: "0px"}}>Кострома</a>
                     <a
-                    href="https://yandex.ru/maps/7/kostroma/house/sovetskaya_ulitsa_44a/YEkYfwNlT0cDQFttfXt3c39rbA==/?ll=40.945624%2C57.762388&utm_medium=mapframe&utm_source=maps&z=17.1"
-                    style={{color: "#eee", fontSize: "12px", position: "absolute", top: "14px"}}>Советская улица, 44А —
-                    Яндекс
-                    Карты</a>
+                        href="https://yandex.ru/maps/7/kostroma/house/sovetskaya_ulitsa_44a/YEkYfwNlT0cDQFttfXt3c39rbA==/?ll=40.945624%2C57.762388&utm_medium=mapframe&utm_source=maps&z=17.1"
+                        style={{color: "#eee", fontSize: "12px", position: "absolute", top: "14px"}}>Советская улица,
+                        44А —
+                        Яндекс
+                        Карты</a>
                     <iframe title={"ya_maps"} className="adaptive__maps"
                             src="https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"
                             width="700" height="476" allowFullScreen={true}
@@ -119,18 +120,18 @@ const SixthScreen = () => {
                     }} variant="h6" component="h2">
                         +7 (910) 801-96-91
                     </Typography>
-                        <div style={{display: "flex", marginTop: "38px"}}>
-                            <a href="https://vk.com/club196114781" target="_blank"><img
-                                style={{marginRight: "30px", width: "52px", height: "52px"}} src="/vk.png"
-                                alt="vk"/></a>
-                            <a href="whatsapp://send?text=l&phone=+79108019691&abid=+79108019691"><img
-                                style={{marginRight: "30px", width: "52px", height: "52px"}} src="/whatsapp.png"
-                                alt="whatsapp"/></a>
-                            <a href="tg://resolve?domain=PravoNaPrava44" target="_blank">
-                                <img style={{width: "52px", height: "52px"}}
-                                     src="/telegram.png"
-                                     alt="telegram"/></a>
-                        </div>
+                    <div style={{display: "flex", marginTop: "38px"}}>
+                        <a href="https://vk.com/club196114781" target="_blank"><img
+                            style={{marginRight: "30px", width: "52px", height: "52px"}} src="/vk.png"
+                            alt="vk"/></a>
+                        <a href="whatsapp://send?text=l&phone=+79108019691&abid=+79108019691"><img
+                            style={{marginRight: "30px", width: "52px", height: "52px"}} src="/whatsapp.png"
+                            alt="whatsapp"/></a>
+                        <a href="tg://resolve?domain=PravoNaPrava44" target="_blank">
+                            <img style={{width: "52px", height: "52px"}}
+                                 src="/telegram.png"
+                                 alt="telegram"/></a>
+                    </div>
                 </div>
             </div>
 

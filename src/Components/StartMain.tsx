@@ -1,4 +1,5 @@
 import React, {Suspense} from 'react'
+import Loading from "./Loading";
 
 const FirstScreen = React.lazy(() => import("./Screen/FirstScreen"))
 
@@ -17,7 +18,7 @@ const StartMain = () => {
             <ThirdScreen/>
             <FourthScreen/>
             <FifthScreen/>
-            <SixthScreen/>
+            <Suspense fallback={<Loading/>}><SixthScreen/></Suspense>
 
 
         </div>
