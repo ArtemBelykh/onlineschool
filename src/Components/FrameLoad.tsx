@@ -17,7 +17,7 @@ export const FrameLoad = ({src, ...props}: any) => {
 
     return (
 
-        <div style={{position: "relative", overflow: "hidden"}} className={"adaptive__maps_div2" + cn}>
+        <div style={{position: "relative", overflow: "hidden"}} className={"adaptive__maps_div2"}>
             <a
                 href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"
                 style={{color: "#eee", fontSize: "12px", position: "absolute", top: "0px"}}>Кострома</a>
@@ -27,7 +27,7 @@ export const FrameLoad = ({src, ...props}: any) => {
                 44А —
                 Яндекс
                 Карты</a>
-            <iframe loading={"lazy"} title={"ya_maps"} className="adaptive__maps"
+            <iframe loading={"lazy"} title={"ya_maps"} className={"adaptive__maps" + cn}
                     src={imageSrc}
                     width="700" height="476" allowFullScreen={true}
                     style={{position: "relative"}}></iframe>
