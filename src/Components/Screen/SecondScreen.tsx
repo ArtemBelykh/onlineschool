@@ -62,7 +62,7 @@ const SecondScreen = () => {
             </div>
 
             <div className="secondImages">
-                <img style={{width: "322px", height: "467px"}} src="/secondImages.jpg"/>
+                <img style={{width: "322px", height: "467px"}} alt={"О школе"} src="/secondImages.jpg"/>
             </div>
 
 

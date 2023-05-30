@@ -37,7 +37,7 @@ const SixthScreen = () => {
                     style={{color: "#eee", fontSize: "12px", position: "absolute", top: "14px"}}>Советская улица, 44А —
                     Яндекс
                     Карты</a>
-                    <iframe className="adaptive__maps"
+                    <iframe title={"ya_maps"} className="adaptive__maps"
                             src="https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"
                             width="700" height="476" allowFullScreen={true}
                             style={{position: "relative"}}></iframe>
