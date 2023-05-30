@@ -25,7 +25,7 @@ function App() {
                 <Navbar/>
             </Suspense>
             <Routes>
-                <Route path="/" element={<Suspense fallback={<Loading/>}><StartMain/></Suspense>}/>
+                <Route path="/" element={<StartMain/>}/>
                 <Route path="/license" element={<Suspense fallback={<Loading/>}><LicensePages/></Suspense>}/>
                 <Route path="*" element={<Suspense fallback={<Loading/>}><NotFoundPages/></Suspense>}/>
 
