@@ -1,5 +1,6 @@
 import React, {Suspense} from 'react'
 import {Container, Typography} from "@mui/material";
+import {FrameLoad} from "../FrameLoad";
 
 const SixthScreen = () => {
 
@@ -29,21 +30,22 @@ const SixthScreen = () => {
                 justifyContent: "center"
             }}>
 
-                <div style={{position: "relative", overflow: "hidden"}} className="adaptive__maps_div2">
-                    <a
-                        href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"
-                        style={{color: "#eee", fontSize: "12px", position: "absolute", top: "0px"}}>Кострома</a>
-                    <a
-                        href="https://yandex.ru/maps/7/kostroma/house/sovetskaya_ulitsa_44a/YEkYfwNlT0cDQFttfXt3c39rbA==/?ll=40.945624%2C57.762388&utm_medium=mapframe&utm_source=maps&z=17.1"
-                        style={{color: "#eee", fontSize: "12px", position: "absolute", top: "14px"}}>Советская улица,
-                        44А —
-                        Яндекс
-                        Карты</a>
-                    <iframe loading={"lazy"} title={"ya_maps"} className="adaptive__maps"
-                            src="https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"
-                            width="700" height="476" allowFullScreen={true}
-                            style={{position: "relative"}}></iframe>
-                </div>
+                <FrameLoad src={"https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"} />
+                {/*<div style={{position: "relative", overflow: "hidden"}} className="adaptive__maps_div2">*/}
+                {/*    <a*/}
+                {/*        href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"*/}
+                {/*        style={{color: "#eee", fontSize: "12px", position: "absolute", top: "0px"}}>Кострома</a>*/}
+                {/*    <a*/}
+                {/*        href="https://yandex.ru/maps/7/kostroma/house/sovetskaya_ulitsa_44a/YEkYfwNlT0cDQFttfXt3c39rbA==/?ll=40.945624%2C57.762388&utm_medium=mapframe&utm_source=maps&z=17.1"*/}
+                {/*        style={{color: "#eee", fontSize: "12px", position: "absolute", top: "14px"}}>Советская улица,*/}
+                {/*        44А —*/}
+                {/*        Яндекс*/}
+                {/*        Карты</a>*/}
+                {/*    <iframe loading={"lazy"} title={"ya_maps"} className="adaptive__maps"*/}
+                {/*            src="https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"*/}
+                {/*            width="700" height="476" allowFullScreen={true}*/}
+                {/*            style={{position: "relative"}}></iframe>*/}
+                {/*</div>*/}
 
 
                 <div className={"adaptiveSix"} style={{paddingLeft: "50px"}}>
