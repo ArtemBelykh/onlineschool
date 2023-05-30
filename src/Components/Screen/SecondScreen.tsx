@@ -6,7 +6,7 @@ const SecondScreen = () => {
     return (
         <Container id="about" className={"SecondScreenAdaptive"} sx={{display: "flex", justifyContent: "space-around", width: "60%", flexWrap: "wrap", marginTop: "100px"}}>
 
-            <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1",width: "100%", height: "100%"}}><img src="/puz/puz1.png" alt="puz1"/></div>
+            <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1",width: "100%", height: "100%"}}><img style={{width: "100%", height: "100%"}} src="/puz/puz1.png" alt="puz1"/></div>
             <div style={{width: "400px"}}>
                 <Typography sx={{
                     fontFamily: "Mulish",
