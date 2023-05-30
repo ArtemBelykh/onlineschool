@@ -23,6 +23,7 @@ export const ImageSchool = ({ src, placeholderSrc, width = "100%", ...props }: a
             width={width}
             {...props}
             loading={"lazy"}
+            fetchpriority="high"
         />
     );
 };
