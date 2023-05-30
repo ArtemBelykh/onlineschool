@@ -26,6 +26,7 @@ const Footer = () => {
                                             offset={-100}
                                             duration={500}
                                             style={{color: "white", textDecoration: "none"}}
+                                            href={"#"}
                                             to={page.tags}>
                                             <ListItemText id={"#" + page.tags} sx={{fontFamily: "Mulish"}}>
                                                 {page.title}
