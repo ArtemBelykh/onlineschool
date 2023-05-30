@@ -85,7 +85,7 @@ const CategoryBKostroma = () => {
 
 
                 <div style={{display: "flex", alignItems: "center", marginTop: "45px"}} >
-                    <div><img src="/symbol.png" alt="symbol"/></div>
+                    <div><img style={{width: "100%", height: "100%"}} src="/symbol.png" alt="symbol"/></div>
 
                     <Typography sx={{
                         fontFamily: "Mulish",
@@ -101,7 +101,7 @@ const CategoryBKostroma = () => {
                 </div>
 
                 <div style={{display: "flex", alignItems: "center", marginTop: "25px", marginBottom: "53px"}}>
-                    <div><img src="/symbol.png" alt="symbol"/></div>
+                    <div><img style={{width: "100%", height: "100%"}} src="/symbol.png" alt="symbol"/></div>
 
                     <Typography sx={{
                         fontFamily: "Mulish",

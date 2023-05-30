@@ -13,7 +13,8 @@ const AdditionalDriving = () => {
                     по вождению
                 </Typography>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "400px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "400px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -27,7 +28,8 @@ const AdditionalDriving = () => {
 
                 </div>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -50,7 +52,8 @@ const AdditionalDriving = () => {
                     </Typography>
                 </div>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "380px", marginTop: "16px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "380px", marginTop: "16px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -76,7 +79,13 @@ const AdditionalDriving = () => {
                 <hr style={{border: "1px solid #DB241C", marginBottom: "54px"}}/>
 
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "450px", alignItems: "center", marginBottom: "37px"}} className="adaptive__rates_div1">
+                <div style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "450px",
+                    alignItems: "center",
+                    marginBottom: "37px"
+                }} className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -116,10 +125,13 @@ const AdditionalDriving = () => {
                     </div>
 
 
-
                 </div>
-                <ModalMain styleBtn={{background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)", borderRadius: "23px", width: "100%", height: "73px"}} variantBtn="contained"
-                           titleBtn="Записаться на обучение"/>
+                <ModalMain styleBtn={{
+                    background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                    borderRadius: "23px",
+                    width: "100%",
+                    height: "73px"
+                }} variantBtn="contained" titleBtn="Записаться на обучение"/>
             </div>
         </Box>
     );

@@ -84,7 +84,7 @@ const AdditionalLessonInTheory = () => {
 
 
                 <div style={{display: "flex", alignItems: "center", marginTop: "45px", marginBottom: "53px"}} className="adaptive__rates_div1">
-                    <div><img src="/symbol.png" alt="symbol"/></div>
+                    <div><img style={{width: "100%", height: "100%"}} src="/symbol.png" alt="symbol"/></div>
 
                     <Typography sx={{
                         fontFamily: "Mulish",
