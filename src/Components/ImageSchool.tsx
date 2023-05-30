@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const ImageSchool = ({ src, placeholderSrc, width = "100%", ...props }: any) => {
+export const ImageSchool = ({ src, placeholderSrc, ...props }: any) => {
     const [imageSrc, setImageSrc] = useState(placeholderSrc);
 
     const cn = `progressive ${
@@ -20,7 +20,6 @@ export const ImageSchool = ({ src, placeholderSrc, width = "100%", ...props }: a
             className={cn}
             src={imageSrc}
             alt={props.alt || ""}
-            width={width}
             {...props}
             loading={"lazy"}
             fetchpriority="high"
