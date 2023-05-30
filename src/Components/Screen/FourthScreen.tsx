@@ -85,7 +85,7 @@ const FourthScreen = () => {
                    sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "500px" : "650px"}}>
 
             <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1"}}>
-                <img style={{width: "auto", height: "auto"}} src="/puz/puz2.png" alt="Кружочки"/>
+                <img style={{width: "100%", height: "100%"}} src="/puz/puz2.png" alt="Кружочки"/>
             </div>
             <Typography sx={{
                 fontFamily: "Mulish",
