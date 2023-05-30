@@ -19,7 +19,7 @@ function SampleNextArrow(props: any) {
             style={{...style}}
             onClick={onClick}
         >
-            <img src="/Arrow%201.png" alt="arrow"/>
+            <img style={{width: "100%", height: "100%"}} src="/Arrow%201.png" alt="arrow"/>
         </div>
     );
 }
