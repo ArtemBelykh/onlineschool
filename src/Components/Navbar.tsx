@@ -53,6 +53,7 @@ const Navbar = () => {
                                                     smooth={true}
                                                     offset={-100}
                                                     duration={500}
+                                                    href={"#"}
                                                     style={{color: "black", textDecoration: "none"}}
                                                     to={page.tags}
                                                 >
