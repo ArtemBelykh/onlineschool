@@ -19,7 +19,7 @@ function SampleNextArrow(props: any) {
             style={{...style}}
             onClick={onClick}
         >
-            <img style={{width: "100%", height: "100%"}} src="/Arrow%201.png" alt="arrow"/>
+            <img style={{width: "56px", height: "16px"}} src="/Arrow%201.png" alt="arrow"/>
         </div>
     );
 }
@@ -32,7 +32,7 @@ function SamplePrevArrow(props: any) {
             style={{...style, position: "absolute !important", bottom: "0"}}
             onClick={onClick}
         >
-            <img style={{transform: "scaleX(-1)", transformOrigin: "center", transformBox: "fill-box", width: "100%", height: "100%"}}
+            <img style={{transform: "scaleX(-1)", transformOrigin: "center", transformBox: "fill-box", width: "56px", height: "16px"}}
                  src="/Arrow%201.png" alt="arrow"/>
         </div>
     );
