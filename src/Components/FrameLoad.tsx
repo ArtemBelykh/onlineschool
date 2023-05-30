@@ -3,9 +3,9 @@ import React, {useState, useEffect} from "react";
 export const FrameLoad = ({src, ...props}: any) => {
     const [imageSrc, setImageSrc] = useState(src);
 
-    // const cn = `progressive ${
-    //     imageSrc === placeholderSrc ? "loading" : "loaded"
-    // }`;
+    const cn = `progressive ${
+        imageSrc === src ? "loading" : "loaded"
+    }`;
 
     useEffect(() => {
         const img = new Image();
@@ -17,7 +17,7 @@ export const FrameLoad = ({src, ...props}: any) => {
 
     return (
 
-        <div style={{position: "relative", overflow: "hidden"}} className="adaptive__maps_div2">
+        <div style={{position: "relative", overflow: "hidden"}} className={"adaptive__maps_div2" + cn}>
             <a
                 href="https://yandex.ru/maps/7/kostroma/?utm_medium=mapframe&utm_source=maps"
                 style={{color: "#eee", fontSize: "12px", position: "absolute", top: "0px"}}>Кострома</a>
