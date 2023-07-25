@@ -40,6 +40,11 @@ const LicensePages = () => {
                 <ModalAssets img="/license/3.jpg"/>
             </Box>
 
+
+            <br/><br/>
+
+            <a style={{color: "blue", textDecoration: "none", fontSize: "18px"}} target="_blank" href="l3.pdf">Отчет о результатах самообследования</a>
+
         </Container>
     );
 };
