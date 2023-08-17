@@ -8,9 +8,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+//const root = ReactDOM.createRoot(
+ // document.getElementById('root') as HTMLElement
+//);
 const isDisable = false;
 root.render(
   <React.StrictMode>
