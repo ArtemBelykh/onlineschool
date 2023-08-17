@@ -8,15 +8,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
 
-//const root = ReactDOM.createRoot(
- // document.getElementById('root') as HTMLElement
-//);
-const isDisable = false;
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+const isDisable = true;
 root.render(
   <React.StrictMode>
       <BrowserRouter>
           {isDisable ?
-              <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Сайт не работает!</Typography> : <App />}
+              <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Error, this website don't work </Typography> : <App />}
       </BrowserRouter>
     
   </React.StrictMode>
