@@ -153,7 +153,7 @@ const CategoryBGalyth = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            35 000 ₽
+                            38 000 ₽
                         </Typography>
                     </div>
 
