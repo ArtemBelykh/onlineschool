@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-const isDisable = true;
+const isDisable = false;
 root.render(
   <React.StrictMode>
       <BrowserRouter>
