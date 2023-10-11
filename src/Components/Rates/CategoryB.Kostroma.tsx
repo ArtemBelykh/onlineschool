@@ -112,7 +112,7 @@ const CategoryBKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        В том числе 60 часов практики
+                        В том числе 56 часов практики
                     </Typography>
                 </div>
 
@@ -156,7 +156,7 @@ const CategoryBKostroma = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            26 000 ₽
+                            27 000 ₽
                         </Typography>
                     </div>
                 </div>
