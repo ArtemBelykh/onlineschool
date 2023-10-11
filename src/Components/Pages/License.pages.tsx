@@ -43,9 +43,9 @@ const LicensePages = () => {
 
             <br/><br/>
 
-            <a style={{color: "blue", textDecoration: "none", fontSize: "18px"}} target="_blank" href="/Отчет_о_результатах_самообследования_г_Кострома_2023.pdf">Отчет о результатах самообследования 2023 года г. Кострома</a>
-            <a style={{color: "blue", textDecoration: "none", fontSize: "18px"}} target="_blank" href="/Отчет_о_результатах_самообследования_г_Галич_2023.pdf">Отчет о результатах самообследования 2023 года г. Галич</a>
-            <a style={{color: "blue", textDecoration: "none", fontSize: "18px"}} target="_blank" href="/Отчет_о_результатах_самообследования_г_Кострома_2021.pdf">Отчет о результатах самообследования 2021 года г. Кострома</a>
+            <a style={{color: "blue", textDecoration: "none", fontSize: "18px"}} target="_blank" href="/Отчет_о_результатах_самообследования_г_Кострома_2023.pdf">Отчет о результатах самообследования 2023 года г. Кострома</a><br/>
+            <a style={{color: "blue", textDecoration: "none", fontSize: "18px"}} target="_blank" href="/Отчет_о_результатах_самообследования_г_Галич_2023.pdf">Отчет о результатах самообследования 2023 года г. Галич</a><br/>
+            <a style={{color: "blue", textDecoration: "none", fontSize: "18px"}} target="_blank" href="/Отчет_о_результатах_самообследования_г_Кострома_2021.pdf">Отчет о результатах самообследования 2021 года г. Кострома</a><br/>
             
         </Container>
     );
