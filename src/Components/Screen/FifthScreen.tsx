@@ -89,6 +89,23 @@ const FifthScreen = () => {
                 fontSize: "15px",
                 lineHeight: "30px",
                 textTransform: "uppercase",
+                color: "red",
+                marginBottom: "20px"
+            }} variant="h5" component="h5">
+                УВАЖАЕМЫЕ КЛИЕНТЫ!
+                ВСЯ ИНФОРМАЦИЯ НА САЙТЕ НОСИТ СПРАВОЧНЫЙ ХАРАКТЕР, НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ,
+                ОПРЕДЕЛЯЕМОЙ ПОЛОЖЕНИЯМИ СТАТЬИ 437 ГК РФ. ПРОСИМ ВАС УТОЧНЯТЬ НАЛИЧИЕ И СТОИМОСТЬ ТОВАРОВ У МЕНЕДЖЕРОВ
+
+            </Typography>
+
+
+            <Typography sx={{
+                fontFamily: "Mulish",
+                fontStyle: "normal",
+                fontWeight: "600",
+                fontSize: "15px",
+                lineHeight: "30px",
+                textTransform: "uppercase",
                 color: "rgba(0, 0, 0, 0.5)",
                 marginBottom: "20px"
             }} variant="h6" component="h2">
