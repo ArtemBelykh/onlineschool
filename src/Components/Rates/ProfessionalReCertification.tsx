@@ -1,41 +1,17 @@
 import React from 'react';
 import Box from "@mui/material/Box";
-import {Typography} from "@mui/material";
 import {styleBox, styleTitle} from "./styles";
+import {Typography} from "@mui/material";
 import ModalMain from "../ModalMain";
 
-
-const CategoryBKostroma = () => {
+const ProfessionalReCertification = () => {
     return (
         <Box sx={styleBox} className="adaptive__rates">
             <div style={{padding: "50px"}} className="adaptive__rates_div">
                 <Typography sx={styleTitle} variant="h2" component="h2">
-                    Категория “В”
+                    Переаттестация
+                    ПРОФ
                 </Typography>
-
-                <div style={{display: "flex", justifyContent: "space-between", width: "400px"}} className="adaptive__rates_div1">
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "500",
-                        fontSize: "20px",
-                        lineHeight: "25px",
-                        color: "#000000"
-                    }} variant="h6" component="h2">
-                        Вождение (МКПП)
-                    </Typography>
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "500",
-                        fontSize: "20px",
-                        lineHeight: "25px",
-                        color: "#000000"
-                    }} variant="h6" component="h2">
-                        г. Кострома
-                    </Typography>
-
-                </div>
 
                 <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}} className="adaptive__rates_div1">
                     <Typography sx={{
@@ -60,7 +36,7 @@ const CategoryBKostroma = () => {
                     </Typography>
                 </div>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "390px", marginTop: "16px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "380px", marginTop: "16px"}} className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -79,12 +55,12 @@ const CategoryBKostroma = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        3 месяца
+                        1 месяц
                     </Typography>
                 </div>
 
 
-                <div style={{display: "flex", alignItems: "center", marginTop: "45px"}} >
+                <div style={{display: "flex", alignItems: "center", marginTop: "45px"}}>
                     <div><img style={{width: "100%", height: "100%"}} src="/symbol.png" alt="symbol"/></div>
 
                     <Typography sx={{
@@ -96,7 +72,7 @@ const CategoryBKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                         Всего 195 часов обучения
+                        Доступ к обучающей онлайн платформе
                     </Typography>
                 </div>
 
@@ -112,7 +88,7 @@ const CategoryBKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                        В том числе 56 часов практики
+                        15 практических занятий
                     </Typography>
                 </div>
 
@@ -133,7 +109,6 @@ const CategoryBKostroma = () => {
                     </Typography>
 
 
-
                     <div style={{marginTop: "-30px", textAlign: "end"}}>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -145,7 +120,7 @@ const CategoryBKostroma = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            30 000 ₽
+                            23 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -156,9 +131,10 @@ const CategoryBKostroma = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            27 000 ₽
+                            20 000 ₽
                         </Typography>
                     </div>
+
                 </div>
                 <ModalMain styleBtn={{background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)", borderRadius: "23px", width: "100%", height: "73px"}} variantBtn="contained"
                            titleBtn="Записаться на обучение"/>
@@ -167,4 +143,4 @@ const CategoryBKostroma = () => {
     );
 };
 
-export default CategoryBKostroma;
+export default ProfessionalReCertification;

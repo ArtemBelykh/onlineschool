@@ -3,6 +3,9 @@ import {Container, Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import CategoryBByi from "../Rates/CategoryB.byi";
+import ProfessionalReCertification from "../Rates/ProfessionalReCertification";
+
 const Acordion = React.lazy(() => import("../Acordion"))
 
 const CategoryBKostroma = React.lazy(() => import("../Rates/CategoryB.Kostroma"))
@@ -113,6 +116,16 @@ const ThirdScreen = () => {
                         <AdditionalLessonInTheory/>
                     </Suspense>
                 </TabPanel>
+                <TabPanel index={7} value={value}>
+                    <Suspense fallback="load">
+                        <CategoryBByi/>
+                    </Suspense>
+                </TabPanel>
+                <TabPanel index={8} value={value}>
+                    <Suspense fallback="load">
+                        <ProfessionalReCertification/>
+                    </Suspense>
+                </TabPanel>
                 <Tabs
                     orientation="vertical"
                     variant="fullWidth"
@@ -131,6 +144,8 @@ const ThirdScreen = () => {
                     <Tab label="Вспомнить Всё!" {...a11yProps(4)} />
                     <Tab label="Дополнительное занятие по вождению" {...a11yProps(5)} />
                     <Tab label="Дополнительное занятие по теории" {...a11yProps(6)} />
+                    <Tab label="Теория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Буй" {...a11yProps(7)} />
+                    <Tab label="Переаттестация ПРОФ" {...a11yProps(8)} />
                 </Tabs>
 
             </Box>

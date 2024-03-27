@@ -38,6 +38,11 @@ const LicensePages = () => {
                 <ModalAssets img="/license/l1pdf.png" img2="/license/l2pdf.png" isPdf={true}/>
                 <ModalAssets img="/license/2.jpg"/>
                 <ModalAssets img="/license/3.jpg"/>
+                
+                <ModalAssets img="/license/docSchool1.jpg"/>
+                <ModalAssets img="/license/docSchool2.jpg"/>
+                <ModalAssets img="/license/docSchool3.jpg"/>
+                <ModalAssets img="/license/schoolR.jpg"/>
             </Box>
 
 

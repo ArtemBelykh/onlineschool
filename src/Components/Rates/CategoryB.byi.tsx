@@ -5,7 +5,7 @@ import {styleBox, styleTitle} from "./styles";
 import ModalMain from "../ModalMain";
 
 
-const CategoryBKostroma = () => {
+const CategoryBByi = () => {
     return (
         <Box sx={styleBox} className="adaptive__rates">
             <div style={{padding: "50px"}} className="adaptive__rates_div">
@@ -32,7 +32,7 @@ const CategoryBKostroma = () => {
                         lineHeight: "25px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        г. Кострома
+                        г. Буй
                     </Typography>
 
                 </div>
@@ -145,7 +145,7 @@ const CategoryBKostroma = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            30 000 ₽
+                            40 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -156,7 +156,7 @@ const CategoryBKostroma = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            27 000 ₽
+                            37 000 ₽
                         </Typography>
                     </div>
                 </div>
@@ -167,4 +167,4 @@ const CategoryBKostroma = () => {
     );
 };
 
-export default CategoryBKostroma;
+export default CategoryBByi;

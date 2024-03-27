@@ -11,6 +11,8 @@ import RecertificationInSchool from "./Rates/RecertificationInSchool";
 import RememberEverything from "./Rates/RememberEverything";
 import AdditionalDriving from "./Rates/AdditionalDriving";
 import AdditionalLessonInTheory from "./Rates/AdditionalLessonInTheory";
+import CategoryBByi from "./Rates/CategoryB.byi";
+import ProfessionalReCertification from "./Rates/ProfessionalReCertification";
 
 
 const Acordion = () => {
@@ -113,6 +115,32 @@ const Acordion = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <AdditionalLessonInTheory/>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel4bh-content"
+                    id="panel4bh-header"
+                >
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Категория "В", г. Буй</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <CategoryBByi/>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel4bh-content"
+                    id="panel4bh-header"
+                >
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Переаттестация ПРОФ</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <ProfessionalReCertification/>
                 </AccordionDetails>
             </Accordion>
         </div>
