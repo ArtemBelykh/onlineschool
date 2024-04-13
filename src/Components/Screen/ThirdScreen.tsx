@@ -83,49 +83,58 @@ const ThirdScreen = () => {
             >
                 <TabPanel value={value} index={0}>
                     <Suspense fallback="load">
+                        <CategoryAKostroma/>
+                    </Suspense>
+                </TabPanel>
+
+                <TabPanel value={value} index={1}>
+                    <Suspense fallback="load">
                         <CategoryBKostroma/>
                     </Suspense>
                 </TabPanel>
-                <TabPanel value={value} index={1}>
+
+                <TabPanel value={value} index={2}>
                     <Suspense fallback="load">
                         <CategoryBGalyth/>
                     </Suspense>
                 </TabPanel>
-                <TabPanel value={value} index={2}>
-                    <Suspense fallback="load">
-                        <CategoryAKostroma/>
-                    </Suspense>
-                </TabPanel>
-                <TabPanel value={value} index={3}>
-                    <Suspense fallback="load">
-                        <RecertificationInSchool/>
-                    </Suspense>
-                </TabPanel>
-                <TabPanel value={value} index={4}>
-                    <Suspense fallback="load">
-                        <RememberEverything/>
-                    </Suspense>
-                </TabPanel>
-                <TabPanel value={value} index={5}>
-                    <Suspense fallback="load">
-                        <AdditionalDriving/>
-                    </Suspense>
-                </TabPanel>
-                <TabPanel value={value} index={6}>
-                    <Suspense fallback="load">
-                        <AdditionalLessonInTheory/>
-                    </Suspense>
-                </TabPanel>
-                <TabPanel index={7} value={value}>
+
+                <TabPanel index={3} value={value}>
                     <Suspense fallback="load">
                         <CategoryBByi/>
                     </Suspense>
                 </TabPanel>
-                <TabPanel index={8} value={value}>
+
+                <TabPanel value={value} index={4}>
+                    <Suspense fallback="load">
+                        <AdditionalDriving/>
+                    </Suspense>
+                </TabPanel>
+
+                <TabPanel value={value} index={5}>
+                    <Suspense fallback="load">
+                        <RecertificationInSchool/>
+                    </Suspense>
+                </TabPanel>
+
+                <TabPanel index={6} value={value}>
                     <Suspense fallback="load">
                         <ProfessionalReCertification/>
                     </Suspense>
                 </TabPanel>
+
+                <TabPanel value={value} index={7}>
+                    <Suspense fallback="load">
+                        <AdditionalLessonInTheory/>
+                    </Suspense>
+                </TabPanel>
+
+                <TabPanel value={value} index={8}>
+                    <Suspense fallback="load">
+                        <RememberEverything/>
+                    </Suspense>
+                </TabPanel>
+
                 <Tabs
                     orientation="vertical"
                     variant="fullWidth"
@@ -135,17 +144,17 @@ const ThirdScreen = () => {
                     sx={{borderColor: 'divider'}}
                 >
                     <Tab
-                        label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(0)} />
+                        label="Категория 'А' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(0)} />
                     <Tab
-                        label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Галич" {...a11yProps(1)} />
+                        label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(1)} />
                     <Tab
-                        label="Категория 'А' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Кострома" {...a11yProps(2)} />
-                    <Tab label="Переаттестация после обучения в другой атвошколе" {...a11yProps(3)} />
-                    <Tab label="Вспомнить Всё!" {...a11yProps(4)} />
-                    <Tab label="Дополнительное занятие по вождению" {...a11yProps(5)} />
-                    <Tab label="Дополнительное занятие по теории" {...a11yProps(6)} />
-                    <Tab label="Теория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Буй" {...a11yProps(7)} />
-                    <Tab label="Переаттестация ПРОФ" {...a11yProps(8)} />
+                        label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Галич" {...a11yProps(2)} />
+                    <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Буй" {...a11yProps(3)} />
+                    <Tab label="Дополнительное занятие по вождению" {...a11yProps(4)} />
+                    <Tab label="Переаттестация после обучения в другой автошколе" {...a11yProps(5)} />
+                    <Tab label="Переаттестация ПРОФ" {...a11yProps(6)} />
+                    <Tab label="Дополнительное занятие по теории" {...a11yProps(7)} />
+                    <Tab label="Вспомнить Всё!" {...a11yProps(8)} />
                 </Tabs>
 
             </Box>
