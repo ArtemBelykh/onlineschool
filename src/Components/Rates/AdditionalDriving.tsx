@@ -120,7 +120,7 @@ const AdditionalDriving = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            1 500 ₽
+                            1 700 ₽
                         </Typography>
                     </div>
 
