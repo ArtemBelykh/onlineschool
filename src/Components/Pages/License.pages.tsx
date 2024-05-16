@@ -35,7 +35,7 @@ const LicensePages = () => {
 
 
             <Box className="adaptLicence" sx={{display: "flex", justifyContent: "space-between", marginTop: "30px", flexWrap: "wrap" }}>
-                <ModalAssets img="/license/l1pdf.png" img2="/license/l2pdf.png" isPdf={true}/>
+                <ModalAssets img="/license/ExtractFromTheRegisterOfLicensesNo_02_21_001.jpg" img2="/license/ExtractFromTheRegisterOfLicensesNo_02_21_002.jpg" isPdf={true}/>
                 <ModalAssets img="/license/2.jpg"/>
                 <ModalAssets img="/license/3.jpg"/>
                 
