@@ -43,6 +43,7 @@ const LicensePages = () => {
                 <ModalAssets img="/license/docSchool2.jpg"/>
                 <ModalAssets img="/license/docSchool3.jpg"/>
 
+
                 <ModalAssets img="/license/photo_2024-07-03_13-53-46.jpg"/>
 
                 <ModalAssets img="/license/schoolR.jpg"/>
