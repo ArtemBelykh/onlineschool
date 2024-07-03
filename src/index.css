@@ -1,0 +1,349 @@
+
+/*@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");*/
+
+@media screen and (max-width: 1300px) {
+    .SecondScreenAdaptive {
+        flex-wrap: nowrap !important;
+    }
+
+
+    .fistScreenBox__adaptive {
+        margin-top: -100px !important;
+    }
+
+    .slick-slide {
+        text-align: center !important;
+        text-align: -webkit-center !important;
+    }
+
+    .hidden_boxThird {
+        display: none !important;
+    }
+
+
+    .hidden_acordionThird {
+        display: block !important;
+    }
+
+}
+
+@media screen and (max-width: 1583px) {
+    .hidden_boxThird {
+        display: none !important;
+    }
+
+
+    .hidden_acordionThird {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .SecondScreenAdaptive {
+        flex-wrap: wrap !important;
+    }
+
+    .hidden_boxThird {
+        display: none !important;
+    }
+
+
+    .hidden_acordionThird {
+        display: block !important;
+    }
+
+    .slick-slide {
+        text-align: center !important;
+        text-align: -webkit-center !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .adaptiveSix {
+        padding: 0 !important;
+    }
+
+    .css-x7najv-MuiButtonBase-root-MuiButton-root, .css-vobilf {
+        margin-top: 50px !important;
+    }
+
+    .adaptPuz {
+        right: 0 !important;
+        z-index: -1 !important;
+    }
+
+    .slick-slide {
+        text-align: center !important;
+        text-align: -webkit-center !important;
+    }
+
+    .image_main__adaptive {
+        margin-top: 30px !important;
+        transform: scaleX(-1);
+        transform-origin: center;
+        transform-box: fill-box;
+        position: absolute !important;
+        left: 0
+    }
+
+    .fistScreenH5__adaptive {
+        width: 100% !important;
+        font-size: 26px !important;
+    }
+
+    .css-2lyiev {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .fistScreenContainer__adaptive {
+        margin-top: 80px !important;
+    }
+
+    .adaptLicence {
+        justify-content: center !important;
+    }
+
+    .fistScreenBox__adaptive {
+        margin-top: 250px !important;
+        border-radius: 28px !important;
+        height: 100% !important;
+    }
+
+    .fistScreenBoxCard__adaptive {
+        height: 100% !important;
+    }
+
+
+    .circeBtn__adaptive {
+        display: block !important;
+        float: right;
+    }
+
+    .css-10hburv-MuiTypography-root {
+        font-size: 1.5rem !important;
+    }
+
+    .footer__adaptive {
+        height: 500px !important;
+    }
+
+    .adaptiveListFooter1 {
+        /*display: block !important;*/
+        align-items: center;
+    }
+
+    .adaptiveListFooter {
+        width: 200px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        /*text-align: center !important;*/
+        justify-content: center !important;
+    }
+
+    .adaptiveListFooter img {
+        width: 100px !important;
+        height: 100px !important;
+        position: absolute !important;
+        right: -150px !important;
+    }
+
+    /*.css-89cnh7-MuiList-root {*/
+    /*    width: 35% !important;*/
+    /*}*/
+    .MuiContainer-root {
+        width: 90% !important;
+        padding: 0 !important;
+    }
+
+    .css-5rx0g5-MuiContainer-root, .css-1e7l1gf {
+        margin-top: 40% !important;
+    }
+
+    .secondImages img {
+        width: 100% !important;
+
+    }
+
+    .adaptive__link_second {
+        position: absolute;
+        margin-top: 480px;
+    }
+
+    .hidden_boxThird {
+        display: none !important;
+    }
+
+
+    .hidden_acordionThird {
+        display: block !important;
+    }
+
+    .adaptive__rates {
+        width: 100% !important;
+        padding: 0 !important;
+        border-radius: 20px !important;
+    }
+
+    .css-1f3zq2s-MuiTypography-root {
+        font-weight: 900 !important;
+        font-size: 30px !important;
+        line-height: 41px !important;
+    }
+
+    .adaptive__rates_div {
+        padding: 30px !important;
+    }
+
+    .adaptive__rates_div h2 {
+        font-size: 25px !important;
+    }
+
+    .adaptive__rates_div1 {
+        width: unset !important;
+    }
+
+    .adaptive__rates_div1 h2 {
+        font-size: 20px !important;
+    }
+
+    .adaptive__maps {
+        width: 100% !important;
+    }
+
+    .adaptive__reviews_height {
+        height: 600px !important;
+    }
+
+    .css-1160xiw-MuiPaper-root-MuiDrawer-paper, .css-1ab2xsx {
+        width: 318px;
+        height: 549px !important;
+
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25) !important;
+        border-radius: 0px 0px 0px 28px !important;
+    }
+
+    .slick-initialized .slick-slide {
+        padding-top: unset !important;
+    }
+
+    .adaptive__maps_div2 {
+        width: 100%;
+    }
+
+    .adaptive__images_article {
+        width: 100% !important;
+        margin-left: unset !important;
+    }
+
+    .adaptive__circel_article {
+        position: unset !important;
+    }
+
+    .css-19vsqmd, .css-yb0lig {
+        font-size: 22px !important;
+    }
+}
+
+.hidden_acordionThird {
+    display: none;
+}
+
+.MuiTabs-indicator {
+    background: #DB1C1C !important;
+    width: 20px !important;
+    border-radius: 0px 5px 5px 0px;
+    right: auto !important;
+}
+
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root, .css-251er {
+    width: 200px;
+    text-align: start !important;
+}
+
+.css-1ujykiq-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-251er.Mui-selected {
+    color: #DB1C1C !important;
+}
+
+.css-251er {
+    justify-content: start !important;
+    text-align: unset !important;
+    flex-direction: unset !important;
+}
+
+.css-17n50n7-MuiTabs-root {
+    width: 100% !important;
+}
+
+.css-j7qwjs {
+    margin-left: 20px !important;
+}
+
+footer {
+    position: absolute;
+    left: 0 !important;
+    background: linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%);
+    height: 200px;
+    width: 100%;
+}
+
+
+.slick-initialized .slick-slide {
+    padding-top: 50px;
+}
+
+.slick-prev, .slick-next {
+    width: 110px !important;
+    top: unset !important;
+    bottom: -50px !important;
+}
+
+.slick-dots li button:before {
+    color: #DB1C1C !important;
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.textStroke404 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(219, 28, 28, 1);
+    font-family: "Mulish" !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    font-size: 379px !important;
+    line-height: 113.5% !important;
+    letter-spacing: unset !important;
+    color: white;
+}
+
+.css-1anid1y {
+    width: 90% !important;
+}
+
+.hhhh p {
+    text-indent: 50px;
+    margin-top: -20px;
+}
+
+.css-7i2w6c {
+    height: 490px !important;
+}
+
+/*.progressive {*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*}*/
+
+@font-face {
+    font-display: swap !important;
+    font-family: "Mulish" !important;
+}
+
+.loading {
+    filter: blur(10px);
+}
+
+.loaded {
+    filter: blur(0);
+    transition: filter 0.3s linear;
+}
