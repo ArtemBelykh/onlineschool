@@ -37,8 +37,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start:auto": "REACT_APP_TITLE_AUTO='Автошкола «Право на Права»' react-scripts start",
+    "start:plus": "REACT_APP_TITLE_PLUS='Автошкола «Право на Права плюс»' react-scripts start",
     "build": "react-scripts build",
+    "build:auto": "REACT_APP_TITLE_AUTO='Автошкола «Право на Права»' react-scripts build",
+    "build:plus": "REACT_APP_TITLE_PLUS='Автошкола «Право на Права плюс»' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

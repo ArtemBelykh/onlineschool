@@ -4,9 +4,11 @@ import {pages} from "./Navbar";
 import ModalMain from "./ModalMain";
 import {Link as LinkScroll} from "react-scroll/modules";
 import {useNavigate} from "react-router-dom";
+import {useTitle} from "./changeTitle";
 
 const Footer = () => {
     const navigate = useNavigate()
+    const appTitle = useTitle();
     return (
         <>
             <footer className="footer__adaptive" style={{display: "flex", alignItems: "center"}}>
@@ -50,7 +52,7 @@ const Footer = () => {
 
                     <div className="topAdaptiveFooter"
                          style={{textAlign: "center", color: "white", marginTop: "30px"}}>Права защищены
-                        © {new Date().getFullYear()} Автошкола Право на Права
+                        © {new Date().getFullYear()} {appTitle}
                     </div>
                 </Container>
             </footer>

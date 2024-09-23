@@ -7,16 +7,24 @@ import {BrowserRouter} from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
+import {changeTitle, TitleProvider} from './Components/changeTitle';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const titleApp = process.env.REACT_APP_TITLE_AUTO || 'Default Title';
+changeTitle(titleApp);
+
 const isDisable = false;
 root.render(
   <React.StrictMode>
       <BrowserRouter>
+          <TitleProvider title={titleApp}>
           {isDisable ?
-              <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Error, this website don't work </Typography> : <App />}
+              <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Error, this website don't work </Typography> : <App />
+          }
+          </TitleProvider>
       </BrowserRouter>
     
   </React.StrictMode>

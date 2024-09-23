@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import ModalMain from "../ModalMain";
 import {ImageSchool} from "../ImageSchool";
 import {LoadImages} from "../LoadImages";
+import {useTitle} from "../changeTitle";
 
 const styleH5 = {
     width: "80%",
@@ -15,12 +16,13 @@ const styleH5 = {
 }
 
 const FirstScreen = () => {
+    const appTitle = useTitle();
     return (
         <>
             <Container className="fistScreenContainer__adaptive " sx={{marginTop: "120px", height: "100%"}}>
                 <Typography className="fistScreenH5__adaptive" variant="h5" component="h2" sx={styleH5}>Обретите свободу
                     передвижения и юридическое
-                    сопровождение вместе с Автошколой <b style={{color: "#DB1C1C"}}>"Право на Права"!</b></Typography>
+                    сопровождение вместе с <b style={{color: "#DB1C1C"}}>{appTitle}!</b></Typography>
 
 
                 <LoadImages className="image_main__adaptive" src={"/mainIMG.webp"}

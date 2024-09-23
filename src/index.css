@@ -212,7 +212,8 @@
     }
 
     .adaptive__reviews_height {
-        height: 600px !important;
+        height: 700px !important;
+        margin-top: 0 !important;
     }
 
     .css-1160xiw-MuiPaper-root-MuiDrawer-paper, .css-1ab2xsx {
@@ -228,7 +229,8 @@
     }
 
     .adaptive__maps_div2 {
-        width: 100%;
+        /*margin-top: 100px;*/
+        width: 400px;
     }
 
     .adaptive__images_article {
