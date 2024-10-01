@@ -13,8 +13,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const titleApp = process.env.REACT_APP_TITLE_AUTO || 'Default Title';
+const titleApp = process.env.REACT_APP_TITLE || 'Default Title';
 changeTitle(titleApp);
+console.log('Title from environment:', process.env.REACT_APP_TITLE);
 
 const isDisable = false;
 root.render(

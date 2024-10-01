@@ -145,7 +145,7 @@ const CategoryBByi = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            40 000 ₽
+                            43 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -156,7 +156,7 @@ const CategoryBByi = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            37 000 ₽
+                            40 000 ₽
                         </Typography>
                     </div>
                 </div>
