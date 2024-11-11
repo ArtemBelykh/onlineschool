@@ -5,6 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import CategoryBByi from "../Rates/CategoryB.byi";
 import ProfessionalReCertification from "../Rates/ProfessionalReCertification";
+import CategoryBYaroslavl from "../Rates/CategoryB.Yaroslavl";
 
 const Acordion = React.lazy(() => import("../Acordion"))
 
@@ -105,31 +106,37 @@ const ThirdScreen = () => {
                     </Suspense>
                 </TabPanel>
 
-                <TabPanel value={value} index={4}>
+                <TabPanel index={4} value={value}>
                     <Suspense fallback="load">
-                        <AdditionalDriving/>
+                        <CategoryBYaroslavl/>
                     </Suspense>
                 </TabPanel>
 
                 <TabPanel value={value} index={5}>
                     <Suspense fallback="load">
+                        <AdditionalDriving/>
+                    </Suspense>
+                </TabPanel>
+
+                <TabPanel value={value} index={6}>
+                    <Suspense fallback="load">
                         <RecertificationInSchool/>
                     </Suspense>
                 </TabPanel>
 
-                <TabPanel index={6} value={value}>
+                <TabPanel index={7} value={value}>
                     <Suspense fallback="load">
                         <ProfessionalReCertification/>
                     </Suspense>
                 </TabPanel>
 
-                <TabPanel value={value} index={7}>
+                <TabPanel value={value} index={8}>
                     <Suspense fallback="load">
                         <AdditionalLessonInTheory/>
                     </Suspense>
                 </TabPanel>
 
-                <TabPanel value={value} index={8}>
+                <TabPanel value={value} index={9}>
                     <Suspense fallback="load">
                         <RememberEverything/>
                     </Suspense>
@@ -150,11 +157,12 @@ const ThirdScreen = () => {
                     <Tab
                         label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Галич" {...a11yProps(2)} />
                     <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Буй" {...a11yProps(3)} />
-                    <Tab label="Дополнительное занятие по вождению" {...a11yProps(4)} />
-                    <Tab label="Переаттестация после обучения в другой автошколе" {...a11yProps(5)} />
-                    <Tab label="Переаттестация ПРОФ" {...a11yProps(6)} />
-                    <Tab label="Дополнительное занятие по теории" {...a11yProps(7)} />
-                    <Tab label="Вспомнить Всё!" {...a11yProps(8)} />
+                    <Tab label="Категория 'В' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; г. Ярославль" {...a11yProps(4)} />
+                    <Tab label="Дополнительное занятие по вождению" {...a11yProps(5)} />
+                    <Tab label="Переаттестация после обучения в другой автошколе" {...a11yProps(6)} />
+                    <Tab label="Переаттестация ПРОФ" {...a11yProps(7)} />
+                    <Tab label="Дополнительное занятие по теории" {...a11yProps(8)} />
+                    <Tab label="Вспомнить Всё!" {...a11yProps(9)} />
                 </Tabs>
 
             </Box>

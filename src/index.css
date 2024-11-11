@@ -271,6 +271,7 @@
     justify-content: start !important;
     text-align: unset !important;
     flex-direction: unset !important;
+    flex: unset !important;
 }
 
 .css-17n50n7-MuiTabs-root {

@@ -102,18 +102,39 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                             <TextField {...register("email")} type="email" id="standard-basic" label="Email"
                                        variant="standard"/>
 
-                            <InputLabel sx={{
-                                marginLeft: "-32px!important",
-                                marginTop: "5px!important",
-                                marginBottom: "0px!important"
-                            }}>
-                                Дата записи
-                            </InputLabel>
-                            <TextField {...register("dataCurrent")}
-                                       //inputProps={{min: "2023-05-16", max: "2025-05-31"}}
-                                       id="standard-basic"
-                                       type="date"
-                                       variant="standard"/>
+                            {/*<InputLabel sx={{*/}
+                            {/*    marginLeft: "-32px!important",*/}
+                            {/*    marginTop: "5px!important",*/}
+                            {/*    marginBottom: "0px!important"*/}
+                            {/*}}>*/}
+                            {/*    Дата записи*/}
+                            {/*</InputLabel>*/}
+                            {/*<TextField {...register("dataCurrent")}*/}
+                            {/*           //inputProps={{min: "2023-05-16", max: "2025-05-31"}}*/}
+                            {/*           id="standard-basic"*/}
+                            {/*           type="date"*/}
+                            {/*           variant="standard"/>*/}
+
+
+                            <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
+                                <InputLabel id="demo-simple-select-standard-label">Город обучения</InputLabel>
+                                <Select
+                                    {...register("dataCurrent")}
+                                    labelId="demo-simple-select-standard-label"
+                                    id="demo-simple-select-standard"
+                                    value={age}
+                                    onChange={handleChange}
+                                    label="learn"
+                                    sx={{textAlign: "left"}}
+                                >
+                                    <MenuItem value="Ярославль">Ярославль</MenuItem>
+                                    <MenuItem value="Кастрома">Кастрома</MenuItem>
+                                    <MenuItem value="Галич">Галич</MenuItem>
+                                    <MenuItem value="Буй">Буй</MenuItem>
+                                </Select>
+                            </FormControl>
+
+
 
                             <MuiTelInput defaultCountry="RU" {...register("phoneClient", {
                                 maxLength: {value: 16, message: "Введите корректный номер телефона"},
