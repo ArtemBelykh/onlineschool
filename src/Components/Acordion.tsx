@@ -13,6 +13,7 @@ import AdditionalDriving from "./Rates/AdditionalDriving";
 import AdditionalLessonInTheory from "./Rates/AdditionalLessonInTheory";
 import CategoryBByi from "./Rates/CategoryB.byi";
 import ProfessionalReCertification from "./Rates/ProfessionalReCertification";
+import CategoryBYaroslavl from "./Rates/CategoryB.Yaroslavl";
 
 
 const Acordion = () => {
@@ -86,10 +87,10 @@ const Acordion = () => {
                     aria-controls="panel5bh-content"
                     id="panel5bh-header"
                 >
-                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Дополнительное вождение</Typography>
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Категория "В", г. Ярославль</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <AdditionalDriving/>
+                    <CategoryBYaroslavl/>
                 </AccordionDetails>
             </Accordion>
 
@@ -99,10 +100,10 @@ const Acordion = () => {
                     aria-controls="panel6bh-content"
                     id="panel6bh-header"
                 >
-                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Переаттестация после обучения в другой автошколе</Typography>
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Дополнительное вождение</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <RecertificationInSchool/>
+                    <AdditionalDriving/>
                 </AccordionDetails>
             </Accordion>
 
@@ -112,10 +113,10 @@ const Acordion = () => {
                     aria-controls="panel7bh-content"
                     id="panel7bh-header"
                 >
-                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Переаттестация ПРОФ</Typography>
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Переаттестация после обучения в другой автошколе</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <ProfessionalReCertification/>
+                    <RecertificationInSchool/>
                 </AccordionDetails>
             </Accordion>
 
@@ -125,10 +126,10 @@ const Acordion = () => {
                     aria-controls="panel8bh-content"
                     id="panel8bh-header"
                 >
-                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Дополнительное занятие по теории</Typography>
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Переаттестация ПРОФ</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <AdditionalLessonInTheory/>
+                    <ProfessionalReCertification/>
                 </AccordionDetails>
             </Accordion>
 
@@ -137,6 +138,19 @@ const Acordion = () => {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel9bh-content"
                     id="panel9bh-header"
+                >
+                    <Typography sx={{ width: '100%', flexShrink: 0 }}>Дополнительное занятие по теории</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <AdditionalLessonInTheory/>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel10bh-content"
+                    id="panel10bh-header"
                 >
                     <Typography sx={{ width: '100%', flexShrink: 0 }}>Вспомнить Всё!</Typography>
                 </AccordionSummary>
