@@ -3,20 +3,21 @@
   "name": "Автошкола «Право на Права»",
   "icons": [
     {
-      "src": "/public/favicon.ico",
+      "src": "/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "/public/logoMain.jpg",
+      "src": "/logoMain.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/public/logoMain.jpg",
+      "src": "/logoMain.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
+
   ],
   "start_url": ".",
   "display": "standalone",
