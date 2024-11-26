@@ -33,14 +33,30 @@ root.render(
 
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-        .register('/sw.js')
-        .then((registration) => {
-            console.log('Service Worker registered:', registration);
-        })
-        .catch((error) => {
-            console.error('Service Worker registration failed:', error);
-        });
+    navigator.serviceWorker.register('/sw.js').then((registration) => {
+        console.log('Service Worker registered with scope:', registration.scope);
+
+        registration.onupdatefound = () => {
+            const installingWorker = registration.installing;
+            if (installingWorker) {
+                installingWorker.onstatechange = () => {
+                    if (installingWorker.state === 'installed') {
+                        if (navigator.serviceWorker.controller) {
+                            // Новая версия доступна, показываем уведомление или перезагружаем
+                            console.log('New content is available; please refresh.');
+                            if (confirm('Обновление доступно. Обновить страницу?')) {
+                                window.location.reload();
+                            }
+                        } else {
+                            console.log('Content is cached for offline use.');
+                        }
+                    }
+                };
+            }
+        };
+    }).catch((error) => {
+        console.error('Service Worker registration failed:', error);
+    });
 }
 
 
