@@ -128,7 +128,7 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                     sx={{textAlign: "left"}}
                                 >
                                     <MenuItem value="Ярославль">Ярославль</MenuItem>
-                                    <MenuItem value="Кастрома">Кастрома</MenuItem>
+                                    <MenuItem value="Кастрома">Кострома</MenuItem>
                                     <MenuItem value="Галич">Галич</MenuItem>
                                     <MenuItem value="Буй">Буй</MenuItem>
                                 </Select>
