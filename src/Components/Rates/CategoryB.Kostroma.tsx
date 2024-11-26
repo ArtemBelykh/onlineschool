@@ -4,6 +4,7 @@ import {Typography} from "@mui/material";
 import {styleBox, styleTitle} from "./styles";
 import ModalMain from "../ModalMain";
 
+console.log('123')
 
 const CategoryBKostroma = () => {
     return (
