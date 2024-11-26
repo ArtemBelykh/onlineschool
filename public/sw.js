@@ -1,10 +1,6 @@
 self.addEventListener('install', (event) => {
     console.log('[Service Worker] Installing...');
-    event.waitUntil(
-        caches.open('app-cache').then((cache) => {
-            return cache.addAll(['/']); // Кэшируем только начальную страницу
-        })
-    );
+    self.skipWaiting(); // Немедленно активируем новый SW
 });
 
 self.addEventListener('activate', (event) => {
@@ -21,6 +17,7 @@ self.addEventListener('activate', (event) => {
             );
         })
     );
+    self.clients.claim(); // Немедленно берем контроль над страницами
 });
 
 self.addEventListener('fetch', (event) => {
