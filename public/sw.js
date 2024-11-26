@@ -1,10 +1,10 @@
-const CACHE_NAME = 'app-cache-v2'; // Уникальное имя кэша
+const CACHE_NAME = 'app-cache-v2';
+const urlsToCache = ['/', '/index.html', '/static/js/main.js']; // Добавьте сюда необходимые файлы
 
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
-            console.log('[Service Worker] Caching new resources');
-            return cache.addAll(['/']);
+            return cache.addAll(urlsToCache);
         })
     );
 });
@@ -15,15 +15,17 @@ self.addEventListener('activate', (event) => {
             return Promise.all(
                 cacheNames.map((cache) => {
                     if (cache !== CACHE_NAME) {
-                        console.log('[Service Worker] Deleting old cache:', cache);
                         return caches.delete(cache);
                     }
                 })
             );
         })
     );
+
+    // Принудительная активация нового Service Worker
     self.clients.claim();
 });
+
 
 
 self.addEventListener('fetch', (event) => {
