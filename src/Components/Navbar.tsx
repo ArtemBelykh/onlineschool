@@ -78,6 +78,8 @@ const Navbar = () => {
                                 }}>
                                     <Link sx={{color: "black", textDecoration: "none"}} href={"tel:+7 (8142) 33 22 11"}>+7
                                         (910) 801-96-91</Link>
+
+                                    <Link href={"mailto:pravo_na_prava44@mail.ru"}>pravo_na_prava44@mail.ru</Link>
                                 </Typography>
                                 <ModalMain styleBtn={{
                                     marginLeft: "auto",
