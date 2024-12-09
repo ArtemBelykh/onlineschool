@@ -11,6 +11,7 @@ import {Link as LinkScroll} from "react-scroll";
 
 import {Link as NavLinks, useNavigate} from "react-router-dom";
 import ModalMain from "./ModalMain";
+import { Analytics } from "@vercel/analytics/react"
 
 export const pages = [{title: "О школе", tags: "about", link: "/about"}, {
     title: "Тарифы",
@@ -32,6 +33,8 @@ const Navbar = () => {
         <React.Fragment>
             <AppBar sx={{background: "white"}}>
                 <Container>
+
+                    <Analytics />
 
                     <Toolbar>
                         <NavLinks to="/">

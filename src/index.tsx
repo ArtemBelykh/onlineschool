@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
 import {changeTitle, TitleProvider} from './Components/changeTitle';
-import { Analytics } from "@vercel/analytics/react"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -22,7 +21,6 @@ const isDisable = false;
 root.render(
   <React.StrictMode>
       <BrowserRouter>
-          <Analytics />
           <TitleProvider title={titleApp}>
           {isDisable ?
               <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Error, this website don't work </Typography> : <App />
