@@ -18,15 +18,16 @@ self.addEventListener('activate', (event) => {
             return Promise.all(
                 cacheNames.map((cache) => {
                     if (cache !== CACHE_NAME) {
-                        console.log('[Service Worker] Deleting old cache:', cache);
+                        console.log('[Service Worker] Clearing old cache:', cache);
                         return caches.delete(cache);
                     }
                 })
             );
-        })
+        }).then(() => self.clients.claim())
     );
-    self.clients.claim();
+    console.log('[Service Worker] Activated and ready to control all clients.');
 });
+
 
 // Обработка запросов
 self.addEventListener('fetch', (event) => {
