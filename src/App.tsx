@@ -27,7 +27,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<StartMain/>}/>
                 <Route path="/license" element={<Suspense fallback={<Loading/>}><LicensePages/></Suspense>}/>
-                {/*<Route path="*" element={<Suspense fallback={<Loading/>}><NotFoundPages/></Suspense>}/>*/}
+                <Route path="*" element={<Suspense fallback={<Loading/>}><NotFoundPages/></Suspense>}/>
 
                 <Route path="/article/How-to-save-money"
                        element={<Suspense fallback={<Loading/>}><HowToSaveMoneyArticle/></Suspense>}/>
