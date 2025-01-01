@@ -109,7 +109,7 @@ const AdditionalDriving = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            2 000 ₽
+                            2 700 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -120,7 +120,7 @@ const AdditionalDriving = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            1 700 ₽
+                            2 000 ₽
                         </Typography>
                     </div>
 

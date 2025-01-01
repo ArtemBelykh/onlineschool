@@ -14,7 +14,8 @@ const CategoryBKostroma = () => {
                     Категория “В”
                 </Typography>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "400px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "400px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -38,7 +39,8 @@ const CategoryBKostroma = () => {
 
                 </div>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -61,7 +63,8 @@ const CategoryBKostroma = () => {
                     </Typography>
                 </div>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "390px", marginTop: "16px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "390px", marginTop: "16px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -85,7 +88,7 @@ const CategoryBKostroma = () => {
                 </div>
 
 
-                <div style={{display: "flex", alignItems: "center", marginTop: "45px"}} >
+                <div style={{display: "flex", alignItems: "center", marginTop: "45px"}}>
                     <div><img style={{width: "100%", height: "100%"}} src="/symbol.png" alt="symbol"/></div>
 
                     <Typography sx={{
@@ -97,7 +100,7 @@ const CategoryBKostroma = () => {
                         color: "#000000",
                         marginLeft: "14px"
                     }} variant="h6" component="h2">
-                         Всего 195 часов обучения
+                        Всего 195 часов обучения
                     </Typography>
                 </div>
 
@@ -121,7 +124,13 @@ const CategoryBKostroma = () => {
                 <hr style={{border: "1px solid #DB241C", marginBottom: "54px"}}/>
 
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "450px", alignItems: "center", marginBottom: "37px"}} className="adaptive__rates_div1">
+                <div style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "450px",
+                    alignItems: "center",
+                    marginBottom: "37px"
+                }} className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -132,7 +141,6 @@ const CategoryBKostroma = () => {
                     }} variant="h6" component="h2">
                         Стоимость
                     </Typography>
-
 
 
                     <div style={{marginTop: "-30px", textAlign: "end"}}>
@@ -146,7 +154,7 @@ const CategoryBKostroma = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            34 000 ₽
+                            38 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -157,11 +165,16 @@ const CategoryBKostroma = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            31 000 ₽
+                            35 000 ₽
                         </Typography>
                     </div>
                 </div>
-                <ModalMain styleBtn={{background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)", borderRadius: "23px", width: "100%", height: "73px"}} variantBtn="contained"
+                <ModalMain styleBtn={{
+                    background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                    borderRadius: "23px",
+                    width: "100%",
+                    height: "73px"
+                }} variantBtn="contained"
                            titleBtn="Записаться на обучение"/>
             </div>
         </Box>

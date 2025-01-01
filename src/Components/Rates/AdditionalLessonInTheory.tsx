@@ -12,7 +12,8 @@ const AdditionalLessonInTheory = () => {
                     Дополнительное занятие по теории
                 </Typography>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "400px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "400px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -36,7 +37,8 @@ const AdditionalLessonInTheory = () => {
 
                 </div>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "365px", marginTop: "43px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -59,7 +61,8 @@ const AdditionalLessonInTheory = () => {
                     </Typography>
                 </div>
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "380px", marginTop: "16px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", justifyContent: "space-between", width: "380px", marginTop: "16px"}}
+                     className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -83,7 +86,8 @@ const AdditionalLessonInTheory = () => {
                 </div>
 
 
-                <div style={{display: "flex", alignItems: "center", marginTop: "45px", marginBottom: "53px"}} className="adaptive__rates_div1">
+                <div style={{display: "flex", alignItems: "center", marginTop: "45px", marginBottom: "53px"}}
+                     className="adaptive__rates_div1">
                     <div><img style={{width: "100%", height: "100%"}} src="/symbol.png" alt="symbol"/></div>
 
                     <Typography sx={{
@@ -103,7 +107,13 @@ const AdditionalLessonInTheory = () => {
                 <hr style={{border: "1px solid #DB241C", marginBottom: "54px"}}/>
 
 
-                <div style={{display: "flex", justifyContent: "space-between", width: "450px", alignItems: "center", marginBottom: "37px"}} className="adaptive__rates_div1">
+                <div style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "450px",
+                    alignItems: "center",
+                    marginBottom: "37px"
+                }} className="adaptive__rates_div1">
                     <Typography sx={{
                         fontFamily: "Mulish",
                         fontStyle: "normal",
@@ -114,7 +124,6 @@ const AdditionalLessonInTheory = () => {
                     }} variant="h6" component="h2">
                         Стоимость
                     </Typography>
-
 
 
                     <div style={{marginTop: "-30px", textAlign: "end"}}>
@@ -128,7 +137,7 @@ const AdditionalLessonInTheory = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            2 000 ₽
+                            2 800 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -139,14 +148,18 @@ const AdditionalLessonInTheory = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            1 200 ₽
+                            2 000 ₽
                         </Typography>
                     </div>
 
 
-
                 </div>
-                <ModalMain styleBtn={{background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)", borderRadius: "23px", width: "100%", height: "73px"}} variantBtn="contained"
+                <ModalMain styleBtn={{
+                    background: "linear-gradient(180deg, #FF6B00 0%, #DB1C1C 100%)",
+                    borderRadius: "23px",
+                    width: "100%",
+                    height: "73px"
+                }} variantBtn="contained"
                            titleBtn="Записаться на обучение"/>
             </div>
         </Box>
