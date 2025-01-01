@@ -11,7 +11,6 @@ self.addEventListener('install', (event) => {
     );
 });
 
-// Удаляем старые кэши при активации нового Service Worker
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => {
@@ -25,37 +24,27 @@ self.addEventListener('activate', (event) => {
             );
         })
     );
-    self.clients.claim(); // Активируем новый Service Worker для всех клиентов
+    return self.clients.claim(); // Перехватываем все клиенты
 });
 
 // Обработка запросов
 self.addEventListener('fetch', (event) => {
-    if (event.request.mode === 'navigate') {
-        // Для запросов на страницы (React Router)
-        event.respondWith(
-            caches.match('/index.html').then((cachedResponse) => {
-                return (
-                    cachedResponse ||
-                    fetch(event.request).catch(() => {
-                        console.error('[Service Worker] Network request failed.');
-                    })
-                );
-            })
-        );
-    } else {
-        // Для остальных ресурсов
-        event.respondWith(
-            caches.match(event.request).then((cachedResponse) => {
-                return (
-                    cachedResponse ||
-                    fetch(event.request).then((networkResponse) => {
-                        return caches.open(CACHE_NAME).then((cache) => {
-                            cache.put(event.request, networkResponse.clone());
-                            return networkResponse;
-                        });
-                    })
-                );
-            })
-        );
+    const url = new URL(event.request.url);
+
+    // Игнорируем запросы к файлам .pdf
+    if (url.pathname.endsWith('.pdf')) {
+        return; // Пропускаем обработку
     }
+
+    // Обычная обработка запросов
+    event.respondWith(
+        caches.match(event.request).then((response) => {
+            return response || fetch(event.request).then((networkResponse) => {
+                return caches.open(CACHE_NAME).then((cache) => {
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse;
+                });
+            });
+        })
+    );
 });
