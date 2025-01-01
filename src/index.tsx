@@ -33,26 +33,14 @@ root.render(
 
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then((registration) => {
-        console.log('Service Worker registered with scope:', registration.scope);
-
-        // Следим за обновлениями
-        registration.onupdatefound = () => {
-            const installingWorker = registration.installing;
-            if (installingWorker) {
-                installingWorker.onstatechange = () => {
-                    if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                        console.log('New content is available; updating silently...');
-                        installingWorker.postMessage({ action: 'skipWaiting' });
-                        window.location.reload(); // Автоматическое обновление
-                    }
-                };
-            }
-        };
-    }).catch((error) => {
-        console.error('Service Worker registration failed:', error);
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+        registrations.forEach((registration) => {
+            registration.unregister();
+        });
+        console.log('All service workers unregistered.');
     });
 }
+
 
 
 
