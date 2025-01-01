@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/(.*)\\.(pdf|jpg|jpeg|png|gif|ico|css|js|woff2?|eot|ttf|otf|svg)$",
+      "destination": "/public/$1.$2"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
