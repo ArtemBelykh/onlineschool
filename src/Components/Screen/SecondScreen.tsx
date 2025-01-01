@@ -63,7 +63,7 @@ const SecondScreen = () => {
                         lineHeight: "25px",
                         color: "#DB241C",
                         textDecoration: "none"
-                    }} to={'/license_doc'}>Правоустанавливающие документы</Link>
+                    }} to={'/license'}>Правоустанавливающие документы</Link>
 
                 </div>
             </div>
