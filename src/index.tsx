@@ -32,18 +32,6 @@ root.render(
 );
 
 
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistrations().then((registrations) => {
-        registrations.forEach((registration) => {
-            registration.unregister();
-        });
-        console.log('All service workers unregistered.');
-    });
-}
-
-
-
-
 
 
 // If you want to start measuring performance in your app, pass a function
