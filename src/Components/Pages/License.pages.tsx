@@ -35,14 +35,14 @@ const LicensePages = () => {
 
 
             <Box className="adaptLicence" sx={{display: "flex", justifyContent: "space-between", marginTop: "30px", flexWrap: "wrap" }}>
-                <ModalAssets img="/license/ExtractFromTheRegisterOfLicensesNo_02_21_001.jpg" img2="/license/ExtractFromTheRegisterOfLicensesNo_02_21_002.jpg" isPdf={true}/>
-                <ModalAssets img="/license/2.jpg"/>
-                <ModalAssets img="/license/3.jpg"/>
+                <ModalAssets img="/license_doc/ExtractFromTheRegisterOfLicensesNo_02_21_001.jpg" img2="/license_doc/ExtractFromTheRegisterOfLicensesNo_02_21_002.jpg" isPdf={true}/>
+                <ModalAssets img="/license_doc/2.jpg"/>
+                <ModalAssets img="/license_doc/3.jpg"/>
                 
-                <ModalAssets img="/license/docSchool1.jpg"/>
-                <ModalAssets img="/license/docSchool2.jpg"/>
-                <ModalAssets img="/license/docSchool3.jpg"/>
-                <ModalAssets img="/license/schoolR.jpg"/>
+                <ModalAssets img="/license_doc/docSchool1.jpg"/>
+                <ModalAssets img="/license_doc/docSchool2.jpg"/>
+                <ModalAssets img="/license_doc/docSchool3.jpg"/>
+                <ModalAssets img="/license_doc/schoolR.jpg"/>
             </Box>
 
 
