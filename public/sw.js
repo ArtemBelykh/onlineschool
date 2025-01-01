@@ -30,35 +30,35 @@ self.addEventListener('activate', (event) => {
 
 // Обработка запросов
 self.addEventListener('fetch', (event) => {
+    const url = new URL(event.request.url);
+
+    // Исключаем PDF-файлы и другие статические файлы из обработки
+    if (url.pathname.endsWith('.pdf') || url.pathname.endsWith('.docx') || url.pathname.endsWith('.xlsx')) {
+        return; // Пропускаем обработку, чтобы запрос шел напрямую к серверу
+    }
+
     if (event.request.mode === 'navigate') {
-        // Для запросов на страницы (например, React Router)
+        // Для запросов на страницы
         event.respondWith(
             caches.match('/index.html').then((cachedResponse) => {
-                return (
-                    cachedResponse ||
-                    fetch(event.request).catch(() => {
-                        console.error('[Service Worker] Network request failed.');
-                    })
-                );
+                return cachedResponse || fetch(event.request);
             })
         );
     } else {
-        // Для остальных ресурсов
+        // Для остальных запросов
         event.respondWith(
             caches.match(event.request).then((cachedResponse) => {
-                return (
-                    cachedResponse ||
-                    fetch(event.request).then((networkResponse) => {
-                        return caches.open(CACHE_NAME).then((cache) => {
-                            cache.put(event.request, networkResponse.clone());
-                            return networkResponse;
-                        });
-                    })
-                );
+                return cachedResponse || fetch(event.request).then((networkResponse) => {
+                    return caches.open(CACHE_NAME).then((cache) => {
+                        cache.put(event.request, networkResponse.clone());
+                        return networkResponse;
+                    });
+                });
             })
         );
     }
 });
+
 
 self.addEventListener('message', (event) => {
     if (event.data && event.data.action === 'skipWaiting') {
