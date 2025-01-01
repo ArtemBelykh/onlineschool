@@ -1,4 +1,4 @@
-const CACHE_NAME = 'app-cache-v3'; // Уникальное имя кэша
+const CACHE_NAME = 'app-cache-v4'; // Уникальное имя кэша
 const urlsToCache = ['/', '/index.html']; // Кэшируем главную страницу и базовый ресурс
 
 // Устанавливаем Service Worker и кэшируем ресурсы
@@ -11,6 +11,7 @@ self.addEventListener('install', (event) => {
     );
 });
 
+// Удаляем старые кэши при активации нового Service Worker
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => {
@@ -24,27 +25,43 @@ self.addEventListener('activate', (event) => {
             );
         })
     );
-    return self.clients.claim(); // Перехватываем все клиенты
+    return self.clients.claim(); // Автоматически активируем новый Service Worker
 });
 
 // Обработка запросов
 self.addEventListener('fetch', (event) => {
-    const url = new URL(event.request.url);
-
-    // Игнорируем запросы к файлам .pdf
-    if (url.pathname.endsWith('.pdf')) {
-        return; // Пропускаем обработку
+    if (event.request.mode === 'navigate') {
+        // Для запросов на страницы (например, React Router)
+        event.respondWith(
+            caches.match('/index.html').then((cachedResponse) => {
+                return (
+                    cachedResponse ||
+                    fetch(event.request).catch(() => {
+                        console.error('[Service Worker] Network request failed.');
+                    })
+                );
+            })
+        );
+    } else {
+        // Для остальных ресурсов
+        event.respondWith(
+            caches.match(event.request).then((cachedResponse) => {
+                return (
+                    cachedResponse ||
+                    fetch(event.request).then((networkResponse) => {
+                        return caches.open(CACHE_NAME).then((cache) => {
+                            cache.put(event.request, networkResponse.clone());
+                            return networkResponse;
+                        });
+                    })
+                );
+            })
+        );
     }
+});
 
-    // Обычная обработка запросов
-    event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request).then((networkResponse) => {
-                return caches.open(CACHE_NAME).then((cache) => {
-                    cache.put(event.request, networkResponse.clone());
-                    return networkResponse;
-                });
-            });
-        })
-    );
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.action === 'skipWaiting') {
+        self.skipWaiting();
+    }
 });
