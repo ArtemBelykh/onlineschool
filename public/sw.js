@@ -1,7 +1,7 @@
 const CACHE_NAME = 'app-cache-v4'; // Уникальное имя кэша
-const urlsToCache = ['/', '/index.html']; // Кэшируем главную страницу и базовый ресурс
+const urlsToCache = ['/', '/index.html'];
 
-// Устанавливаем Service Worker и кэшируем ресурсы
+// Установка Service Worker
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
@@ -11,7 +11,7 @@ self.addEventListener('install', (event) => {
     );
 });
 
-// Удаляем старые кэши при активации нового Service Worker
+// Активация Service Worker и удаление старых кэшей
 self.addEventListener('activate', (event) => {
     event.waitUntil(
         caches.keys().then((cacheNames) => {
@@ -25,34 +25,22 @@ self.addEventListener('activate', (event) => {
             );
         })
     );
-    return self.clients.claim(); // Автоматически активируем новый Service Worker
+    self.clients.claim();
 });
 
 // Обработка запросов
 self.addEventListener('fetch', (event) => {
-    const url = new URL(event.request.url);
-
-    // Пропускаем запросы к статическим файлам
-    if (url.pathname.endsWith('.pdf') || url.pathname.endsWith('.jpg') || url.pathname.endsWith('.png')) {
-        return; // Пропускаем обработку
-    }
-
     event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request).then((networkResponse) => {
-                return caches.open(CACHE_NAME).then((cache) => {
-                    cache.put(event.request, networkResponse.clone());
-                    return networkResponse;
-                });
-            });
+        caches.match(event.request).then((cachedResponse) => {
+            return (
+                cachedResponse ||
+                fetch(event.request).then((networkResponse) => {
+                    return caches.open(CACHE_NAME).then((cache) => {
+                        cache.put(event.request, networkResponse.clone());
+                        return networkResponse;
+                    });
+                })
+            );
         })
     );
-});
-
-
-
-self.addEventListener('message', (event) => {
-    if (event.data && event.data.action === 'skipWaiting') {
-        self.skipWaiting();
-    }
 });
