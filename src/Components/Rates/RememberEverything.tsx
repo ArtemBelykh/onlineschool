@@ -144,7 +144,7 @@ const RememberEverything = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            9 000 ₽
+                            11 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -155,7 +155,7 @@ const RememberEverything = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            7 000 ₽
+                            9 000 ₽
                         </Typography>
                     </div>
 
