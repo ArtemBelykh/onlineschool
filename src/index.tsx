@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
 import {changeTitle, TitleProvider} from './Components/changeTitle';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,14 +18,19 @@ const titleApp = process.env.REACT_APP_TITLE || 'Default Title';
 changeTitle(titleApp);
 console.log('Title from environment:', process.env.REACT_APP_TITLE);
 
-const isDisable = process.env.REACT_APP_DISABLE_SITE === 'true';
+const isDisable = false
+
 root.render(
   <React.StrictMode>
       <BrowserRouter>
           <TitleProvider title={titleApp}>
-          {isDisable ?
-              <Typography variant="h1" component="h1" sx={{textAlign: "center"}}>Error, this website don't work </Typography> : <App />
-          }
+              {isDisable ? (
+                  <Typography variant="h1" component="h1" sx={{ textAlign: "center" }}>
+                      Error, this website don't work
+                  </Typography>
+              ) : (
+                  <App />
+              )}
           </TitleProvider>
       </BrowserRouter>
     
