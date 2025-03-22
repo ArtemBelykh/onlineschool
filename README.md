@@ -1,28 +1,31 @@
 # OnlineSchool
 
----
-
-**OnlineSchool** is a comprehensive platform designed for managing and delivering online education. It provides a seamless experience for students, teachers, and administrators with powerful tools and intuitive interfaces.
+**OnlineSchool** is a modern educational platform designed to facilitate online learning for driving schools. It provides a convenient and interactive experience for both students and instructors.
 
 ## Features
-- **Course Management**: Create, edit, and manage courses with ease.
-- **Student & Teacher Portals**: Separate interfaces tailored to the needs of students and teachers.
-- **Live Classes**: Conduct and attend live classes with real-time interaction.
-- **Assignments & Assessments**: Manage assignments, track submissions, and evaluate performance.
-- **Payment Integration**: Support for multiple payment gateways.
-- **Admin Dashboard**: Monitor platform activity, generate reports, and manage users.
+- **Custom Branding**: Supports multiple school brands like "Автошкола «Право на Права»" and "Автошкола «Право на Права плюс»".
+- **Course Management**: Manage lessons, schedules, and materials efficiently.
+- **Student Portal**: Track progress, view schedules, and submit assignments.
+- **Admin Dashboard**: Monitor school performance with comprehensive analytics.
+- **Interactive Maps**: Integrated Yandex Maps for easy location management.
+- **Form Management**: Handle data input using React Hook Form and Masked Inputs.
+- **PDF Generation**: Generate reports and certificates using React PDF Renderer.
+- **Modern UI**: Powered by Material UI with customizable themes.
 
 ## Tech Stack
-- **Backend**: NestJS
-- **Frontend**: React with Material UI
-- **Database**: PostgreSQL
-- **Admin Panel**: Ant Design
-- **Authentication**: JWT
+- **Frontend**: React 18, React Router, React Scroll
+- **UI Components**: Material UI, Styled Components
+- **Forms**: React Hook Form, IMask
+- **Maps**: Yandex Maps Integration
+- **PDF Generation**: React PDF Renderer
+- **State Management**: React Hooks
+- **Animations**: React Spring
+- **Testing**: Jest, React Testing Library
 
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/onlineschool.git
+    git clone https://github.com/ArtemBelykh/onlineschool.git
     ```  
 2. Install dependencies:
     ```bash
@@ -30,16 +33,20 @@
     npm install
     ```  
 3. Configure environment variables:  
-   Create a `.env` file using the `.env.example` template and add necessary configurations.
+   Create a `.env` file using the `.env.example` template and set your desired variables.
 
-4. Start the application:
+4. Start the application for a specific school:
     ```bash
-    npm run start:dev
+    npm run start:auto   # For 'Автошкола «Право на Права»'
+    npm run start:plus   # For 'Автошкола «Право на Права плюс»'
     ```  
 
+## Build
+To build the application for deployment:
+```bash
+npm run build:auto
+npm run build:plus
+```  
+
 ## Contribution
-Contributions are welcome! Please submit a pull request or open an issue for discussions.
-
----
-
-Let me know if you'd like any adjustments.
+We welcome contributions! Please submit issues, suggestions, or pull requests through the GitHub repository.
