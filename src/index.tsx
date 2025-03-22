@@ -17,7 +17,7 @@ const titleApp = process.env.REACT_APP_TITLE || 'Default Title';
 changeTitle(titleApp);
 console.log('Title from environment:', process.env.REACT_APP_TITLE);
 
-const isDisable = process.env.DISABLE_SITE === 'true';
+const isDisable = process.env.REACT_APP_DISABLE_SITE === 'true';
 root.render(
   <React.StrictMode>
       <BrowserRouter>
