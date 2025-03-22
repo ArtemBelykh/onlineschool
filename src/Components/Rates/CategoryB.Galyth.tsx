@@ -142,7 +142,7 @@ const CategoryBGalyth = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            48 000 ₽
+                            53 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -153,7 +153,7 @@ const CategoryBGalyth = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            45 000 ₽
+                            50 000 ₽
                         </Typography>
                     </div>
 
