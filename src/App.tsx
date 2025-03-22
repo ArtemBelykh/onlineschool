@@ -2,6 +2,7 @@ import React, {Suspense} from 'react'
 import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Loading from "./Components/Loading";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const Navbar = React.lazy(() => import("./Components/Navbar"))
 const Footer = React.lazy(() => import("./Components/Footer"))
@@ -51,6 +52,9 @@ function App() {
             <Suspense>
                 <Footer/>
             </Suspense>
+
+
+            <SpeedInsights />
 
 
         </>

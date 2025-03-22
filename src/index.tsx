@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Typography from "@mui/material/Typography";
 import {changeTitle, TitleProvider} from './Components/changeTitle';
-import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
