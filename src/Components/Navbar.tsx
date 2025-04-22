@@ -11,7 +11,7 @@ import {Link as LinkScroll} from "react-scroll";
 
 import {Link as NavLinks, useNavigate} from "react-router-dom";
 import ModalMain from "./ModalMain";
-import { Analytics } from "@vercel/analytics/react"
+import {Analytics} from "@vercel/analytics/react"
 
 export const pages = [{title: "О школе", tags: "about", link: "/about"}, {
     title: "Тарифы",
@@ -34,11 +34,12 @@ const Navbar = () => {
             <AppBar sx={{background: "white"}}>
                 <Container>
 
-                    <Analytics />
+                    <Analytics/>
 
                     <Toolbar>
                         <NavLinks to="/">
-                            <img width="50" height="50" style={{borderRadius: "50%"}} src="/favicon-32x32.png" alt="favicon-32x32"/>
+                            <img width="50" height="50" style={{borderRadius: "50%"}} src="/favicon-32x32.png"
+                                 alt="favicon-32x32"/>
                         </NavLinks>
                         {isMatch ? (
                             <>
@@ -79,10 +80,11 @@ const Navbar = () => {
                                     fontWeight: "200",
                                     fontSize: "17px"
                                 }}>
-                                    <Link  sx={{color: "black", textDecoration: "none"}} href={"tel:+7 (8142) 33 22 11"}>+7
+                                    <Link sx={{color: "black", textDecoration: "none"}} href={"tel:+7 (910) 801-96-91"}>+7
                                         (910) 801-96-91</Link>
 
-                                    <Link sx={{color: "black", textDecoration: "none", marginLeft: "10px"}} href={"mailto:pravo_na_prava44@mail.ru"}>Напишите нам</Link>
+                                    <Link sx={{color: "black", textDecoration: "none", marginLeft: "10px"}}
+                                          href={"mailto:pravo_na_prava44@mail.ru"}>Напишите нам</Link>
                                 </Typography>
                                 <ModalMain styleBtn={{
                                     marginLeft: "auto",
