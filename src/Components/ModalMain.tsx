@@ -40,11 +40,12 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     const {register, handleSubmit, formState: {errors}, reset} = useForm();
 
 
-    const [age, setAge] = React.useState('');
-
-    const handleChange = (event: SelectChangeEvent) => {
-        setAge(event.target.value);
-    };
+    const [city, setCity] = React.useState('');
+    const [formState, setFormState] = React.useState("");
+    // const handleChange = (event: SelectChangeEvent) => {
+    //     setCity(event.target.value);
+    //     setFormState(event.target.value);
+    // };
 
     async function onSubmit(data: any) {
         reset()
@@ -66,6 +67,15 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
     const handleChangePhone = (newValue: any) => {
         setValue(newValue)
     }
+
+    const handleChangeCity = (event: SelectChangeEvent) => {
+        setCity(event.target.value);
+    };
+
+    const handleChangeFormState = (event: SelectChangeEvent) => {
+        setFormState(event.target.value);
+    };
+
 
 
     return (
@@ -122,8 +132,8 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
                                     {...register("dataCurrent")}
                                     labelId="demo-simple-select-standard-label"
                                     id="demo-simple-select-standard"
-                                    value={age}
-                                    onChange={handleChange}
+                                    value={city}
+                                    onChange={handleChangeCity}
                                     label="learn"
                                     sx={{textAlign: "left"}}
                                 >
@@ -147,14 +157,14 @@ const ModalMain = ({styleBtn, variantBtn, colorBtn, titleBtn}: IModalMain) => {
 
 
                             <FormControl variant="standard" sx={{m: 1, minWidth: 120}}>
-                                <InputLabel id="demo-simple-select-standard-label">Форма обучения</InputLabel>
+                                <InputLabel id="demo-simple-select-standard-label1">Форма обучения</InputLabel>
                                 <Select
                                     {...register("formsLearnClient")}
-                                    labelId="demo-simple-select-standard-label"
-                                    id="demo-simple-select-standard"
-                                    value={age}
-                                    onChange={handleChange}
-                                    label="learn"
+                                    labelId="demo-simple-select-standard-label1"
+                                    id="demo-simple-select-standard2"
+                                    value={formState}
+                                    onChange={handleChangeFormState}
+                                    label="learn1"
                                     sx={{textAlign: "left"}}
                                 >
                                     <MenuItem value="Дистанционное обучение">Дистанционное обучение</MenuItem>
