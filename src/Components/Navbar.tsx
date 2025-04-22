@@ -80,7 +80,7 @@ const Navbar = () => {
                                     fontWeight: "200",
                                     fontSize: "17px"
                                 }}>
-                                    <Link sx={{color: "black", textDecoration: "none"}} href={"tel:+7 (910) 801-96-91"}>+7
+                                    <Link sx={{color: "black", textDecoration: "none"}} href={"tel:+79108019691"}>+7
                                         (910) 801-96-91</Link>
 
                                     <Link sx={{color: "black", textDecoration: "none", marginLeft: "10px"}}
