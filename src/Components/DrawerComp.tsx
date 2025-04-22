@@ -48,7 +48,7 @@ const DrawerComp = () => {
                     ))}
                     <ListItemText sx={{marginTop: "30px"}}><Link
                         sx={{color: "rgba(0, 0, 0, 0.54)", textDecoration: "none", paddingLeft: "50px"}}
-                        href={"tel:+7 (8142) 33 22 11"}>+7
+                        href={"tel:+79108019691"}>+7
                         (910) 801-96-91</Link></ListItemText>
                 </List>
             </Drawer>
@@ -67,7 +67,7 @@ const DrawerComp = () => {
                     fontSize: "17px"
                 }}>
                     <Link sx={{color: "black", textDecoration: "none", marginRight: "20px"}}
-                          href={"tel:+7 (8142) 33 22 11"}>+7 (910) 801-96-91</Link>
+                          href={"tel:+79108019691"}>+7 (910) 801-96-91</Link>
                 </Typography>
                 <MenuIcon/>
             </IconButton>
