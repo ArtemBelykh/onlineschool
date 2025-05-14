@@ -154,7 +154,7 @@ const CategoryBKostroma = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            38 000 ₽
+                            40 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -165,7 +165,7 @@ const CategoryBKostroma = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            35 000 ₽
+                            37 000 ₽
                         </Typography>
                     </div>
                 </div>

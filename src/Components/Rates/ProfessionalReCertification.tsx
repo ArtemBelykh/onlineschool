@@ -128,7 +128,7 @@ const ProfessionalReCertification = () => {
                             textTransform: "uppercase",
                             textDecorationLine: "line-through"
                         }} variant="h6" component="h2">
-                            25 000 ₽
+                            27 000 ₽
                         </Typography>
                         <Typography sx={{
                             fontFamily: "Mulish",
@@ -139,7 +139,7 @@ const ProfessionalReCertification = () => {
                             color: "#000000",
                             textTransform: "uppercase"
                         }} variant="h6" component="h2">
-                            22 000 ₽
+                            24 000 ₽
                         </Typography>
                     </div>
 
