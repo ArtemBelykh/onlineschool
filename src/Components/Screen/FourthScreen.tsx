@@ -82,7 +82,7 @@ const FourthScreen = () => {
     };
     return (
         <Container id="articles"
-                   sx={{width: "65%", marginTop: "70px", height: window.screen.width < 900 ? "700px" : "650px"}}>
+                   sx={{width: "60%", marginTop: "100px", height: window.screen.width < 900 ? "700px" : "650px"}}>
 
             <div className="adaptPuz" style={{position: "absolute", left: "0", marginTop: "300px", zIndex: "-1"}}>
                 <img style={{width: "100%", height: "100%"}} src="/puz/puz2.png" alt="Кружочки"/>
@@ -94,8 +94,7 @@ const FourthScreen = () => {
                 fontSize: "15px",
                 lineHeight: "30px",
                 textTransform: "uppercase",
-                color: "rgba(0, 0, 0, 0.5)",
-                marginBottom: "20px"
+                color: "rgba(0, 0, 0, 0.5)"
             }} variant="h6" component="h2">
                 Статьи
             </Typography>

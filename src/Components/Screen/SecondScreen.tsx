@@ -6,7 +6,7 @@ const SecondScreen = () => {
     return (
         <Container id="about" className={"SecondScreenAdaptive"} sx={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "space-between",
             width: "60%",
             flexWrap: "wrap",
             marginTop: "100px"

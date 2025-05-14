@@ -85,7 +85,7 @@ const FifthScreen = () => {
     };
 
     return (
-        <Container id="reviews" sx={{width: "65%", marginTop: "70px", height: "600px"}}
+        <Container id="reviews" sx={{width: "60%", marginTop: "70px", height: "600px"}}
                    className="adaptive__reviews_height">
 
             <Typography sx={{

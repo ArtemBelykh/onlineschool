@@ -36,7 +36,7 @@ const Navbar = () => {
 
                     <Analytics/>
 
-                    <Toolbar>
+                    <Toolbar sx={{padding: 0, minHeight: 0}}>
                         <NavLinks to="/">
                             <img width="50" height="50" style={{borderRadius: "50%"}} src="/favicon-32x32.png"
                                  alt="favicon-32x32"/>

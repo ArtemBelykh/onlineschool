@@ -61,7 +61,10 @@ const ThirdScreen = () => {
     };
 
     return (
-        <Container id="rate" sx={{width: "55%", marginTop: "70px"}}>
+        <Container id="rate" sx={{
+            width: "60%",
+            marginTop: "70px"
+        }}>
             <Typography sx={{
                 fontFamily: "Mulish",
                 fontStyle: "normal",

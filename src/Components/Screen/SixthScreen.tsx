@@ -8,7 +8,7 @@ const SixthScreen = () => {
     return (
         <div style={{marginTop: "120px"}}>
 
-            <Container id="contact" sx={{width: "65%"}}>
+            <Container id="contact" sx={{width: "60%"}}>
                 <Typography sx={{
                     fontFamily: "Mulish",
                     fontStyle: "normal",
@@ -95,13 +95,13 @@ const SixthScreen = () => {
                         </Link>
                     </Typography>
                     <div style={{display: "flex", marginTop: "38px"}}>
-                        <a href="https://vk.com/club196114781" target="_blank"><img
+                        <a href="https://vk.com/club196114781" rel="noreferrer" target="_blank"><img
                             style={{marginRight: "30px", width: "52px", height: "52px"}} src="/vk.png"
                             alt="vk"/></a>
-                        <a href="whatsapp://send?text=l&phone=+79108019691&abid=+79108019691"><img
+                        <a href="whatsapp://send?text=l&phone=+79108019691&abid=+79108019691" rel="noreferrer"><img
                             style={{marginRight: "30px", width: "52px", height: "52px"}} src="/whatsapp.png"
                             alt="whatsapp"/></a>
-                        <a href="tg://resolve?domain=PravoNaPrava44" target="_blank">
+                        <a href="tg://resolve?domain=PravoNaPrava44" rel="noreferrer" target="_blank">
                             <img style={{width: "52px", height: "52px"}}
                                  src="/telegram.png"
                                  alt="telegram"/></a>
