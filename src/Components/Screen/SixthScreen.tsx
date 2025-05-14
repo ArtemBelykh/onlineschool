@@ -1,6 +1,7 @@
 import React from 'react'
-import {Container, Typography} from "@mui/material";
+import {Container, Link, Typography} from "@mui/material";
 import {FrameLoad} from "../FrameLoad";
+import AddressesComponents from "../Adress/Addresses.components";
 
 const SixthScreen = () => {
 
@@ -29,97 +30,13 @@ const SixthScreen = () => {
                 width: "100%",
                 justifyContent: "center"
             }}>
-                <FrameLoad src={"https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"}/>
+                <FrameLoad
+                    src={"https://yandex.ru/map-widget/v1/?ll=40.945624%2C57.762388&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjM0ODY2NRJD0KDQvtGB0YHQuNGPLCDQmtC-0YHRgtGA0L7QvNCwLCDQodC-0LLQtdGC0YHQutCw0Y8g0YPQu9C40YbQsCwgNDTQkCIKDVHII0IVrwxnQg%2C%2C&z=17.1"}/>
 
 
                 <div className={"adaptiveSix"} style={{paddingLeft: "50px"}}>
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "500",
-                        fontSize: "16px",
-                        lineHeight: "20px",
-                        color: "rgba(0, 0, 0, 0.5)",
-                    }} variant="h6" component="h2">
-                        Адреса
-                    </Typography>
 
-
-                    {/*<Typography sx={{*/}
-                    {/*    fontFamily: "Mulish",*/}
-                    {/*    fontStyle: "normal",*/}
-                    {/*    fontWeight: "400",*/}
-                    {/*    fontSize: "24px",*/}
-                    {/*    lineHeight: "30px",*/}
-                    {/*    color: "#000000"*/}
-                    {/*}} variant="h6" component="h2">*/}
-                    {/*    Костромская обл., <br/>*/}
-                    {/*    г. Галич, <br/>*/}
-                    {/*    ул. Ленина, д. 43, <br/>*/}
-                    {/*    помещение 10 (категория «В»);*/}
-                    {/*</Typography>*/}
-
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "400",
-                        fontSize: "20px",
-                        lineHeight: "23px",
-                        color: "#000000"
-                    }} variant="h6" component="h2">
-                        г. Кострома <br/>
-                        ул. Советская 44а <br/>
-                        офис 25, 2 этаж
-                    </Typography>
-
-
-                    <br/>
-
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "400",
-                        fontSize: "20px",
-                        lineHeight: "23px",
-                        color: "#000000"
-                    }} variant="h6" component="h2">
-                        Костромская обл., <br/>
-                        г. Галич, <br/>
-                        ул. Ленина, д. 43, <br/>
-                        помещение 10 (категория «В»);
-                    </Typography>
-
-                    <br/>
-
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "400",
-                        fontSize: "20px",
-                        lineHeight: "23px",
-                        color: "#000000"
-                    }} variant="h6" component="h2">
-                        Костромская обл., <br/>
-                        г. Буй, пл. Революции, д. 11, <br/>
-                        помещение с инвентарным <br/> номером 2-11 (категория «В»);
-                    </Typography>
-
-                    <br/>
-
-                    <Typography sx={{
-                        fontFamily: "Mulish",
-                        fontStyle: "normal",
-                        fontWeight: "400",
-                        fontSize: "20px",
-                        lineHeight: "23px",
-                        color: "#000000"
-                    }} variant="h6" component="h2">
-                        г. Ярославль, <br/>
-                        Московский просп., д. 97, <br/>
-                        помещение Nº 43 (категория «В»). <br/>
-                        Автодром - г. Кострома, <br/>
-                        ул. Коммунаров, д. 40
-                    </Typography>
+                    <AddressesComponents/>
 
                     <Typography sx={{
                         fontFamily: "Mulish",
@@ -171,7 +88,11 @@ const SixthScreen = () => {
                         lineHeight: "30px",
                         color: "#000000"
                     }} variant="h6" component="h2">
-                        +7 (910) 801-96-91
+                        <Link
+                            sx={{color: "black", textDecoration: "none"}}
+                            href={"tel:+79108019691"}>
+                            +7 (910) 801-96-91
+                        </Link>
                     </Typography>
                     <div style={{display: "flex", marginTop: "38px"}}>
                         <a href="https://vk.com/club196114781" target="_blank"><img
