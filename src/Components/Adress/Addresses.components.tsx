@@ -42,22 +42,7 @@ const AddressesComponents = () => {
                 Костромская обл., <br/>
                 г. Галич, <br/>
                 ул. Ленина, д. 43, <br/>
-                помещение 10 (категория «В»);
-            </Typography>
-
-            <br/>
-
-            <Typography sx={{
-                fontFamily: "Mulish",
-                fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "20px",
-                lineHeight: "23px",
-                color: "#000000"
-            }} variant="h6" component="h2">
-                Костромская обл., <br/>
-                г. Буй, пл. Революции, д. 11, <br/>
-                помещение с инвентарным <br/> номером 2-11 (категория «В»);
+                офис 10;
             </Typography>
 
             <br/>
@@ -72,9 +57,23 @@ const AddressesComponents = () => {
             }} variant="h6" component="h2">
                 г. Ярославль, <br/>
                 Московский просп., д. 97, <br/>
-                помещение Nº 43 (категория «В»). <br/>
-                Автодром - г. Кострома, <br/>
-                ул. Коммунаров, д. 40
+                офис Nº 43. <br/>
+                офис 2
+            </Typography>
+
+            <br/>
+
+            <Typography sx={{
+                fontFamily: "Mulish",
+                fontStyle: "normal",
+                fontWeight: "400",
+                fontSize: "20px",
+                lineHeight: "23px",
+                color: "#000000"
+            }} variant="h6" component="h2">
+                Костромская обл., <br/>
+                г. Буй, пл. Революции, д. 11, <br/>
+                офис 2
             </Typography>
         </>
     );
