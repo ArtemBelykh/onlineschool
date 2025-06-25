@@ -57,7 +57,7 @@ const AddressesComponents = () => {
             }} variant="h6" component="h2">
                 г. Ярославль, <br/>
                 Московский просп., д. 97, <br/>
-                офис Nº 43. <br/>
+                офис 43. <br/>
                 офис 2
             </Typography>
 
