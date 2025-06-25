@@ -72,7 +72,7 @@ const AddressesComponents = () => {
                 color: "#000000"
             }} variant="h6" component="h2">
                 Костромская обл., <br/>
-                г. Буй, пл. Революции, д. 11, <br/>
+                г. Буй, пл. Революции, д. 11,<br/>
                 офис 2
             </Typography>
         </>
