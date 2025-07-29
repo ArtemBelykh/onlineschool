@@ -17,7 +17,7 @@ const titleApp = process.env.REACT_APP_TITLE || 'Default Title';
 changeTitle(titleApp);
 console.log('Title from environment:', process.env.REACT_APP_TITLE);
 
-const isDisable = true
+const isDisable = false
 
 root.render(
   <React.StrictMode>
