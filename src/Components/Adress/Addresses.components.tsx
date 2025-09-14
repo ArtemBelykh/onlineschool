@@ -41,8 +41,7 @@ const AddressesComponents = () => {
             }} variant="h6" component="h2">
                 Костромская обл., <br/>
                 г. Галич, <br/>
-                ул. Ленина, д. 43, <br/>
-                офис 10;
+                ул. Ленина, д. 43
             </Typography>
 
             <br/>
@@ -72,8 +71,7 @@ const AddressesComponents = () => {
                 color: "#000000"
             }} variant="h6" component="h2">
                 Костромская обл., <br/>
-                г. Буй, пл. Революции, д. 11,<br/>
-                офис 2
+                г.Буй, ул. 10 Годовщины Октября, <br/> дом 2
             </Typography>
         </>
     );
